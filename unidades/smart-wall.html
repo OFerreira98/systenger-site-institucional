@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="es-PA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Fachadas Smart Wall · Systenger</title>
+  <meta name="description" content="Systenger · Sistemas constructivos de fachada industrializada en vidrio, aluminio y paneles prefabricados. Alto desempeño térmico, acústico y estanqueidad para edificaciones complejas." />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        ink:   { 0:"#030b0b", 1:"#011516", 2:"#0d1b1c", 3:"#162324", 4:"#003730" },
+        paper: { 0:"#ffffff", 1:"#f6f7f9", 2:"#eceef2" },
+        steel: { DEFAULT:"#039b9c", hi:"#0bbcbd", lo:"#006f75" },
+        mut:   { dark:"#8993a3", light:"#5b6573" }
+      },
+      fontFamily: {
+        sans: ['"Space Grotesk"', "Helvetica Neue", "Arial", "sans-serif"],
+        mono: ['"JetBrains Mono"', "ui-monospace", "Menlo", "monospace"]
+      },
+      maxWidth: { '8xl': '88rem' }
+    } } };
+  </script>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body class="bg-paper-0 text-ink-1">
+
+  <div id="site-header"></div>
+
+  <!-- ============================== PAGE HERO ============================== -->
+  <section class="relative bg-ink-1 text-white overflow-hidden">
+    <image-slot id="smart-hero" class="absolute inset-0 w-full h-full opacity-50" placeholder="HERO · Fachada Smart Wall · vidro espelhado refletindo céu"></image-slot>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink-1 via-ink-1/85 to-ink-1/35"></div>
+    <div class="absolute inset-0 tech-grid opacity-40"></div>
+
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 pt-40 pb-24 lg:pt-48 lg:pb-32">
+      <div class="kicker mb-8" data-i18n="pg.smart.eyebrow">Unidades de Negocio · 02</div>
+      <h1 class="text-[clamp(36px,5.4vw,84px)] font-bold leading-[1.02] tracking-[-0.02em] max-w-[18ch] text-balance"
+          data-i18n="pg.smart.h1">Fachadas Arquitectónicas Smart Wall</h1>
+      <p class="mt-8 text-[17px] lg:text-[19px] text-mut-dark leading-relaxed max-w-[60ch]"
+         data-i18n="pg.smart.lede">Sistemas constructivos de fachada industrializada en vidrio, aluminio y paneles prefabricados. Soluciones de alto desempeño térmico, acústico y estanqueidad para edificaciones complejas.</p>
+
+      <div class="mt-14 grid grid-cols-3 max-w-3xl border-t border-ink-4">
+        <div class="py-5 pr-6 border-r border-ink-4">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.smart.r1.k">Tipo</div>
+          <div class="mt-2 font-mono text-[13px] text-white" data-i18n="pg.smart.r1.v">Sistema panelizado</div>
+        </div>
+        <div class="py-5 px-6 border-r border-ink-4">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.smart.r2.k">Capas</div>
+          <div class="mt-2 font-mono text-[13px] text-white" data-i18n="pg.smart.r2.v">05 integradas</div>
+        </div>
+        <div class="py-5 pl-6">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.smart.r3.k">Acabados</div>
+          <div class="mt-2 font-mono text-[13px] text-white" data-i18n="pg.smart.r3.v">Vidrio · Al · Cerámica</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== OVERVIEW ============================== -->
+  <section class="bg-paper-0">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 reveal">
+          <div class="kicker mb-5" data-i18n="pg.smart.ov.kicker">02 / Qué es Smart Wall</div>
+          <h2 class="text-[clamp(28px,3.2vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.smart.ov.h2">Una envolvente industrializada, no una fachada tradicional</h2>
+          <ul class="mt-9 space-y-4 text-[15px] text-mut-light">
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.smart.ov.b1">Paneles prefabricados con todas las capas integradas</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.smart.ov.b2">Sistema de anclaje a estructura de hormigón o acero</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.smart.ov.b3">Acabados en vidrio, aluminio, composite o cerámica técnica</span></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-6 lg:col-start-7 reveal reveal-delay-1">
+          <div class="space-y-6 text-[16.5px] leading-[1.65] text-ink-1">
+            <p data-i18n="pg.smart.ov.p1">Smart Wall es un sistema de fachada prefabricado en planta y montado por paneles, integrando estructura, aislación, barreras y acabado en un único componente.</p>
+            <p class="text-mut-light" data-i18n="pg.smart.ov.p2">Esto elimina interfaces críticas en obra, garantiza desempeño térmico y acústico constante y reduce dramáticamente los plazos de cierre de envolvente.</p>
+          </div>
+          <image-slot id="smart-ov" class="mt-10 block w-full aspect-[16/10]" placeholder="Fachada Smart Wall en obra · grúa instalando panel"></image-slot>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SYSTEM COMPOSITION (with section diagram) ============================== -->
+  <section class="bg-ink-1 text-white relative">
+    <div class="absolute inset-0 tech-grid opacity-40 pointer-events-none"></div>
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+
+      <div class="grid lg:grid-cols-12 gap-10 mb-14">
+        <div class="lg:col-span-6 reveal">
+          <div class="kicker mb-5" data-i18n="pg.smart.sys.kicker">03 / Composición del sistema</div>
+          <h2 class="text-[clamp(30px,3.6vw,50px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.smart.sys.h2">Cinco capas pensadas para trabajar como un único elemento</h2>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-dark leading-relaxed max-w-[50ch]" data-i18n="pg.smart.sys.intro">Cada panel Smart Wall combina estructura, aislamiento térmico, barrera de vapor, subestructura y acabado, dimensionado según las exigencias del proyecto.</p>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+
+        <!-- Section diagram -->
+        <div class="lg:col-span-5 reveal">
+          <div class="border border-ink-4 bg-ink-2 p-7">
+            <div class="flex items-center justify-between mb-5">
+              <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase">Sección · SW-01</div>
+              <div class="font-mono text-[10px] tracking-[0.22em] text-steel uppercase">[esc 1:5]</div>
+            </div>
+
+            <svg viewBox="0 0 360 420" class="w-full h-auto" fill="none" stroke-width="1.2">
+              <!-- exterior side -->
+              <text x="20" y="20" font-family="JetBrains Mono,monospace" font-size="9" fill="#8993a3">EXTERIOR</text>
+              <text x="280" y="20" font-family="JetBrains Mono,monospace" font-size="9" fill="#8993a3">INTERIOR</text>
+
+              <!-- L1 · primary structure -->
+              <rect x="40" y="40" width="280" height="50" stroke="#039b9c" />
+              <path d="M40 40 L320 90 M40 90 L320 40" stroke="#039b9c" stroke-opacity="0.4"/>
+              <text x="180" y="70" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="11" fill="#fff">Estructura primaria</text>
+              <line x1="40" y1="65" x2="20" y2="65" stroke="#039b9c"/>
+              <text x="15" y="68" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="9" fill="#039b9c">L1</text>
+
+              <!-- L2 · substructure -->
+              <rect x="40" y="100" width="280" height="35" stroke="#039b9c" />
+              <path d="M70 100 L70 135 M120 100 L120 135 M170 100 L170 135 M220 100 L220 135 M270 100 L270 135" stroke="#039b9c" stroke-opacity="0.5"/>
+              <text x="180" y="122" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="11" fill="#fff">Subestructura técnica</text>
+              <line x1="40" y1="117" x2="20" y2="117" stroke="#039b9c"/>
+              <text x="15" y="120" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="9" fill="#039b9c">L2</text>
+
+              <!-- L3 · insulation (hatching) -->
+              <rect x="40" y="145" width="280" height="100" stroke="#039b9c" />
+              <path d="M40 145 L60 245 M60 145 L80 245 M80 145 L100 245 M100 145 L120 245 M120 145 L140 245 M140 145 L160 245 M160 145 L180 245 M180 145 L200 245 M200 145 L220 245 M220 145 L240 245 M240 145 L260 245 M260 145 L280 245 M280 145 L300 245 M300 145 L320 245" stroke="#039b9c" stroke-opacity="0.25"/>
+              <text x="180" y="200" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="11" fill="#fff">Aislamiento térmico-acústico</text>
+              <line x1="40" y1="195" x2="20" y2="195" stroke="#039b9c"/>
+              <text x="15" y="198" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="9" fill="#039b9c">L3</text>
+
+              <!-- L4 · barriers -->
+              <rect x="40" y="255" width="280" height="25" stroke="#039b9c" />
+              <path d="M40 268 L320 268" stroke="#039b9c" stroke-dasharray="4 4"/>
+              <text x="180" y="273" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="11" fill="#fff">Barreras técnicas</text>
+              <line x1="40" y1="267" x2="20" y2="267" stroke="#039b9c"/>
+              <text x="15" y="270" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="9" fill="#039b9c">L4</text>
+
+              <!-- L5 · exterior finish -->
+              <rect x="40" y="290" width="280" height="60" stroke="#039b9c" fill="#039b9c" fill-opacity="0.08" />
+              <path d="M70 290 L70 350 M120 290 L120 350 M170 290 L170 350 M220 290 L220 350 M270 290 L270 350" stroke="#039b9c" stroke-opacity="0.3"/>
+              <text x="180" y="324" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="11" fill="#fff">Acabado exterior</text>
+              <line x1="40" y1="320" x2="20" y2="320" stroke="#039b9c"/>
+              <text x="15" y="323" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="9" fill="#039b9c">L5</text>
+
+              <!-- Anchor symbols -->
+              <circle cx="80" cy="65" r="3" fill="#039b9c"/>
+              <circle cx="180" cy="65" r="3" fill="#039b9c"/>
+              <circle cx="280" cy="65" r="3" fill="#039b9c"/>
+
+              <!-- Dimensions -->
+              <line x1="40" y1="380" x2="320" y2="380" stroke="#8993a3" stroke-width="0.6"/>
+              <line x1="40" y1="375" x2="40" y2="385" stroke="#8993a3" stroke-width="0.6"/>
+              <line x1="320" y1="375" x2="320" y2="385" stroke="#8993a3" stroke-width="0.6"/>
+              <text x="180" y="400" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#8993a3">[XXX] mm</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Layer list -->
+        <div class="lg:col-span-6 lg:col-start-7 reveal reveal-delay-1">
+          <div class="border-t border-ink-4">
+            <div class="grid grid-cols-[60px_1fr] gap-5 py-7 border-b border-ink-4">
+              <div class="font-mono text-[11px] tracking-[0.2em] text-steel">L 01</div>
+              <div>
+                <h3 class="text-[18px] font-semibold" data-i18n="pg.smart.sys.l1.title">Estructura primaria</h3>
+                <p class="mt-2 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.smart.sys.l1.desc">Perfilería de acero o aluminio que recibe el panel y lo ancla a la edificación.</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-[60px_1fr] gap-5 py-7 border-b border-ink-4">
+              <div class="font-mono text-[11px] tracking-[0.2em] text-steel">L 02</div>
+              <div>
+                <h3 class="text-[18px] font-semibold" data-i18n="pg.smart.sys.l2.title">Subestructura técnica</h3>
+                <p class="mt-2 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.smart.sys.l2.desc">Sistema de perfiles que recibe el aislamiento y las barreras técnicas.</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-[60px_1fr] gap-5 py-7 border-b border-ink-4">
+              <div class="font-mono text-[11px] tracking-[0.2em] text-steel">L 03</div>
+              <div>
+                <h3 class="text-[18px] font-semibold" data-i18n="pg.smart.sys.l3.title">Aislamiento térmico-acústico</h3>
+                <p class="mt-2 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.smart.sys.l3.desc">Lana mineral de alta densidad u otro aislante calculado para cada clima.</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-[60px_1fr] gap-5 py-7 border-b border-ink-4">
+              <div class="font-mono text-[11px] tracking-[0.2em] text-steel">L 04</div>
+              <div>
+                <h3 class="text-[18px] font-semibold" data-i18n="pg.smart.sys.l4.title">Barreras técnicas</h3>
+                <p class="mt-2 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.smart.sys.l4.desc">Membranas de impermeabilización, barrera de vapor y control de aire.</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-[60px_1fr] gap-5 py-7">
+              <div class="font-mono text-[11px] tracking-[0.2em] text-steel">L 05</div>
+              <div>
+                <h3 class="text-[18px] font-semibold" data-i18n="pg.smart.sys.l5.title">Acabado exterior</h3>
+                <p class="mt-2 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.smart.sys.l5.desc">Vidrio, aluminio composite, paneles cerámicos o sistemas a medida.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== BENEFITS ============================== -->
+  <section class="bg-paper-0">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-10 mb-14">
+        <div class="lg:col-span-6 reveal">
+          <div class="kicker mb-5" data-i18n="pg.smart.ben.kicker">04 / Ventajas del sistema</div>
+          <h2 class="text-[clamp(28px,3.4vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.smart.ben.h2">Desempeño certificado, plazos reducidos, riesgo controlado</h2>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-paper-2 border border-paper-2">
+        <!-- b1 thermal -->
+        <div class="bg-paper-0 p-7 lg:p-9 reveal">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" class="text-steel mb-6">
+            <path d="M16 4v6M16 22v6M4 16h6M22 16h6M7.5 7.5l4.2 4.2M20.3 20.3l4.2 4.2M7.5 24.5l4.2-4.2M20.3 11.7l4.2-4.2"/>
+            <circle cx="16" cy="16" r="3"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">B-01</div>
+          <h3 class="mt-3 text-[20px] font-semibold" data-i18n="pg.smart.ben.b1.title">Desempeño térmico</h3>
+          <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.smart.ben.b1.desc">Valores U y R calibrados al clima del proyecto, sin puentes térmicos.</p>
+        </div>
+        <!-- b2 acoustic -->
+        <div class="bg-paper-0 p-7 lg:p-9 reveal reveal-delay-1">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" class="text-steel mb-6">
+            <path d="M4 12v8h4l6 5V7l-6 5H4z"/>
+            <path d="M20 11c2 2 2 8 0 10M24 8c4 4 4 12 0 16"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">B-02</div>
+          <h3 class="mt-3 text-[20px] font-semibold" data-i18n="pg.smart.ben.b2.title">Aislamiento acústico</h3>
+          <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.smart.ben.b2.desc">Atenuación acústica certificada para entornos urbanos exigentes.</p>
+        </div>
+        <!-- b3 weather-tight -->
+        <div class="bg-paper-0 p-7 lg:p-9 reveal reveal-delay-2">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" class="text-steel mb-6">
+            <path d="M16 4l8 10c2 3 1 8-3 10s-9 1-11-3c-1.5-3-0.5-7 1-9l5-8z"/>
+            <path d="M11 19c0 2 1.5 3.5 3.5 4" stroke-linecap="round"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">B-03</div>
+          <h3 class="mt-3 text-[20px] font-semibold" data-i18n="pg.smart.ben.b3.title">Estanqueidad total</h3>
+          <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.smart.ben.b3.desc">Sistema sellado y testado contra agua y aire en juntas críticas.</p>
+        </div>
+        <!-- b4 light -->
+        <div class="bg-paper-0 p-7 lg:p-9 reveal">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" class="text-steel mb-6">
+            <rect x="4" y="6" width="10" height="10"/>
+            <rect x="18" y="6" width="10" height="10"/>
+            <rect x="4" y="20" width="10" height="6"/>
+            <rect x="18" y="20" width="10" height="6"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">B-04</div>
+          <h3 class="mt-3 text-[20px] font-semibold" data-i18n="pg.smart.ben.b4.title">Liviano y modular</h3>
+          <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.smart.ben.b4.desc">Menor peso por m² que las fachadas tradicionales, modular y replicable.</p>
+        </div>
+        <!-- b5 speed -->
+        <div class="bg-paper-0 p-7 lg:p-9 reveal reveal-delay-1">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" class="text-steel mb-6">
+            <circle cx="16" cy="16" r="12"/>
+            <path d="M16 8v8l5 3" stroke-linecap="round"/>
+            <path d="M14 4h4" stroke-linecap="round"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">B-05</div>
+          <h3 class="mt-3 text-[20px] font-semibold" data-i18n="pg.smart.ben.b5.title">Velocidad de obra</h3>
+          <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.smart.ben.b5.desc">Cierre de envolvente en una fracción del tiempo de un sistema húmedo.</p>
+        </div>
+        <!-- b6 sustainable -->
+        <div class="bg-paper-0 p-7 lg:p-9 reveal reveal-delay-2">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" class="text-steel mb-6">
+            <path d="M6 16c0-6 4-10 10-10s10 4 10 10c0 4-2 8-7 9-3 1-6-1-6-4 0-2 2-4 4-4" stroke-linecap="round"/>
+            <path d="M22 14c-3 0-6 3-6 6" stroke-linecap="round"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">B-06</div>
+          <h3 class="mt-3 text-[20px] font-semibold" data-i18n="pg.smart.ben.b6.title">Sostenible</h3>
+          <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.smart.ben.b6.desc">Reducción de residuos, materiales reciclables y desempeño energético.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== PROCESS ============================== -->
+  <section class="bg-ink-2 text-white">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-10 mb-16">
+        <div class="lg:col-span-7 reveal">
+          <div class="kicker mb-5" data-i18n="pg.smart.proc.kicker">05 / Proceso constructivo</div>
+          <h2 class="text-[clamp(28px,3.4vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.smart.proc.h2">Diseño, prefabricación e instalación coordinada</h2>
+        </div>
+        <div class="lg:col-span-4 lg:col-start-9 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-dark leading-relaxed" data-i18n="pg.smart.proc.intro">El sistema se diseña en conjunto con la estructura del edificio, se prefabrica en planta y se monta por paneles en obra, minimizando andamios y tiempos.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+        <div class="proc-card reveal">
+          <image-slot id="smart-p1" class="block w-full aspect-[4/3] mb-7" placeholder="01 · Plano arquitectónico de fachada · ploter"></image-slot>
+          <div class="flex items-baseline justify-between">
+            <div class="num text-[13px] tracking-[0.2em]">01</div>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" class="text-steel"><path d="M3 3H19V19H3V3Z" stroke="currentColor" stroke-width="1.2"/><path d="M3 11H19M11 3V19" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="mt-8 text-[22px] font-semibold leading-tight" data-i18n="pg.smart.proc.p1.title">Diseño integrado</h3>
+          <p class="mt-4 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.smart.proc.p1.desc">Definición de módulos, anclajes y desempeño en conjunto con el arquitecto.</p>
+        </div>
+        <div class="proc-card reveal reveal-delay-1">
+          <image-slot id="smart-p2" class="block w-full aspect-[4/3] mb-7" placeholder="02 · Mesa de armado de panel · obreros ensamblando capas"></image-slot>
+          <div class="flex items-baseline justify-between">
+            <div class="num text-[13px] tracking-[0.2em]">02</div>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" class="text-steel"><rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="1.2"/><rect x="12" y="3" width="7" height="7" stroke="currentColor" stroke-width="1.2"/><rect x="3" y="12" width="7" height="7" stroke="currentColor" stroke-width="1.2"/><rect x="12" y="12" width="7" height="7" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="mt-8 text-[22px] font-semibold leading-tight" data-i18n="pg.smart.proc.p2.title">Prefabricación en planta</h3>
+          <p class="mt-4 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.smart.proc.p2.desc">Ensamble de paneles completos con control de calidad por pieza.</p>
+        </div>
+        <div class="proc-card reveal reveal-delay-2">
+          <image-slot id="smart-p3" class="block w-full aspect-[4/3] mb-7" placeholder="03 · Camión transportando paneles envueltos hacia la obra"></image-slot>
+          <div class="flex items-baseline justify-between">
+            <div class="num text-[13px] tracking-[0.2em]">03</div>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" class="text-steel"><path d="M2 16V8H12V16M12 11H17L20 14V16M2 16H4M8 16H14M18 16H20" stroke="currentColor" stroke-width="1.2"/><circle cx="6" cy="17" r="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="16" cy="17" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="mt-8 text-[22px] font-semibold leading-tight" data-i18n="pg.smart.proc.p3.title">Logística y entrega</h3>
+          <p class="mt-4 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.smart.proc.p3.desc">Transporte secuenciado según el plan de montaje del edificio.</p>
+        </div>
+        <div class="proc-card reveal reveal-delay-3">
+          <image-slot id="smart-p4" class="block w-full aspect-[4/3] mb-7" placeholder="04 · Grúa montando panel de fachada en altura"></image-slot>
+          <div class="flex items-baseline justify-between">
+            <div class="num text-[13px] tracking-[0.2em]">04</div>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" class="text-steel"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.2"/><path d="M7 11L10 14L15 8" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="mt-8 text-[22px] font-semibold leading-tight" data-i18n="pg.smart.proc.p4.title">Montaje certificado</h3>
+          <p class="mt-4 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.smart.proc.p4.desc">Instalación por personal especializado y ensayos de estanqueidad en obra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== APPLICATIONS ============================== -->
+  <section class="bg-paper-1">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-10 mb-14">
+        <div class="lg:col-span-5 reveal">
+          <div class="kicker mb-5" data-i18n="pg.smart.apps.kicker">06 / Aplicaciones</div>
+          <h2 class="text-[clamp(26px,3vw,42px)] font-semibold leading-tight tracking-[-0.02em]"
+              data-i18n="pg.smart.apps.h2">Edificaciones donde Smart Wall hace la diferencia</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="reveal">
+          <image-slot id="smart-app-1" class="block w-full aspect-[5/4]" placeholder="APP 01 · Torre de escritórios · fachada espelhada"></image-slot>
+          <div class="mt-4 flex items-baseline justify-between">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-mut-light uppercase">01</div>
+            <div class="text-[15px] font-medium" data-i18n="pg.smart.apps.a1">Edificios de oficinas</div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <image-slot id="smart-app-2" class="block w-full aspect-[5/4]" placeholder="APP 02 · Hotel ou residencial · fachada moderna"></image-slot>
+          <div class="mt-4 flex items-baseline justify-between">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-mut-light uppercase">02</div>
+            <div class="text-[15px] font-medium" data-i18n="pg.smart.apps.a2">Hoteles y residenciales</div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <image-slot id="smart-app-3" class="block w-full aspect-[5/4]" placeholder="APP 03 · Hospital · fachada técnica"></image-slot>
+          <div class="mt-4 flex items-baseline justify-between">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-mut-light uppercase">03</div>
+            <div class="text-[15px] font-medium" data-i18n="pg.smart.apps.a3">Hospitales y salud</div>
+          </div>
+        </div>
+        <div class="reveal">
+          <image-slot id="smart-app-4" class="block w-full aspect-[5/4]" placeholder="APP 04 · Shopping ou plaza comercial"></image-slot>
+          <div class="mt-4 flex items-baseline justify-between">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-mut-light uppercase">04</div>
+            <div class="text-[15px] font-medium" data-i18n="pg.smart.apps.a4">Centros comerciales</div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <image-slot id="smart-app-5" class="block w-full aspect-[5/4]" placeholder="APP 05 · Terminal aeroportuario · vidro + alumínio"></image-slot>
+          <div class="mt-4 flex items-baseline justify-between">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-mut-light uppercase">05</div>
+            <div class="text-[15px] font-medium" data-i18n="pg.smart.apps.a5">Aeropuertos y transporte</div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <image-slot id="smart-app-6" class="block w-full aspect-[5/4]" placeholder="APP 06 · Edifício institucional ou educacional"></image-slot>
+          <div class="mt-4 flex items-baseline justify-between">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-mut-light uppercase">06</div>
+            <div class="text-[15px] font-medium" data-i18n="pg.smart.apps.a6">Educación e institucionales</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CTA ============================== -->
+  <section class="bg-ink-1 text-white">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-20 lg:py-24 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7">
+        <h2 class="text-[clamp(28px,3.4vw,48px)] font-semibold leading-[1.05] tracking-[-0.02em]" data-i18n="pg.smart.cta.h">Conversemos sobre la envolvente de tu próximo edificio</h2>
+      </div>
+      <div class="lg:col-span-4 lg:col-start-9 flex flex-wrap gap-3">
+        <a href="../contacto.html" class="btn btn-primary"><span data-i18n="pg.smart.cta.btn">Solicitar cotización</span><span class="arrow">→</span></a>
+        <a href="../procesos.html" class="btn btn-ghost-dark"><span data-i18n="pg.smart.cta.btn2">Ver procesos</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="../assets/image-slot.js"></script>
+  <script src="../assets/chrome.js" data-page="smartwall"></script>
+  <script src="../assets/translations.js"></script>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

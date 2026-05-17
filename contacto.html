@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="es-PA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Contacto · Systenger</title>
+  <meta name="description" content="Contactá a Systenger para presupuestos, asesoría técnica o coordinar una visita a la planta. Nuestro equipo de ingeniería responde en menos de 24 horas hábiles." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        ink:   { 0:"#030b0b", 1:"#011516", 2:"#0d1b1c", 3:"#162324", 4:"#003730" },
+        paper: { 0:"#ffffff", 1:"#f6f7f9", 2:"#eceef2" },
+        steel: { DEFAULT:"#039b9c", hi:"#0bbcbd", lo:"#006f75" },
+        mut:   { dark:"#8993a3", light:"#5b6573" }
+      },
+      fontFamily: {
+        sans: ['"Space Grotesk"', "Helvetica Neue", "Arial", "sans-serif"],
+        mono: ['"JetBrains Mono"', "ui-monospace", "Menlo", "monospace"]
+      },
+      maxWidth: { '8xl': '88rem' }
+    } } };
+  </script>
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <style>
+    /* form */
+    .field {
+      display: block;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--mut-on-light);
+      margin-bottom: 10px;
+    }
+    .field-req::after {
+      content: " *";
+      color: var(--accent);
+    }
+    .input,
+    .select,
+    .textarea {
+      width: 100%;
+      background: var(--paper-0);
+      border: 1px solid var(--paper-2);
+      padding: 14px 16px;
+      font-family: var(--serif);
+      font-size: 15px;
+      color: var(--fg-on-light);
+      transition: border-color 180ms, background 180ms;
+    }
+    .input:focus,
+    .select:focus,
+    .textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      background: #fff;
+    }
+    .input::placeholder, .textarea::placeholder { color: #a5acba; }
+    .select {
+      appearance: none;
+      background-image: linear-gradient(45deg, transparent 50%, var(--mut-on-light) 50%),
+                        linear-gradient(135deg, var(--mut-on-light) 50%, transparent 50%);
+      background-position: calc(100% - 18px) 19px, calc(100% - 12px) 19px;
+      background-size: 6px 6px;
+      background-repeat: no-repeat;
+      padding-right: 36px;
+    }
+    .textarea { min-height: 140px; resize: vertical; }
+    .field-wrap.has-error .input,
+    .field-wrap.has-error .select,
+    .field-wrap.has-error .textarea {
+      border-color: #d9534f;
+      background: #fdf3f3;
+    }
+    .err-msg {
+      display: none;
+      margin-top: 6px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: #d9534f;
+    }
+    .field-wrap.has-error .err-msg { display: block; }
+
+    /* checkbox */
+    .check-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      cursor: pointer;
+      font-size: 13.5px;
+      color: var(--mut-on-light);
+      line-height: 1.5;
+    }
+    .check-wrap input { position: absolute; opacity: 0; pointer-events: none; }
+    .check-box {
+      flex: none;
+      width: 18px; height: 18px;
+      border: 1px solid var(--paper-2);
+      background: var(--paper-0);
+      margin-top: 2px;
+      position: relative;
+      transition: background 150ms, border-color 150ms;
+    }
+    .check-wrap input:checked + .check-box {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    .check-wrap input:checked + .check-box::after {
+      content: "";
+      position: absolute;
+      inset: 3px;
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='white' stroke-width='2'><path d='M2 6.5L5 9.5L10 3.5'/></svg>") center/contain no-repeat;
+    }
+
+    /* success state */
+    .form-success {
+      display: none;
+      padding: 28px 30px;
+      background: rgba(58,134,255,0.06);
+      border: 1px solid var(--accent);
+      color: var(--fg-on-light);
+    }
+    .form-shell.is-sent .form-body { display: none; }
+    .form-shell.is-sent .form-success { display: block; }
+
+    /* map styling */
+    .map-wrap {
+      position: relative;
+      background: var(--ink-1);
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="bg-paper-0 text-ink-1">
+
+  <div id="site-header"></div>
+
+  <!-- ============================== HERO (compact) ============================== -->
+  <section class="relative bg-ink-1 text-white overflow-hidden">
+    <div class="absolute inset-0 tech-grid opacity-40"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-ink-1 via-ink-1 to-ink-0/70"></div>
+
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 pt-40 pb-20 lg:pt-44 lg:pb-24">
+      <div class="kicker mb-7" data-i18n="pg.contact.eyebrow">Contacto · 01</div>
+      <h1 class="text-[clamp(34px,4.8vw,72px)] font-bold leading-[1.04] tracking-[-0.02em] max-w-[22ch] text-balance"
+          data-i18n="pg.contact.h1">Hablemos sobre tu próximo proyecto</h1>
+      <p class="mt-7 text-[16.5px] lg:text-[18px] text-mut-dark leading-relaxed max-w-[60ch]"
+         data-i18n="pg.contact.lede">Contactanos para presupuestos, asesoría técnica o para coordinar una visita a la planta. Nuestro equipo de ingeniería responde en menos de 24 horas hábiles.</p>
+    </div>
+  </section>
+
+  <!-- ============================== FORM + INFO ============================== -->
+  <section class="bg-paper-0">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-20 lg:py-28">
+      <div class="grid lg:grid-cols-12 gap-14 lg:gap-10">
+
+        <!-- FORM -->
+        <div class="lg:col-span-7 reveal">
+          <div class="kicker mb-5" data-i18n="pg.contact.form.kicker">02 / Formulario</div>
+          <h2 class="text-[clamp(26px,2.8vw,40px)] font-semibold leading-[1.08] tracking-[-0.02em]"
+              data-i18n="pg.contact.form.h2">Contanos sobre tu proyecto</h2>
+          <p class="mt-5 text-[15.5px] text-mut-light leading-relaxed max-w-[55ch]" data-i18n="pg.contact.form.intro">Cuanto más detalle podamos recibir desde el inicio, mejor podremos orientarte y preparar una propuesta a tu medida.</p>
+
+          <div class="form-shell mt-10" id="contact-form-shell">
+
+            <!-- SUCCESS -->
+            <div class="form-success" role="status" aria-live="polite">
+              <div class="font-mono text-[10px] tracking-[0.2em] text-steel uppercase mb-3">Status · 200 OK</div>
+              <div class="text-[18px] font-semibold mb-2" data-i18n="pg.contact.form.success">¡Gracias! Recibimos tu consulta y te respondemos en breve.</div>
+              <div class="text-[13.5px] text-mut-light" data-i18n="pg.contact.form.note">Respondemos en menos de 24 horas hábiles.</div>
+            </div>
+
+            <form class="form-body grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-7" novalidate id="contact-form" autocomplete="on">
+              <!-- name -->
+              <div class="field-wrap" data-field="name">
+                <label class="field field-req" for="f-name" data-i18n="pg.contact.form.name.label">Nombre completo</label>
+                <input id="f-name" name="name" type="text" required class="input" data-i18n-attr="placeholder|pg.contact.form.name.ph" placeholder="Tu nombre" />
+                <div class="err-msg">Campo requerido</div>
+              </div>
+              <!-- company -->
+              <div class="field-wrap" data-field="company">
+                <label class="field" for="f-company" data-i18n="pg.contact.form.company.label">Empresa</label>
+                <input id="f-company" name="company" type="text" class="input" data-i18n-attr="placeholder|pg.contact.form.company.ph" placeholder="Razón social o estudio" />
+              </div>
+              <!-- email -->
+              <div class="field-wrap" data-field="email">
+                <label class="field field-req" for="f-email" data-i18n="pg.contact.form.email.label">Email corporativo</label>
+                <input id="f-email" name="email" type="email" required class="input" data-i18n-attr="placeholder|pg.contact.form.email.ph" placeholder="tu@empresa.com" />
+                <div class="err-msg">Email requerido</div>
+              </div>
+              <!-- phone -->
+              <div class="field-wrap" data-field="phone">
+                <label class="field" for="f-phone" data-i18n="pg.contact.form.phone.label">Teléfono</label>
+                <input id="f-phone" name="phone" type="tel" class="input" data-i18n-attr="placeholder|pg.contact.form.phone.ph" placeholder="+507 …" />
+              </div>
+              <!-- project type -->
+              <div class="field-wrap sm:col-span-2" data-field="type">
+                <label class="field field-req" for="f-type" data-i18n="pg.contact.form.type.label">Tipo de proyecto</label>
+                <select id="f-type" name="type" required class="select">
+                  <option value="" data-i18n="pg.contact.form.type.opt0">Seleccioná una opción</option>
+                  <option value="metal" data-i18n="pg.contact.form.type.opt1">Estructuras Metálicas Prefabricadas</option>
+                  <option value="smart" data-i18n="pg.contact.form.type.opt2">Fachadas Smart Wall</option>
+                  <option value="industrial" data-i18n="pg.contact.form.type.opt3">Obras Industriales e Infraestructura</option>
+                  <option value="other" data-i18n="pg.contact.form.type.opt4">Otro · necesito asesoramiento</option>
+                </select>
+                <div class="err-msg">Seleccioná un tipo</div>
+              </div>
+              <!-- location -->
+              <div class="field-wrap sm:col-span-2" data-field="location">
+                <label class="field" for="f-location" data-i18n="pg.contact.form.location.label">Ubicación de la obra</label>
+                <input id="f-location" name="location" type="text" class="input" data-i18n-attr="placeholder|pg.contact.form.location.ph" placeholder="Ciudad, país" />
+              </div>
+              <!-- message -->
+              <div class="field-wrap sm:col-span-2" data-field="message">
+                <label class="field field-req" for="f-message" data-i18n="pg.contact.form.message.label">Detalles del proyecto</label>
+                <textarea id="f-message" name="message" required class="textarea" data-i18n-attr="placeholder|pg.contact.form.message.ph" placeholder="Contanos sobre el alcance, plazos y cualquier información relevante…"></textarea>
+                <div class="err-msg">Por favor agregá una descripción</div>
+              </div>
+              <!-- privacy + submit -->
+              <div class="sm:col-span-2 pt-2">
+                <label class="check-wrap mb-7" data-field="privacy">
+                  <input type="checkbox" required name="privacy" />
+                  <span class="check-box" aria-hidden="true"></span>
+                  <span data-i18n="pg.contact.form.privacy">Acepto el tratamiento de mis datos para que Systenger pueda responder mi consulta.</span>
+                </label>
+                <div class="flex flex-wrap items-center gap-5">
+                  <button type="submit" class="btn btn-primary">
+                    <span data-i18n="pg.contact.form.submit">Enviar consulta</span>
+                    <span class="arrow">→</span>
+                  </button>
+                  <span class="font-mono text-[11px] tracking-[0.12em] text-mut-light uppercase" data-i18n="pg.contact.form.note">Respondemos en menos de 24 horas hábiles.</span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- INFO CHANNELS -->
+        <aside class="lg:col-span-4 lg:col-start-9 reveal reveal-delay-1">
+          <div class="bg-paper-1 p-7 lg:p-9 border border-paper-2">
+            <div class="kicker mb-5" data-i18n="pg.contact.info.kicker">03 / Datos directos</div>
+            <h3 class="text-[20px] font-semibold leading-tight" data-i18n="pg.contact.info.h2">También podés llegar a nosotros por estos canales</h3>
+
+            <div class="mt-8 space-y-7">
+              <!-- address -->
+              <div class="flex gap-4">
+                <div class="flex-none w-9 h-9 inline-flex items-center justify-center border border-paper-2 bg-paper-0 text-steel">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 14s5-4 5-8a5 5 0 10-10 0c0 4 5 8 5 8z"/><circle cx="8" cy="6" r="1.8"/></svg>
+                </div>
+                <div class="min-w-0">
+                  <div class="font-mono text-[10px] tracking-[0.18em] text-mut-light uppercase mb-1" data-i18n="pg.contact.info.c1.label">Planta y oficinas</div>
+                  <div class="text-[14.5px] text-ink-1" data-i18n="pg.contact.info.c1.value">Panamá · [Dirección completa]</div>
+                </div>
+              </div>
+              <!-- phone -->
+              <div class="flex gap-4">
+                <div class="flex-none w-9 h-9 inline-flex items-center justify-center border border-paper-2 bg-paper-0 text-steel">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 2.5h3l1.5 3.5L5.5 7.5a8 8 0 003 3l1.5-2 3.5 1.5v3a1 1 0 01-1 1A11 11 0 012 3.5a1 1 0 011-1z"/></svg>
+                </div>
+                <div class="min-w-0">
+                  <div class="font-mono text-[10px] tracking-[0.18em] text-mut-light uppercase mb-1" data-i18n="pg.contact.info.c2.label">Teléfono</div>
+                  <a href="tel:+507" class="text-[14.5px] text-ink-1 hover:text-steel transition" data-i18n="pg.contact.info.c2.value">+507 [XXXX-XXXX]</a>
+                </div>
+              </div>
+              <!-- email -->
+              <div class="flex gap-4">
+                <div class="flex-none w-9 h-9 inline-flex items-center justify-center border border-paper-2 bg-paper-0 text-steel">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1.5" y="3.5" width="13" height="9"/><path d="M1.5 4l6.5 5L14.5 4"/></svg>
+                </div>
+                <div class="min-w-0">
+                  <div class="font-mono text-[10px] tracking-[0.18em] text-mut-light uppercase mb-1" data-i18n="pg.contact.info.c3.label">Email comercial</div>
+                  <a href="mailto:info@systenger.com" class="text-[14.5px] text-ink-1 hover:text-steel transition" data-i18n="pg.contact.info.c3.value">info@systenger.com</a>
+                </div>
+              </div>
+              <!-- hours -->
+              <div class="flex gap-4">
+                <div class="flex-none w-9 h-9 inline-flex items-center justify-center border border-paper-2 bg-paper-0 text-steel">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></svg>
+                </div>
+                <div class="min-w-0">
+                  <div class="font-mono text-[10px] tracking-[0.18em] text-mut-light uppercase mb-1" data-i18n="pg.contact.info.c4.label">Horario de atención</div>
+                  <div class="text-[14.5px] text-ink-1" data-i18n="pg.contact.info.c4.value">Lun a Vie · 08:00–17:00 (GMT-5)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- social -->
+            <div class="mt-10 pt-7 border-t border-paper-2">
+              <div class="kicker mb-4 !text-mut-light !before:bg-mut-light/30">
+                <span data-i18n="pg.contact.social.kicker">04 / Redes</span>
+              </div>
+              <p class="text-[13.5px] text-mut-light leading-relaxed mb-5" data-i18n="pg.contact.social.intro">Publicamos novedades de obras, capacidades de planta y artículos técnicos sobre construcción industrializada.</p>
+              <div class="flex items-center gap-3">
+                <a href="https://twitter.com/Systenger" aria-label="Twitter / X" class="w-10 h-10 inline-flex items-center justify-center border border-paper-2 bg-paper-0 text-ink-1 hover:border-steel hover:text-steel transition">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M10.5 0H12.7l-4.8 5.5L13.5 14H9.1L5.6 9.3 1.7 14H-.5l5.2-5.9L-1 0h4.5l3.2 4.3L10.5 0zm-.8 12.7h1.2L3.6 1.2H2.3l7.4 11.5z"/></svg>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="w-10 h-10 inline-flex items-center justify-center border border-paper-2 bg-paper-0 text-ink-1 hover:border-steel hover:text-steel transition">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M3 5H0v9h3V5zm-1.5-4a1.7 1.7 0 100 3.5 1.7 1.7 0 000-3.5zM14 9.4c0-2.6-1.4-3.8-3.2-3.8-1.5 0-2.2.8-2.5 1.4V5H5.3v9h3V9c0-.8 0-1.7 1.2-1.7 1.1 0 1.2 1 1.2 1.7v5h3V9.4z"/></svg>
+                </a>
+                <a href="#" aria-label="Instagram" class="w-10 h-10 inline-flex items-center justify-center border border-paper-2 bg-paper-0 text-ink-1 hover:border-steel hover:text-steel transition">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1" y="1" width="12" height="12" rx="3"/><circle cx="7" cy="7" r="3"/><circle cx="10.6" cy="3.4" r=".6" fill="currentColor"/></svg>
+                </a>
+                <a href="#" aria-label="YouTube" class="w-10 h-10 inline-flex items-center justify-center border border-paper-2 bg-paper-0 text-ink-1 hover:border-steel hover:text-steel transition">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M13.4 4.1a1.5 1.5 0 00-1-1.1C11.4 2.7 7 2.7 7 2.7s-4.4 0-5.4.3a1.5 1.5 0 00-1 1.1C.3 5.1.3 7 .3 7s0 1.9.3 2.9c.1.5.5.9 1 1.1 1 .3 5.4.3 5.4.3s4.4 0 5.4-.3a1.5 1.5 0 001-1.1c.3-1 .3-2.9.3-2.9s0-1.9-.3-2.9zM5.7 9V5l3.5 2-3.5 2z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== MAP ============================== -->
+  <section class="bg-ink-1 text-white">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-20 lg:py-24">
+      <div class="grid lg:grid-cols-12 gap-10 mb-10">
+        <div class="lg:col-span-6 reveal">
+          <div class="kicker mb-5" data-i18n="pg.contact.map.kicker">05 / Ubicación</div>
+          <h2 class="text-[clamp(26px,3vw,42px)] font-semibold leading-[1.08] tracking-[-0.02em]" data-i18n="pg.contact.map.h2">Cómo llegar a la planta</h2>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-dark leading-relaxed max-w-[50ch]" data-i18n="pg.contact.map.note">Recibimos visitas técnicas con cita previa.</p>
+        </div>
+      </div>
+
+      <div class="reveal map-wrap border border-ink-4">
+        <!-- background image-slot for actual map screenshot -->
+        <image-slot id="contact-map-bg" class="absolute inset-0 w-full h-full opacity-60" placeholder="MAPA · Screenshot Google Maps · localização da planta Systenger"></image-slot>
+
+        <!-- decorative overlay grid + pin -->
+        <svg viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice" class="relative block w-full h-[420px] lg:h-[480px] text-steel">
+          <!-- grid background -->
+          <defs>
+            <pattern id="cgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M0 40 L0 0 40 0" stroke="currentColor" stroke-width="0.4" stroke-opacity="0.12" fill="none"/>
+            </pattern>
+            <pattern id="cgrid-big" width="200" height="200" patternUnits="userSpaceOnUse">
+              <path d="M0 200 L0 0 200 0" stroke="currentColor" stroke-width="0.7" stroke-opacity="0.18" fill="none"/>
+            </pattern>
+          </defs>
+          <rect width="1600" height="600" fill="url(#cgrid)"/>
+          <rect width="1600" height="600" fill="url(#cgrid-big)"/>
+
+          <!-- roads -->
+          <path d="M-50 200 Q400 220 700 280 T1300 320 L1700 350" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.5" fill="none"/>
+          <path d="M-50 380 Q500 360 900 380 T1700 420" stroke="currentColor" stroke-width="1.2" stroke-opacity="0.35" fill="none"/>
+          <path d="M780 -50 L820 600" stroke="currentColor" stroke-width="1" stroke-opacity="0.3" fill="none"/>
+
+          <!-- coordinate ticks -->
+          <g font-family="JetBrains Mono,monospace" font-size="11" fill="currentColor" opacity="0.55">
+            <text x="40" y="30">N 9.0°</text>
+            <text x="40" y="580">N 8.8°</text>
+            <text x="1480" y="30">W 79.5°</text>
+          </g>
+
+          <!-- pin -->
+          <g transform="translate(800,300)">
+            <circle r="60" fill="currentColor" fill-opacity="0.08"/>
+            <circle r="30" fill="currentColor" fill-opacity="0.18"/>
+            <circle r="10" fill="currentColor"/>
+            <circle r="4" fill="#fff"/>
+            <line x1="0" y1="-80" x2="0" y2="-30" stroke="currentColor" stroke-width="1"/>
+            <line x1="0" y1="30" x2="0" y2="80" stroke="currentColor" stroke-width="1"/>
+            <line x1="-80" y1="0" x2="-30" y2="0" stroke="currentColor" stroke-width="1"/>
+            <line x1="30" y1="0" x2="80" y2="0" stroke="currentColor" stroke-width="1"/>
+            <text x="50" y="-50" font-family="JetBrains Mono,monospace" font-size="13" fill="#fff" font-weight="600">SYSTENGER</text>
+            <text x="50" y="-32" font-family="JetBrains Mono,monospace" font-size="11" fill="currentColor">PLANTA · PA</text>
+          </g>
+
+          <!-- legend box -->
+          <g transform="translate(40,460)">
+            <rect width="280" height="100" fill="#0a0e14" fill-opacity="0.9" stroke="currentColor" stroke-opacity="0.5"/>
+            <text x="20" y="32" font-family="JetBrains Mono,monospace" font-size="10" fill="currentColor" letter-spacing="2">SYSTENGER PLANT</text>
+            <text x="20" y="58" font-family="Space Grotesk,sans-serif" font-size="14" fill="#fff" font-weight="600">[Dirección completa]</text>
+            <text x="20" y="80" font-family="JetBrains Mono,monospace" font-size="11" fill="#8993a3">Panamá · +507 [XXXX-XXXX]</text>
+          </g>
+        </svg>
+
+        <div class="absolute top-4 right-4 font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase bg-ink-1/80 px-3 py-2 border border-ink-4">
+          Map · SYS-LOC-01
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CTA ============================== -->
+  <section class="bg-ink-0 text-white border-t border-ink-4">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-16 lg:py-20 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7">
+        <h2 class="text-[clamp(24px,2.8vw,38px)] font-semibold leading-[1.1] tracking-[-0.02em]" data-i18n="pg.contact.cta.h">También podés escribirnos directamente</h2>
+      </div>
+      <div class="lg:col-span-4 lg:col-start-9 flex flex-wrap gap-3">
+        <a href="mailto:info@systenger.com" class="btn btn-primary">
+          <span data-i18n="pg.contact.cta.btn">info@systenger.com</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/image-slot.js"></script>
+  <script src="assets/chrome.js" data-page="contact"></script>
+  <script src="assets/translations.js"></script>
+  <script src="assets/app.js"></script>
+
+  <!-- contact form validation + submit -->
+  <script>
+    (function () {
+      const form = document.getElementById('contact-form');
+      const shell = document.getElementById('contact-form-shell');
+      if (!form || !shell) return;
+
+      const setError = (wrap, on) => wrap.classList.toggle('has-error', !!on);
+
+      const validate = () => {
+        let ok = true;
+        // clean all first
+        form.querySelectorAll('.field-wrap, [data-field]').forEach((w) => w.classList.remove('has-error'));
+
+        const required = ['name', 'email', 'type', 'message', 'privacy'];
+        required.forEach((key) => {
+          const wrap = form.querySelector(`[data-field="${key}"]`) || form.querySelector(`label[data-field="${key}"]`);
+          const el = form.querySelector(`[name="${key}"]`);
+          if (!el) return;
+          let bad = false;
+          if (el.type === 'checkbox') bad = !el.checked;
+          else if (key === 'email') {
+            bad = !el.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim());
+          } else bad = !el.value.trim();
+          if (bad && wrap) {
+            wrap.classList.add('has-error');
+            ok = false;
+          }
+        });
+        return ok;
+      };
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!validate()) {
+          // scroll to first error
+          const firstErr = form.querySelector('.has-error');
+          if (firstErr) firstErr.querySelector('input,select,textarea')?.focus();
+          return;
+        }
+        // In production, POST to backend. For now, surface success state.
+        shell.classList.add('is-sent');
+        // optional: scroll the success card into view a bit
+        const top = shell.getBoundingClientRect().top + window.scrollY - 120;
+        window.scrollTo({ top, behavior: 'smooth' });
+      });
+
+      // clear error on input
+      form.addEventListener('input', (e) => {
+        const wrap = e.target.closest('.field-wrap');
+        if (wrap) wrap.classList.remove('has-error');
+      });
+      form.addEventListener('change', (e) => {
+        const wrap = e.target.closest('.field-wrap');
+        if (wrap) wrap.classList.remove('has-error');
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
+      <path d="M0 0H40M0 0V40" stroke="#162324" stroke-width="1"></path>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#011516"></rect>
+  <rect width="1200" height="630" fill="url(#g)"></rect>
+  <g transform="translate(80,80)">
+    <rect width="50" height="50" fill="none" stroke="#039b9c" stroke-width="2"></rect>
+    <path d="M12 38L25 12L38 38H12Z" stroke="#039b9c" stroke-width="2" fill="none"></path>
+    <path d="M19 38H31M25 12V38" stroke="#039b9c" stroke-width="2"></path>
+  </g>
+  <text x="150" y="115" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" letter-spacing="6">SYSTENGER</text>
+  <text x="150" y="138" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#039b9c" letter-spacing="4">STRUCTURAL · PANAMÁ</text>
+
+  <text x="80" y="380" font-family="Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#ffffff" letter-spacing="-1">Soluciones Estructurales</text>
+  <text x="80" y="450" font-family="Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#039b9c" letter-spacing="-1">para Obras Complejas</text>
+  <text x="80" y="520" font-family="ui-monospace, Menlo, monospace" font-size="16" fill="#8993a3" letter-spacing="3">SYSTENGER.COM · PANAMÁ · LATINOAMÉRICA</text>
+</svg>

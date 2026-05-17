@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="es-PA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Instalaciones · Systenger</title>
+  <meta name="description" content="Systenger · Planta industrial dedicada: ingeniería, fabricación y control de calidad bajo un mismo techo. Capacidades, equipos y recorrido visual por la operación." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        ink:   { 0:"#030b0b", 1:"#011516", 2:"#0d1b1c", 3:"#162324", 4:"#003730" },
+        paper: { 0:"#ffffff", 1:"#f6f7f9", 2:"#eceef2" },
+        steel: { DEFAULT:"#039b9c", hi:"#0bbcbd", lo:"#006f75" },
+        mut:   { dark:"#8993a3", light:"#5b6573" }
+      },
+      fontFamily: {
+        sans: ['"Space Grotesk"', "Helvetica Neue", "Arial", "sans-serif"],
+        mono: ['"JetBrains Mono"', "ui-monospace", "Menlo", "monospace"]
+      },
+      maxWidth: { '8xl': '88rem' }
+    } } };
+  </script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-paper-0 text-ink-1">
+
+  <div id="site-header"></div>
+
+  <!-- ============================== HERO ============================== -->
+  <section class="relative bg-ink-1 text-white overflow-hidden">
+    <image-slot id="fac-hero" class="absolute inset-0 w-full h-full opacity-45" placeholder="HERO · Vista aérea da planta Systenger · galpão industrial coberto"></image-slot>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink-1 via-ink-1/85 to-ink-1/35"></div>
+    <div class="absolute inset-0 tech-grid opacity-40"></div>
+
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 pt-40 pb-24 lg:pt-48 lg:pb-32">
+      <div class="kicker mb-8" data-i18n="pg.fac.eyebrow">Operaciones · 02</div>
+      <h1 class="text-[clamp(36px,5.4vw,84px)] font-bold leading-[1.02] tracking-[-0.02em] max-w-[18ch] text-balance"
+          data-i18n="pg.fac.h1">Instalaciones</h1>
+      <p class="mt-8 text-[17px] lg:text-[19px] text-mut-dark leading-relaxed max-w-[60ch]"
+         data-i18n="pg.fac.lede">Nuestra planta industrial concentra ingeniería, fabricación y control de calidad bajo un mismo techo. Una operación pensada para entregar estructuras de alta precisión a escala industrial.</p>
+
+      <div class="mt-14 grid grid-cols-3 max-w-3xl border-t border-ink-4">
+        <div class="py-5 pr-6 border-r border-ink-4">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.fac.r1.k">Área</div>
+          <div class="mt-2 font-mono text-[13px] text-white">[XX] m²</div>
+        </div>
+        <div class="py-5 px-6 border-r border-ink-4">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.fac.r2.k">Capacidad</div>
+          <div class="mt-2 font-mono text-[13px] text-white">[XX] t/mes</div>
+        </div>
+        <div class="py-5 pl-6">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.fac.r3.k">Turnos</div>
+          <div class="mt-2 font-mono text-[13px] text-white">24/7</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== OVERVIEW ============================== -->
+  <section class="bg-paper-0">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 reveal">
+          <div class="kicker mb-5" data-i18n="pg.fac.ov.kicker">02 / La planta</div>
+          <h2 class="text-[clamp(28px,3.2vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.fac.ov.h2">Una operación industrial diseñada para obras complejas</h2>
+          <ul class="mt-9 space-y-4 text-[15px] text-mut-light">
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.fac.ov.b1">[XX] m² de planta industrial cubierta</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.fac.ov.b2">Puentes grúa de [XX] toneladas en líneas principales</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.fac.ov.b3">Patio de despacho con accesos para camiones de gran porte</span></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-6 lg:col-start-7 reveal reveal-delay-1">
+          <div class="space-y-6 text-[16.5px] leading-[1.65] text-ink-1">
+            <p data-i18n="pg.fac.ov.p1">Nuestra planta de fabricación está organizada en líneas de producción dedicadas, con áreas separadas para corte, armado, soldadura, tratamiento superficial y despacho.</p>
+            <p class="text-mut-light" data-i18n="pg.fac.ov.p2">Cada elemento sigue un flujo único, sin cruces de operación, lo que permite garantizar trazabilidad y calidad dimensional sobre cada pieza producida.</p>
+          </div>
+          <image-slot id="fac-ov" class="mt-10 block w-full aspect-[16/10]" placeholder="Interior do galpão · vista para corredor central com pontes rolantes"></image-slot>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== LAYOUT (floor plan) ============================== -->
+  <section class="bg-ink-1 text-white relative">
+    <div class="absolute inset-0 tech-grid opacity-40 pointer-events-none"></div>
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+
+      <div class="grid lg:grid-cols-12 gap-10 mb-14">
+        <div class="lg:col-span-6 reveal">
+          <div class="kicker mb-5" data-i18n="pg.fac.layout.kicker">03 / Layout productivo</div>
+          <h2 class="text-[clamp(30px,3.6vw,50px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.fac.layout.h2">Cinco áreas dedicadas, un flujo único</h2>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-dark leading-relaxed max-w-[50ch]" data-i18n="pg.fac.layout.intro">La planta está organizada como una línea de producción industrial, donde cada elemento avanza de la materia prima al despacho sin retrocesos ni cruces.</p>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+
+        <!-- Floor plan SVG -->
+        <div class="lg:col-span-7 reveal">
+          <div class="border border-ink-4 bg-ink-2 p-6 lg:p-8">
+            <div class="flex items-center justify-between mb-5">
+              <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase">Plant Layout · SYS-FAC-01</div>
+              <div class="font-mono text-[10px] tracking-[0.22em] text-steel uppercase">[esc 1:200]</div>
+            </div>
+
+            <svg viewBox="0 0 720 360" class="w-full h-auto" fill="none" stroke-width="1.2">
+              <!-- outer wall -->
+              <rect x="20" y="20" width="680" height="320" stroke="#039b9c" stroke-opacity="0.5"/>
+
+              <!-- columns grid -->
+              <g stroke="#039b9c" stroke-opacity="0.18">
+                <line x1="160" y1="20" x2="160" y2="340"/>
+                <line x1="300" y1="20" x2="300" y2="340"/>
+                <line x1="440" y1="20" x2="440" y2="340"/>
+                <line x1="580" y1="20" x2="580" y2="340"/>
+                <line x1="20" y1="180" x2="700" y2="180"/>
+              </g>
+
+              <!-- A1 storage -->
+              <rect x="30" y="30" width="120" height="300" stroke="#039b9c" fill="#039b9c" fill-opacity="0.05"/>
+              <text x="90" y="178" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="13" font-weight="600" fill="#fff">A1</text>
+              <text x="90" y="196" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#8993a3">RECEPCIÓN</text>
+
+              <!-- A2 cutting -->
+              <rect x="170" y="30" width="120" height="300" stroke="#039b9c" fill="#039b9c" fill-opacity="0.05"/>
+              <text x="230" y="178" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="13" font-weight="600" fill="#fff">A2</text>
+              <text x="230" y="196" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#8993a3">CORTE CNC</text>
+              <!-- CNC machine icon -->
+              <rect x="195" y="80" width="70" height="40" stroke="#039b9c" stroke-opacity="0.6"/>
+              <rect x="195" y="240" width="70" height="40" stroke="#039b9c" stroke-opacity="0.6"/>
+
+              <!-- A3 assembly -->
+              <rect x="310" y="30" width="120" height="300" stroke="#039b9c" fill="#039b9c" fill-opacity="0.05"/>
+              <text x="370" y="178" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="13" font-weight="600" fill="#fff">A3</text>
+              <text x="370" y="196" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#8993a3">ARMADO · SOLDA</text>
+              <!-- weld tables -->
+              <rect x="325" y="60" width="90" height="20" stroke="#039b9c" stroke-opacity="0.6"/>
+              <rect x="325" y="110" width="90" height="20" stroke="#039b9c" stroke-opacity="0.6"/>
+              <rect x="325" y="230" width="90" height="20" stroke="#039b9c" stroke-opacity="0.6"/>
+              <rect x="325" y="280" width="90" height="20" stroke="#039b9c" stroke-opacity="0.6"/>
+
+              <!-- A4 paint -->
+              <rect x="450" y="30" width="120" height="300" stroke="#039b9c" fill="#039b9c" fill-opacity="0.05"/>
+              <text x="510" y="178" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="13" font-weight="600" fill="#fff">A4</text>
+              <text x="510" y="196" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#8993a3">TRATAMIENTO</text>
+              <!-- paint booth -->
+              <rect x="465" y="80" width="90" height="60" stroke="#039b9c" stroke-opacity="0.6"/>
+              <rect x="465" y="220" width="90" height="60" stroke="#039b9c" stroke-opacity="0.6"/>
+
+              <!-- A5 shipping -->
+              <rect x="590" y="30" width="100" height="300" stroke="#039b9c" fill="#039b9c" fill-opacity="0.08"/>
+              <text x="640" y="178" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="13" font-weight="600" fill="#fff">A5</text>
+              <text x="640" y="196" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#8993a3">DESPACHO</text>
+              <!-- truck access -->
+              <path d="M690 140 L720 140 L720 220 L690 220" stroke="#039b9c" stroke-dasharray="4 4"/>
+              <text x="708" y="180" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="#039b9c">OUT</text>
+
+              <!-- flow arrows -->
+              <g stroke="#039b9c" stroke-width="1.5" fill="#039b9c">
+                <path d="M155 60 L168 60" stroke-linecap="round"/>
+                <path d="M168 60 L162 56 M168 60 L162 64"/>
+                <path d="M295 60 L308 60" stroke-linecap="round"/>
+                <path d="M308 60 L302 56 M308 60 L302 64"/>
+                <path d="M435 60 L448 60" stroke-linecap="round"/>
+                <path d="M448 60 L442 56 M448 60 L442 64"/>
+                <path d="M575 60 L588 60" stroke-linecap="round"/>
+                <path d="M588 60 L582 56 M588 60 L582 64"/>
+              </g>
+
+              <!-- dim line -->
+              <line x1="30" y1="350" x2="690" y2="350" stroke="#8993a3" stroke-width="0.6"/>
+              <line x1="30" y1="345" x2="30" y2="355" stroke="#8993a3" stroke-width="0.6"/>
+              <line x1="690" y1="345" x2="690" y2="355" stroke="#8993a3" stroke-width="0.6"/>
+            </svg>
+
+            <div class="mt-6 flex items-center justify-between pt-5 border-t border-ink-4">
+              <div class="flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] text-mut-dark uppercase">
+                <span class="inline-block w-3 h-3 border border-steel/60"></span>
+                <span>Áreas productivas</span>
+              </div>
+              <div class="flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] text-mut-dark uppercase">
+                <span class="inline-block w-3 h-0.5 bg-steel"></span>
+                <span>Flujo de producción</span>
+              </div>
+              <div class="flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] text-mut-dark uppercase">
+                <span class="inline-block w-3 h-0.5 border-t border-dashed border-steel"></span>
+                <span>Acceso vehículos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Area legend -->
+        <div class="lg:col-span-5 reveal reveal-delay-1">
+          <div class="border-t border-ink-4">
+            <div class="grid grid-cols-[52px_1fr] gap-5 py-5 border-b border-ink-4">
+              <div class="font-mono text-[11px] tracking-[0.2em] text-steel">A1</div>
+              <div>
+                <h3 class="text-[17px] font-semibold" data-i18n="pg.fac.layout.a1.title">Recepción y almacén</h3>
+                <p class="mt-1.5 text-[13.5px] text-mut-dark leading-relaxed" data-i18n="pg.fac.layout.a1.desc">Recepción de perfiles, chapas y consumibles con inspección y trazabilidad por lote.</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-[52px_1fr] gap-5 py-5 border-b border-ink-4">
+              <div class="font-mono text-[11px] tracking-[0.2em] text-steel">A2</div>
+              <div>
+                <h3 class="text-[17px] font-semibold" data-i18n="pg.fac.layout.a2.title">Corte y conformado</h3>
+                <p class="mt-1.5 text-[13.5px] text-mut-dark leading-relaxed" data-i18n="pg.fac.layout.a2.desc">Líneas CNC de corte plasma, oxicorte y perforación automatizada.</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-[52px_1fr] gap-5 py-5 border-b border-ink-4">
+              <div class="font-mono text-[11px] tracking-[0.2em] text-steel">A3</div>
+              <div>
+                <h3 class="text-[17px] font-semibold" data-i18n="pg.fac.layout.a3.title">Armado y soldadura</h3>
+                <p class="mt-1.5 text-[13.5px] text-mut-dark leading-relaxed" data-i18n="pg.fac.layout.a3.desc">Mesas de armado, soldadura semi-automática y posicionadores robóticos.</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-[52px_1fr] gap-5 py-5 border-b border-ink-4">
+              <div class="font-mono text-[11px] tracking-[0.2em] text-steel">A4</div>
+              <div>
+                <h3 class="text-[17px] font-semibold" data-i18n="pg.fac.layout.a4.title">Tratamiento superficial</h3>
+                <p class="mt-1.5 text-[13.5px] text-mut-dark leading-relaxed" data-i18n="pg.fac.layout.a4.desc">Granallado, pintura industrial en cabina o galvanizado por inmersión.</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-[52px_1fr] gap-5 py-5">
+              <div class="font-mono text-[11px] tracking-[0.2em] text-steel">A5</div>
+              <div>
+                <h3 class="text-[17px] font-semibold" data-i18n="pg.fac.layout.a5.title">Patio de despacho</h3>
+                <p class="mt-1.5 text-[13.5px] text-mut-dark leading-relaxed" data-i18n="pg.fac.layout.a5.desc">Estiba, identificación de piezas y carga programada hacia obra.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SPECS ============================== -->
+  <section class="bg-paper-0 border-y border-paper-2">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-20 lg:py-24">
+      <div class="grid lg:grid-cols-12 gap-10 mb-12 reveal">
+        <div class="lg:col-span-5">
+          <div class="kicker mb-5" data-i18n="pg.fac.specs.kicker">04 / Capacidad productiva</div>
+          <h2 class="text-[clamp(26px,3vw,42px)] font-semibold leading-tight tracking-[-0.02em]"
+              data-i18n="pg.fac.specs.h2">Cifras que definen el alcance de la planta</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 border-t border-paper-2">
+        <div class="reveal p-7 lg:p-10 border-r border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.fac.specs.s1.value">[XX] m²</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.fac.specs.s1.label">Área industrial cubierta</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">01</div>
+        </div>
+        <div class="reveal reveal-delay-1 p-7 lg:p-10 border-r border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.fac.specs.s2.value">[XX] t/mes</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.fac.specs.s2.label">Capacidad mensual de fabricación</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">02</div>
+        </div>
+        <div class="reveal reveal-delay-2 p-7 lg:p-10 border-r border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.fac.specs.s3.value">[XX] t</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.fac.specs.s3.label">Capacidad máxima de puente grúa</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">03</div>
+        </div>
+        <div class="reveal reveal-delay-3 p-7 lg:p-10 border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.fac.specs.s4.value">24/7</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.fac.specs.s4.label">Operación en doble o triple turno según demanda</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">04</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== EQUIPMENT ============================== -->
+  <section class="bg-paper-1">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-10 mb-14">
+        <div class="lg:col-span-6 reveal">
+          <div class="kicker mb-5" data-i18n="pg.fac.eq.kicker">05 / Equipos principales</div>
+          <h2 class="text-[clamp(28px,3.4vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.fac.eq.h2">La maquinaria que permite la escala</h2>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-light leading-relaxed max-w-[50ch]" data-i18n="pg.fac.eq.intro">Invertimos en equipamiento industrial que permite mantener tolerancias estrechas en producción de gran volumen.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="reveal bg-paper-0 border border-paper-2">
+          <image-slot id="fac-eq-1" class="block w-full aspect-[4/3]" placeholder="EQ 01 · Mesa de corte plasma CNC em operação"></image-slot>
+          <div class="p-7">
+            <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">EQ · 01</div>
+            <h3 class="mt-3 text-[19px] font-semibold" data-i18n="pg.fac.eq.e1.title">Mesa de corte plasma CNC</h3>
+            <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.fac.eq.e1.desc">Corte automatizado de chapa hasta [XX] mm de espesor en gran formato.</p>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1 bg-paper-0 border border-paper-2">
+          <image-slot id="fac-eq-2" class="block w-full aspect-[4/3]" placeholder="EQ 02 · Linha de oxicorte com chama"></image-slot>
+          <div class="p-7">
+            <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">EQ · 02</div>
+            <h3 class="mt-3 text-[19px] font-semibold" data-i18n="pg.fac.eq.e2.title">Línea de oxicorte</h3>
+            <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.fac.eq.e2.desc">Corte de chapa de gran espesor para elementos estructurales pesados.</p>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2 bg-paper-0 border border-paper-2">
+          <image-slot id="fac-eq-3" class="block w-full aspect-[4/3]" placeholder="EQ 03 · Furadeira CNC de vigas com perfil sendo processado"></image-slot>
+          <div class="p-7">
+            <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">EQ · 03</div>
+            <h3 class="mt-3 text-[19px] font-semibold" data-i18n="pg.fac.eq.e3.title">Perforadora CNC de vigas</h3>
+            <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.fac.eq.e3.desc">Perforado, fresado y marcado automatizado de perfiles laminados.</p>
+          </div>
+        </div>
+        <div class="reveal bg-paper-0 border border-paper-2">
+          <image-slot id="fac-eq-4" class="block w-full aspect-[4/3]" placeholder="EQ 04 · Estação de solda · soldador trabalhando"></image-slot>
+          <div class="p-7">
+            <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">EQ · 04</div>
+            <h3 class="mt-3 text-[19px] font-semibold" data-i18n="pg.fac.eq.e4.title">Estaciones de soldadura</h3>
+            <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.fac.eq.e4.desc">Soldadura MIG/MAG y arco sumergido con posicionadores robóticos.</p>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1 bg-paper-0 border border-paper-2">
+          <image-slot id="fac-eq-5" class="block w-full aspect-[4/3]" placeholder="EQ 05 · Cabine de pintura industrial · operario aplicando tinta"></image-slot>
+          <div class="p-7">
+            <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">EQ · 05</div>
+            <h3 class="mt-3 text-[19px] font-semibold" data-i18n="pg.fac.eq.e5.title">Cabina de pintura industrial</h3>
+            <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.fac.eq.e5.desc">Granallado y aplicación de esquemas de pintura industrial certificados.</p>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2 bg-paper-0 border border-paper-2">
+          <image-slot id="fac-eq-6" class="block w-full aspect-[4/3]" placeholder="EQ 06 · Ponte rolante içando viga · vista de baixo"></image-slot>
+          <div class="p-7">
+            <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">EQ · 06</div>
+            <h3 class="mt-3 text-[19px] font-semibold" data-i18n="pg.fac.eq.e6.title">Puentes grúa</h3>
+            <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.fac.eq.e6.desc">Hasta [XX] toneladas de capacidad para manipulación de elementos pesados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== GALLERY ============================== -->
+  <section class="bg-paper-0">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-10 mb-14">
+        <div class="lg:col-span-6 reveal">
+          <div class="kicker mb-5" data-i18n="pg.fac.gal.kicker">06 / Galería de planta</div>
+          <h2 class="text-[clamp(28px,3.4vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.fac.gal.h2">Recorrido visual por la planta Systenger</h2>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-light leading-relaxed max-w-[50ch]" data-i18n="pg.fac.gal.intro">Imágenes de la operación, los equipos y el equipo humano detrás de cada elemento que producimos.</p>
+        </div>
+      </div>
+
+      <!-- Asymmetric grid: tall + medium + grid -->
+      <div class="grid grid-cols-12 grid-rows-[repeat(4,minmax(140px,auto))] gap-4 reveal">
+        <image-slot id="fac-gal-1" class="block col-span-12 md:col-span-7 row-span-2 w-full h-full min-h-[260px]" placeholder="GAL 01 · Vista panorâmica do galpão · linha de corte ao fundo"></image-slot>
+        <image-slot id="fac-gal-2" class="block col-span-6 md:col-span-5 w-full h-full min-h-[200px]" placeholder="GAL 02 · Mesas de armado · vigas em montagem"></image-slot>
+        <image-slot id="fac-gal-3" class="block col-span-6 md:col-span-5 w-full h-full min-h-[200px]" placeholder="GAL 03 · Solda semi-automática · faíscas"></image-slot>
+
+        <image-slot id="fac-gal-4" class="block col-span-6 md:col-span-3 w-full h-full min-h-[180px]" placeholder="GAL 04 · Cabine de pintura"></image-slot>
+        <image-slot id="fac-gal-5" class="block col-span-6 md:col-span-3 w-full h-full min-h-[180px]" placeholder="GAL 05 · Pátio de despacho · caminhão carregando"></image-slot>
+        <image-slot id="fac-gal-6" class="block col-span-12 md:col-span-6 w-full h-full min-h-[180px]" placeholder="GAL 06 · Equipe de engenharia · escritório com BIM"></image-slot>
+
+        <image-slot id="fac-gal-7" class="block col-span-6 md:col-span-6 w-full h-full min-h-[200px]" placeholder="GAL 07 · Ponte rolante içando estrutura grande"></image-slot>
+        <image-slot id="fac-gal-8" class="block col-span-6 md:col-span-6 w-full h-full min-h-[200px]" placeholder="GAL 08 · Estrutura finalizada antes do despacho"></image-slot>
+      </div>
+
+      <!-- Captions strip -->
+      <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-x-4 gap-y-2 text-[11px] font-mono text-mut-light/70 tracking-[0.06em]">
+        <div data-i18n="pg.fac.gal.cap1">Línea de corte CNC</div>
+        <div data-i18n="pg.fac.gal.cap2">Mesas de armado</div>
+        <div data-i18n="pg.fac.gal.cap3">Soldadura semi-automática</div>
+        <div data-i18n="pg.fac.gal.cap4">Cabina de pintura</div>
+        <div data-i18n="pg.fac.gal.cap5">Patio de despacho</div>
+        <div data-i18n="pg.fac.gal.cap6">Equipo de ingeniería</div>
+        <div data-i18n="pg.fac.gal.cap7">Puente grúa en operación</div>
+        <div data-i18n="pg.fac.gal.cap8">Estructura terminada antes del despacho</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CTA ============================== -->
+  <section class="bg-ink-1 text-white">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-20 lg:py-24 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7">
+        <h2 class="text-[clamp(28px,3.4vw,48px)] font-semibold leading-[1.05] tracking-[-0.02em]" data-i18n="pg.fac.cta.h">¿Querés visitar la planta o pedir una propuesta?</h2>
+      </div>
+      <div class="lg:col-span-4 lg:col-start-9 flex flex-wrap gap-3">
+        <a href="contacto.html" class="btn btn-primary"><span data-i18n="pg.fac.cta.btn">Agendar visita</span><span class="arrow">→</span></a>
+        <a href="procesos.html" class="btn btn-ghost-dark"><span data-i18n="pg.fac.cta.btn2">Ver procesos</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/image-slot.js"></script>
+  <script src="assets/chrome.js" data-page="facilities"></script>
+  <script src="assets/translations.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

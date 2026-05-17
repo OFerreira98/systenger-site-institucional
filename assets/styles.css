@@ -1,0 +1,311 @@
+/* =========================================================
+   SYSTENGER · estilos base + utilidades fuera de Tailwind
+   ========================================================= */
+
+:root {
+  --ink-0:   #030b0b;
+  --ink-1:   #011516;   /* hero / dark sections */
+  --ink-2:   #0d1b1c;   /* surface */
+  --ink-3:   #162324;   /* elevated */
+  --ink-4:   #003730;   /* border on dark */
+
+  --paper-0: #ffffff;
+  --paper-1: #f6f7f9;   /* alt section bg */
+  --paper-2: #eceef2;
+  --line:    #d8dce3;
+
+  --fg-on-dark:  #e7ebf2;
+  --mut-on-dark: #8993a3;
+  --fg-on-light: #011516;
+  --mut-on-light:#5b6573;
+
+  --accent:      #039b9c;   /* teal */
+  --accent-hi:   #0bbcbd;
+  --accent-lo:   #006f75;
+
+  --serif: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --mono:  "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+* { -webkit-font-smoothing: antialiased; }
+
+html, body {
+  font-family: var(--serif);
+  background: var(--paper-0);
+  color: var(--fg-on-light);
+  scroll-behavior: smooth;
+}
+
+.font-mono { font-family: var(--mono); }
+
+/* ---------- placeholders de imagen (stripes diagonales) ---------- */
+.ph {
+  position: relative;
+  background-color: #091415;
+  background-image:
+    repeating-linear-gradient(
+      135deg,
+      rgba(255,255,255,0.04) 0 1px,
+      transparent 1px 14px
+    ),
+    linear-gradient(180deg, #0d1b1c 0%, #081314 100%);
+  overflow: hidden;
+}
+.ph::after {
+  content: attr(data-label);
+  position: absolute;
+  inset: auto 0 0 0;
+  margin: 14px;
+  padding: 6px 10px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.55);
+  background: rgba(0,0,0,0.45);
+  border: 1px solid rgba(255,255,255,0.08);
+  width: max-content;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.ph-light {
+  background-color: #e8ebef;
+  background-image:
+    repeating-linear-gradient(
+      135deg,
+      rgba(10,14,20,0.05) 0 1px,
+      transparent 1px 14px
+    ),
+    linear-gradient(180deg, #eceef2 0%, #d6dae0 100%);
+}
+.ph-light::after {
+  color: rgba(10,14,20,0.55);
+  background: rgba(255,255,255,0.7);
+  border-color: rgba(10,14,20,0.1);
+}
+
+/* ---------- líneas + grilla técnica de fondo ---------- */
+.tech-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+.tech-grid-light {
+  background-image:
+    linear-gradient(rgba(10,14,20,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10,14,20,0.05) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* ---------- kicker ---------- */
+.kicker {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.kicker::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: var(--accent);
+}
+
+/* ---------- hero bg sync ---------- */
+.hero-bg {
+  opacity: 0;
+  transition: opacity 900ms cubic-bezier(.2,.7,.2,1);
+}
+.hero-bg.is-active { opacity: 1; }
+
+/* ---------- hero slider ---------- */
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 800ms cubic-bezier(.2,.7,.2,1), transform 800ms cubic-bezier(.2,.7,.2,1);
+  pointer-events: none;
+}
+.hero-slide.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.hero-bar {
+  position: relative;
+  flex: 1;
+  height: 2px;
+  background: rgba(255,255,255,0.12);
+  overflow: hidden;
+}
+.hero-bar .fill {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 0%;
+  background: var(--accent);
+  transition: width 80ms linear;
+}
+
+/* ---------- scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 700ms cubic-bezier(.2,.7,.2,1), transform 700ms cubic-bezier(.2,.7,.2,1);
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 80ms; }
+.reveal-delay-2 { transition-delay: 160ms; }
+.reveal-delay-3 { transition-delay: 240ms; }
+.reveal-delay-4 { transition-delay: 320ms; }
+
+/* ---------- cards business unit ---------- */
+.bu-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--ink-2);
+  border: 1px solid var(--ink-4);
+  transition: transform 500ms cubic-bezier(.2,.7,.2,1), border-color 300ms;
+}
+.bu-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+.bu-card .img {
+  height: 320px;
+  transition: transform 900ms cubic-bezier(.2,.7,.2,1);
+}
+.bu-card:hover .img { transform: scale(1.04); }
+.bu-card .arrow {
+  transition: transform 300ms;
+}
+.bu-card:hover .arrow { transform: translateX(6px); }
+
+/* ---------- process card ---------- */
+.proc-card {
+  border-top: 1px solid var(--ink-4);
+  padding-top: 28px;
+  transition: border-color 300ms;
+}
+.proc-card:hover { border-color: var(--accent); }
+.proc-card .num {
+  font-family: var(--mono);
+  color: var(--mut-on-dark);
+  transition: color 300ms;
+}
+.proc-card:hover .num { color: var(--accent); }
+
+/* ---------- nav dropdown ---------- */
+.nav-item { position: relative; }
+.nav-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: -16px;
+  min-width: 280px;
+  background: var(--ink-2);
+  border: 1px solid var(--ink-4);
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 200ms, transform 200ms, visibility 200ms;
+}
+.nav-item:hover .nav-dropdown,
+.nav-item:focus-within .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-dropdown a {
+  display: block;
+  padding: 10px 12px;
+  color: var(--fg-on-dark);
+  font-size: 13.5px;
+  transition: background 150ms, color 150ms;
+}
+.nav-dropdown a:hover { background: var(--ink-3); color: var(--accent); }
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 22px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: background 200ms, color 200ms, border-color 200ms, transform 200ms;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--accent-hi); }
+.btn-ghost-dark {
+  border-color: rgba(255,255,255,0.25);
+  color: var(--fg-on-dark);
+}
+.btn-ghost-dark:hover { border-color: var(--accent); color: var(--accent); }
+.btn-ghost-light {
+  border-color: rgba(10,14,20,0.2);
+  color: var(--fg-on-light);
+}
+.btn-ghost-light:hover { border-color: var(--accent); color: var(--accent); }
+
+.btn .arrow {
+  display: inline-block;
+  transition: transform 250ms;
+}
+.btn:hover .arrow { transform: translateX(4px); }
+
+/* ---------- language switch ---------- */
+.lang-pill {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  color: var(--mut-on-dark);
+  transition: color 150ms, border-color 150ms, background 150ms;
+}
+.lang-pill.is-active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.lang-pill:hover { color: var(--fg-on-dark); }
+.lang-pill.is-active:hover { color: var(--accent); }
+
+/* ---------- counter ---------- */
+.counter {
+  font-feature-settings: "tnum" 1;
+}
+
+/* ---------- mobile menu ---------- */
+.mobile-panel {
+  transform: translateX(100%);
+  transition: transform 350ms cubic-bezier(.2,.7,.2,1);
+}
+.mobile-panel.is-open { transform: translateX(0); }
+
+/* ---------- scrollbar discreto ---------- */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--paper-1); }
+::-webkit-scrollbar-thumb { background: var(--ink-4); }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* ---------- selección ---------- */
+::selection { background: var(--accent); color: #fff; }
+
+/* ---------- impide scroll ---------- */
+body.no-scroll { overflow: hidden; }

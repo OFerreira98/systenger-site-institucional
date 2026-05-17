@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="es-PA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Obras Industriales e Infraestructura · Systenger</title>
+  <meta name="description" content="Systenger · Ingeniería estructural y construcción industrializada para plantas industriales, centros logísticos, infraestructura energética y obras civiles de gran envergadura." />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        ink:   { 0:"#030b0b", 1:"#011516", 2:"#0d1b1c", 3:"#162324", 4:"#003730" },
+        paper: { 0:"#ffffff", 1:"#f6f7f9", 2:"#eceef2" },
+        steel: { DEFAULT:"#039b9c", hi:"#0bbcbd", lo:"#006f75" },
+        mut:   { dark:"#8993a3", light:"#5b6573" }
+      },
+      fontFamily: {
+        sans: ['"Space Grotesk"', "Helvetica Neue", "Arial", "sans-serif"],
+        mono: ['"JetBrains Mono"', "ui-monospace", "Menlo", "monospace"]
+      },
+      maxWidth: { '8xl': '88rem' }
+    } } };
+  </script>
+  <link rel="stylesheet" href="../assets/styles.css" />
+
+  <style>
+    /* Delivery matrix */
+    .matrix { display: grid; grid-template-columns: minmax(220px, 1.3fr) repeat(5, 1fr); }
+    .matrix > div {
+      padding: 18px 16px;
+      border-right: 1px solid var(--paper-2);
+      border-bottom: 1px solid var(--paper-2);
+      font-size: 13px;
+    }
+    .matrix > div:nth-child(6n) { border-right: none; }
+    .matrix .head {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--mut-on-light);
+      background: var(--paper-1);
+    }
+    .matrix .row-h { font-weight: 600; color: var(--fg-on-light); }
+    .matrix .cell { display: flex; align-items: center; justify-content: center; }
+    .matrix .dot {
+      width: 14px; height: 14px;
+      border: 1px solid #d8dce3;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .matrix .dot.full {
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 4px rgba(58,134,255,0.08);
+    }
+    .matrix .dot.half {
+      background: linear-gradient(90deg, var(--accent) 50%, #fff 50%);
+      border-color: var(--accent);
+    }
+  </style>
+</head>
+<body class="bg-paper-0 text-ink-1">
+
+  <div id="site-header"></div>
+
+  <!-- ============================== PAGE HERO ============================== -->
+  <section class="relative bg-ink-1 text-white overflow-hidden">
+    <image-slot id="indu-hero" class="absolute inset-0 w-full h-full opacity-45" placeholder="HERO · Drone · obra industrial gran porte · guindastes + estruturas"></image-slot>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink-1 via-ink-1/85 to-ink-1/35"></div>
+    <div class="absolute inset-0 tech-grid opacity-40"></div>
+
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 pt-40 pb-24 lg:pt-48 lg:pb-32">
+      <div class="kicker mb-8" data-i18n="pg.indu.eyebrow">Unidades de Negocio · 03</div>
+      <h1 class="text-[clamp(36px,5.4vw,84px)] font-bold leading-[1.02] tracking-[-0.02em] max-w-[18ch] text-balance"
+          data-i18n="pg.indu.h1">Obras Industriales e Infraestructura</h1>
+      <p class="mt-8 text-[17px] lg:text-[19px] text-mut-dark leading-relaxed max-w-[60ch]"
+         data-i18n="pg.indu.lede">Ingeniería estructural y construcción industrializada para plantas industriales, centros logísticos, infraestructura energética y obras civiles de gran envergadura en América Latina.</p>
+
+      <div class="mt-14 grid grid-cols-3 max-w-3xl border-t border-ink-4">
+        <div class="py-5 pr-6 border-r border-ink-4">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.indu.r1.k">Modelo</div>
+          <div class="mt-2 font-mono text-[13px] text-white" data-i18n="pg.indu.r1.v">EPC · Llave en mano</div>
+        </div>
+        <div class="py-5 px-6 border-r border-ink-4">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.indu.r2.k">Cobertura</div>
+          <div class="mt-2 font-mono text-[13px] text-white" data-i18n="pg.indu.r2.v">América Latina</div>
+        </div>
+        <div class="py-5 pl-6">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.indu.r3.k">Escala</div>
+          <div class="mt-2 font-mono text-[13px] text-white" data-i18n="pg.indu.r3.v">Gran envergadura</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== OVERVIEW ============================== -->
+  <section class="bg-paper-0">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 reveal">
+          <div class="kicker mb-5" data-i18n="pg.indu.ov.kicker">02 / Qué hacemos</div>
+          <h2 class="text-[clamp(28px,3.2vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.indu.ov.h2">Proyectos complejos, entregados como un único contrato</h2>
+          <ul class="mt-9 space-y-4 text-[15px] text-mut-light">
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.indu.ov.b1">Soporte técnico especializado en obras de gran envergadura</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.indu.ov.b2">Coordinación EPC e integración con disciplinas civiles</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.indu.ov.b3">Cumplimiento de normativas locales e internacionales</span></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-6 lg:col-start-7 reveal reveal-delay-1">
+          <div class="space-y-6 text-[16.5px] leading-[1.65] text-ink-1">
+            <p data-i18n="pg.indu.ov.p1">Combinamos ingeniería estructural, fabricación en planta y montaje en obra para entregar instalaciones industriales completas en plazos predecibles.</p>
+            <p class="text-mut-light" data-i18n="pg.indu.ov.p2">Nuestro equipo coordina ingeniería, procura, fabricación y construcción bajo un mismo techo, eliminando interfaces y reduciendo riesgos contractuales.</p>
+          </div>
+          <image-slot id="indu-ov" class="mt-10 block w-full aspect-[16/10]" placeholder="Planta industrial · vista aérea · equipo Systenger en obra"></image-slot>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SCOPE ============================== -->
+  <section class="bg-ink-1 text-white relative">
+    <div class="absolute inset-0 tech-grid opacity-40 pointer-events-none"></div>
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+
+      <div class="grid lg:grid-cols-12 gap-10 mb-14">
+        <div class="lg:col-span-6 reveal">
+          <div class="kicker mb-5" data-i18n="pg.indu.scope.kicker">03 / Alcance</div>
+          <h2 class="text-[clamp(30px,3.6vw,50px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.indu.scope.h2">Cuatro frentes de obra coordinados</h2>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-dark leading-relaxed max-w-[50ch]" data-i18n="pg.indu.scope.intro">Asumimos desde la ingeniería hasta el llave en mano, según el modelo contractual que mejor se ajuste a cada proyecto.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="relative bu-card reveal">
+          <image-slot id="indu-s1" class="block w-full" placeholder="SCOPE 01 · Planta industrial · linha de produção"></image-slot>
+          <div class="p-8 lg:p-10">
+            <div class="flex items-baseline justify-between">
+              <div class="font-mono text-[11px] tracking-[0.22em] text-mut-dark uppercase">Scope · 01</div>
+              <div class="font-mono text-[11px] tracking-[0.22em] text-steel uppercase">SYS-IND-01</div>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold leading-tight" data-i18n="pg.indu.scope.s1.title">Plantas industriales</h3>
+            <p class="mt-4 text-[14.5px] text-mut-dark leading-relaxed" data-i18n="pg.indu.scope.s1.desc">Edificación, soportes de proceso y obras civiles para nuevas plantas y ampliaciones.</p>
+          </div>
+        </article>
+        <article class="relative bu-card reveal reveal-delay-1">
+          <image-slot id="indu-s2" class="block w-full" placeholder="SCOPE 02 · Centro logístico · prateleiras altas"></image-slot>
+          <div class="p-8 lg:p-10">
+            <div class="flex items-baseline justify-between">
+              <div class="font-mono text-[11px] tracking-[0.22em] text-mut-dark uppercase">Scope · 02</div>
+              <div class="font-mono text-[11px] tracking-[0.22em] text-steel uppercase">SYS-IND-02</div>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold leading-tight" data-i18n="pg.indu.scope.s2.title">Logística y depósitos</h3>
+            <p class="mt-4 text-[14.5px] text-mut-dark leading-relaxed" data-i18n="pg.indu.scope.s2.desc">Centros de distribución, depósitos refrigerados y plataformas logísticas.</p>
+          </div>
+        </article>
+        <article class="relative bu-card reveal reveal-delay-2">
+          <image-slot id="indu-s3" class="block w-full" placeholder="SCOPE 03 · Subestação ou planta solar · painéis"></image-slot>
+          <div class="p-8 lg:p-10">
+            <div class="flex items-baseline justify-between">
+              <div class="font-mono text-[11px] tracking-[0.22em] text-mut-dark uppercase">Scope · 03</div>
+              <div class="font-mono text-[11px] tracking-[0.22em] text-steel uppercase">SYS-IND-03</div>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold leading-tight" data-i18n="pg.indu.scope.s3.title">Infraestructura energética</h3>
+            <p class="mt-4 text-[14.5px] text-mut-dark leading-relaxed" data-i18n="pg.indu.scope.s3.desc">Estructuras para subestaciones, plantas solares y obras del sector energía.</p>
+          </div>
+        </article>
+        <article class="relative bu-card reveal reveal-delay-3">
+          <image-slot id="indu-s4" class="block w-full" placeholder="SCOPE 04 · Fundações ou pavimento industrial · concreto"></image-slot>
+          <div class="p-8 lg:p-10">
+            <div class="flex items-baseline justify-between">
+              <div class="font-mono text-[11px] tracking-[0.22em] text-mut-dark uppercase">Scope · 04</div>
+              <div class="font-mono text-[11px] tracking-[0.22em] text-steel uppercase">SYS-IND-04</div>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold leading-tight" data-i18n="pg.indu.scope.s4.title">Obras civiles asociadas</h3>
+            <p class="mt-4 text-[14.5px] text-mut-dark leading-relaxed" data-i18n="pg.indu.scope.s4.desc">Fundaciones, hormigón estructural, pavimentos industriales y obras de sitio.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SPECS ============================== -->
+  <section class="bg-paper-0 border-y border-paper-2">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-20 lg:py-24">
+      <div class="grid lg:grid-cols-12 gap-10 mb-12 reveal">
+        <div class="lg:col-span-5">
+          <div class="kicker mb-5" data-i18n="pg.indu.specs.kicker">04 / Capacidades</div>
+          <h2 class="text-[clamp(26px,3vw,42px)] font-semibold leading-tight tracking-[-0.02em]"
+              data-i18n="pg.indu.specs.h2">La escala que requieren las obras complejas</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 border-t border-paper-2">
+        <div class="reveal p-7 lg:p-10 border-r border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.indu.specs.s1.value">[XX]</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.indu.specs.s1.label">Proyectos industriales completados en la región</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">01</div>
+        </div>
+        <div class="reveal reveal-delay-1 p-7 lg:p-10 border-r border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.indu.specs.s2.value">[XX] m²</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.indu.specs.s2.label">Área construida acumulada en obras industriales</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">02</div>
+        </div>
+        <div class="reveal reveal-delay-2 p-7 lg:p-10 border-r border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.indu.specs.s3.value">[XX]+</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.indu.specs.s3.label">Países donde Systenger ya entregó proyectos</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">03</div>
+        </div>
+        <div class="reveal reveal-delay-3 p-7 lg:p-10 border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.indu.specs.s4.value">EPC</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.indu.specs.s4.label">Modelos contractuales desde diseño hasta llave en mano</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">04</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== DELIVERY MATRIX ============================== -->
+  <section class="bg-paper-1">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-10 mb-14">
+        <div class="lg:col-span-6 reveal">
+          <div class="kicker mb-5" data-i18n="pg.indu.delivery.kicker">05 / Modelo de entrega</div>
+          <h2 class="text-[clamp(28px,3.4vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.indu.delivery.h2">Cuatro modalidades contractuales según el proyecto</h2>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-light leading-relaxed max-w-[50ch]" data-i18n="pg.indu.delivery.intro">Nos adaptamos al modelo de contratación que más valor entrega al cliente, asumiendo más o menos alcance según el caso.</p>
+        </div>
+      </div>
+
+      <div class="reveal border border-paper-2 bg-paper-0 overflow-x-auto">
+        <div class="matrix min-w-[820px]" role="table" aria-label="Modelos contractuales">
+          <!-- header row -->
+          <div class="head">Modalidad</div>
+          <div class="head cell">Ingeniería</div>
+          <div class="head cell">Procura</div>
+          <div class="head cell">Fabricación</div>
+          <div class="head cell">Construcción</div>
+          <div class="head cell">Management</div>
+
+          <!-- row 1 -->
+          <div class="row-h" data-i18n="pg.indu.delivery.d1.title">Diseño + Construcción</div>
+          <div class="cell"><span class="dot full"></span></div>
+          <div class="cell"><span class="dot"></span></div>
+          <div class="cell"><span class="dot half"></span></div>
+          <div class="cell"><span class="dot full"></span></div>
+          <div class="cell"><span class="dot half"></span></div>
+
+          <!-- row 2 -->
+          <div class="row-h" data-i18n="pg.indu.delivery.d2.title">EPC / Llave en mano</div>
+          <div class="cell"><span class="dot full"></span></div>
+          <div class="cell"><span class="dot full"></span></div>
+          <div class="cell"><span class="dot full"></span></div>
+          <div class="cell"><span class="dot full"></span></div>
+          <div class="cell"><span class="dot full"></span></div>
+
+          <!-- row 3 -->
+          <div class="row-h" data-i18n="pg.indu.delivery.d3.title">Fabricación + montaje</div>
+          <div class="cell"><span class="dot half"></span></div>
+          <div class="cell"><span class="dot half"></span></div>
+          <div class="cell"><span class="dot full"></span></div>
+          <div class="cell"><span class="dot full"></span></div>
+          <div class="cell"><span class="dot"></span></div>
+
+          <!-- row 4 -->
+          <div class="row-h" data-i18n="pg.indu.delivery.d4.title">Construction Management</div>
+          <div class="cell"><span class="dot half"></span></div>
+          <div class="cell"><span class="dot half"></span></div>
+          <div class="cell"><span class="dot"></span></div>
+          <div class="cell"><span class="dot half"></span></div>
+          <div class="cell"><span class="dot full"></span></div>
+        </div>
+      </div>
+
+      <!-- Legend + row descriptions -->
+      <div class="mt-10 grid lg:grid-cols-12 gap-8">
+        <div class="lg:col-span-3 reveal">
+          <div class="font-mono text-[10px] tracking-[0.18em] text-mut-light uppercase mb-4">Leyenda</div>
+          <ul class="space-y-2.5 text-[13px] text-mut-light">
+            <li class="flex items-center gap-3"><span class="matrix-legend-dot inline-block w-3 h-3 rounded-full bg-steel"></span><span>Alcance completo</span></li>
+            <li class="flex items-center gap-3"><span class="matrix-legend-dot inline-block w-3 h-3 rounded-full" style="background: linear-gradient(90deg, #039b9c 50%, #fff 50%); border:1px solid #039b9c;"></span><span>Alcance parcial</span></li>
+            <li class="flex items-center gap-3"><span class="matrix-legend-dot inline-block w-3 h-3 rounded-full border border-[#d8dce3]"></span><span>No incluido</span></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-9 grid sm:grid-cols-2 gap-x-10 gap-y-7">
+          <div class="reveal reveal-delay-1">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-steel uppercase mb-2">D · 01</div>
+            <h3 class="text-[16px] font-semibold" data-i18n="pg.indu.delivery.d1.title">Diseño + Construcción</h3>
+            <p class="mt-2 text-[13.5px] text-mut-light leading-relaxed" data-i18n="pg.indu.delivery.d1.desc">Asumimos ingeniería de detalle y ejecución integrada con un único responsable.</p>
+          </div>
+          <div class="reveal reveal-delay-2">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-steel uppercase mb-2">D · 02</div>
+            <h3 class="text-[16px] font-semibold" data-i18n="pg.indu.delivery.d2.title">EPC / Llave en mano</h3>
+            <p class="mt-2 text-[13.5px] text-mut-light leading-relaxed" data-i18n="pg.indu.delivery.d2.desc">Ingeniería, procura y construcción bajo un único contrato y un solo responsable.</p>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-steel uppercase mb-2">D · 03</div>
+            <h3 class="text-[16px] font-semibold" data-i18n="pg.indu.delivery.d3.title">Fabricación + montaje</h3>
+            <p class="mt-2 text-[13.5px] text-mut-light leading-relaxed" data-i18n="pg.indu.delivery.d3.desc">Ejecución de las estructuras metálicas y obras complementarias sobre un proyecto existente.</p>
+          </div>
+          <div class="reveal reveal-delay-2">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-steel uppercase mb-2">D · 04</div>
+            <h3 class="text-[16px] font-semibold" data-i18n="pg.indu.delivery.d4.title">Construction Management</h3>
+            <p class="mt-2 text-[13.5px] text-mut-light leading-relaxed" data-i18n="pg.indu.delivery.d4.desc">Coordinación técnica, control de obra y gerenciamiento integrado para el cliente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SECTORS ============================== -->
+  <section class="bg-ink-1 text-white">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-10 mb-14">
+        <div class="lg:col-span-5 reveal">
+          <div class="kicker mb-5" data-i18n="pg.indu.sectors.kicker">06 / Sectores</div>
+          <h2 class="text-[clamp(28px,3.4vw,46px)] font-semibold leading-tight tracking-[-0.02em]"
+              data-i18n="pg.indu.sectors.h2">Sectores donde ya entregamos obras</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-px bg-ink-4 border border-ink-4">
+        <div class="bg-ink-1 p-7 lg:p-9 reveal aspect-[4/3] flex flex-col justify-between">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-steel uppercase">S-01</div>
+          <div>
+            <h3 class="text-[20px] lg:text-[22px] font-semibold leading-tight" data-i18n="pg.indu.sectors.s1">Alimentos y bebidas</h3>
+            <div class="mt-4 font-mono text-[11px] tracking-[0.18em] text-mut-dark uppercase">FOOD · BEVERAGE</div>
+          </div>
+        </div>
+        <div class="bg-ink-1 p-7 lg:p-9 reveal reveal-delay-1 aspect-[4/3] flex flex-col justify-between">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-steel uppercase">S-02</div>
+          <div>
+            <h3 class="text-[20px] lg:text-[22px] font-semibold leading-tight" data-i18n="pg.indu.sectors.s2">Logística y retail</h3>
+            <div class="mt-4 font-mono text-[11px] tracking-[0.18em] text-mut-dark uppercase">LOGISTICS · RETAIL</div>
+          </div>
+        </div>
+        <div class="bg-ink-1 p-7 lg:p-9 reveal reveal-delay-2 aspect-[4/3] flex flex-col justify-between">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-steel uppercase">S-03</div>
+          <div>
+            <h3 class="text-[20px] lg:text-[22px] font-semibold leading-tight" data-i18n="pg.indu.sectors.s3">Energía</h3>
+            <div class="mt-4 font-mono text-[11px] tracking-[0.18em] text-mut-dark uppercase">ENERGY</div>
+          </div>
+        </div>
+        <div class="bg-ink-1 p-7 lg:p-9 reveal aspect-[4/3] flex flex-col justify-between">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-steel uppercase">S-04</div>
+          <div>
+            <h3 class="text-[20px] lg:text-[22px] font-semibold leading-tight" data-i18n="pg.indu.sectors.s4">Minería y agroindustria</h3>
+            <div class="mt-4 font-mono text-[11px] tracking-[0.18em] text-mut-dark uppercase">MINING · AGRO</div>
+          </div>
+        </div>
+        <div class="bg-ink-1 p-7 lg:p-9 reveal reveal-delay-1 aspect-[4/3] flex flex-col justify-between">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-steel uppercase">S-05</div>
+          <div>
+            <h3 class="text-[20px] lg:text-[22px] font-semibold leading-tight" data-i18n="pg.indu.sectors.s5">Farmacéutico y químico</h3>
+            <div class="mt-4 font-mono text-[11px] tracking-[0.18em] text-mut-dark uppercase">PHARMA · CHEM</div>
+          </div>
+        </div>
+        <div class="bg-ink-1 p-7 lg:p-9 reveal reveal-delay-2 aspect-[4/3] flex flex-col justify-between">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-steel uppercase">S-06</div>
+          <div>
+            <h3 class="text-[20px] lg:text-[22px] font-semibold leading-tight" data-i18n="pg.indu.sectors.s6">Infraestructura pública</h3>
+            <div class="mt-4 font-mono text-[11px] tracking-[0.18em] text-mut-dark uppercase">PUBLIC INFRA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CTA ============================== -->
+  <section class="bg-ink-0 text-white border-t border-ink-4">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-20 lg:py-24 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7">
+        <h2 class="text-[clamp(28px,3.4vw,48px)] font-semibold leading-[1.05] tracking-[-0.02em]" data-i18n="pg.indu.cta.h">Hablemos sobre tu próxima obra industrial</h2>
+      </div>
+      <div class="lg:col-span-4 lg:col-start-9 flex flex-wrap gap-3">
+        <a href="../contacto.html" class="btn btn-primary"><span data-i18n="pg.indu.cta.btn">Solicitar cotización</span><span class="arrow">→</span></a>
+        <a href="../instalaciones.html" class="btn btn-ghost-dark"><span data-i18n="pg.indu.cta.btn2">Ver instalaciones</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="../assets/image-slot.js"></script>
+  <script src="../assets/chrome.js" data-page="industrial"></script>
+  <script src="../assets/translations.js"></script>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

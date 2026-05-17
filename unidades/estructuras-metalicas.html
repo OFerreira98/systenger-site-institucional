@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="es-PA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Estructuras Metálicas Prefabricadas · Systenger</title>
+  <meta name="description" content="Systenger · Diseño, fabricación y montaje de estructuras metálicas prefabricadas para obras industriales, comerciales e infraestructura. Producidas en planta con control de calidad total." />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        ink:   { 0:"#030b0b", 1:"#011516", 2:"#0d1b1c", 3:"#162324", 4:"#003730" },
+        paper: { 0:"#ffffff", 1:"#f6f7f9", 2:"#eceef2" },
+        steel: { DEFAULT:"#039b9c", hi:"#0bbcbd", lo:"#006f75" },
+        mut:   { dark:"#8993a3", light:"#5b6573" }
+      },
+      fontFamily: {
+        sans: ['"Space Grotesk"', "Helvetica Neue", "Arial", "sans-serif"],
+        mono: ['"JetBrains Mono"', "ui-monospace", "Menlo", "monospace"]
+      },
+      maxWidth: { '8xl': '88rem' }
+    } } };
+  </script>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body class="bg-paper-0 text-ink-1">
+
+  <div id="site-header"></div>
+
+  <!-- ============================== PAGE HERO ============================== -->
+  <section class="relative bg-ink-1 text-white overflow-hidden">
+    <image-slot id="metal-hero" class="absolute inset-0 w-full h-full opacity-45" placeholder="HERO · Vigas y columnas de acero en planta de fabricación Systenger"></image-slot>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink-1 via-ink-1/85 to-ink-1/35"></div>
+    <div class="absolute inset-0 tech-grid opacity-40"></div>
+
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 pt-40 pb-24 lg:pt-48 lg:pb-32">
+      <div class="kicker mb-8" data-i18n="pg.metal.eyebrow">Unidades de Negocio · 01</div>
+      <h1 class="text-[clamp(36px,5.4vw,84px)] font-bold leading-[1.02] tracking-[-0.02em] max-w-[18ch] text-balance"
+          data-i18n="pg.metal.h1">Estructuras Metálicas Prefabricadas</h1>
+      <p class="mt-8 text-[17px] lg:text-[19px] text-mut-dark leading-relaxed max-w-[60ch]"
+         data-i18n="pg.metal.lede">Diseño, fabricación y montaje de estructuras de acero para obras industriales, comerciales e infraestructura. Producidas en planta con control de calidad total antes de la instalación.</p>
+
+      <!-- floating spec ribbon -->
+      <div class="mt-14 grid grid-cols-3 max-w-3xl border-t border-ink-4">
+        <div class="py-5 pr-6 border-r border-ink-4">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.metal.r1.k">Norma</div>
+          <div class="mt-2 font-mono text-[13px] text-white">ASTM · AWS</div>
+        </div>
+        <div class="py-5 px-6 border-r border-ink-4">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.metal.r2.k">Sistema</div>
+          <div class="mt-2 font-mono text-[13px] text-white">Off-site</div>
+        </div>
+        <div class="py-5 pl-6">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.metal.r3.k">Sector</div>
+          <div class="mt-2 font-mono text-[13px] text-white" data-i18n="pg.metal.r3.v">Industrial · Comercial</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== OVERVIEW ============================== -->
+  <section class="bg-paper-0">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 reveal">
+          <div class="kicker mb-5" data-i18n="pg.metal.ov.kicker">02 / Qué hacemos</div>
+          <h2 class="text-[clamp(28px,3.2vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.metal.ov.h2">Acero estructural fabricado off-site, montado con precisión</h2>
+          <ul class="mt-9 space-y-4 text-[15px] text-mut-light">
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.metal.ov.b1">Diseño paramétrico 3D y modelado BIM</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.metal.ov.b2">Corte, perforado y conformado con maquinaria CNC</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.metal.ov.b3">Soldaduras calificadas y ensayos no destructivos</span></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-6 lg:col-start-7 reveal reveal-delay-1">
+          <div class="space-y-6 text-[16.5px] leading-[1.65] text-ink-1">
+            <p data-i18n="pg.metal.ov.p1">Producimos elementos estructurales en planta, en un ambiente controlado, garantizando calidad dimensional, soldaduras certificadas y trazabilidad por pieza.</p>
+            <p class="text-mut-light" data-i18n="pg.metal.ov.p2">Cada proyecto se diseña a medida y se entrega listo para montaje rápido en obra, reduciendo tiempos, residuos y exposición a las inclemencias del clima.</p>
+          </div>
+          <image-slot id="metal-ov" class="mt-10 block w-full aspect-[16/10]" placeholder="Detalle · perfil de acero saliendo de máquina CNC · ambiente de fábrica"></image-slot>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== TYPOLOGIES ============================== -->
+  <section class="bg-ink-1 text-white relative">
+    <div class="absolute inset-0 tech-grid opacity-40 pointer-events-none"></div>
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+
+      <div class="grid lg:grid-cols-12 gap-10 mb-14">
+        <div class="lg:col-span-6 reveal">
+          <div class="kicker mb-5" data-i18n="pg.metal.types.kicker">03 / Tipologías</div>
+          <h2 class="text-[clamp(30px,3.6vw,50px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.metal.types.h2">Seis tipologías que cubren la mayoría de las obras complejas</h2>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-dark leading-relaxed max-w-[50ch]" data-i18n="pg.metal.types.intro">Trabajamos con perfiles laminados, armados, tubulares y soluciones a medida según los requisitos estructurales y arquitectónicos de cada proyecto.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-ink-4 border border-ink-4">
+        <!-- t1 · portal frame -->
+        <div class="bg-ink-1 p-7 lg:p-9 reveal flex flex-col">
+          <svg viewBox="0 0 200 110" class="w-full h-20 text-steel/70 mb-6" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M10 100 L190 100" stroke-dasharray="3 5" opacity="0.5"/>
+            <path d="M20 100 L20 30 L100 10 L180 30 L180 100" />
+            <path d="M20 30 L180 30" />
+            <path d="M20 100 L100 10 M180 100 L100 10" stroke-dasharray="2 3" opacity="0.5"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase">T-01</div>
+          <h3 class="mt-3 text-xl font-semibold" data-i18n="pg.metal.types.t1.title">Naves industriales y galpones</h3>
+          <p class="mt-3 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.metal.types.t1.desc">Pórticos de gran luz para plantas, depósitos y centros logísticos.</p>
+        </div>
+        <!-- t2 · multistory frame -->
+        <div class="bg-ink-1 p-7 lg:p-9 reveal reveal-delay-1 flex flex-col">
+          <svg viewBox="0 0 200 110" class="w-full h-20 text-steel/70 mb-6" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M30 100 L30 10 M90 100 L90 10 M150 100 L150 10"/>
+            <path d="M30 10 L150 10 M30 40 L150 40 M30 70 L150 70 M30 100 L170 100"/>
+            <path d="M30 10 L90 40 M90 10 L30 40 M90 10 L150 40 M150 10 L90 40" stroke-dasharray="2 3" opacity="0.5"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase">T-02</div>
+          <h3 class="mt-3 text-xl font-semibold" data-i18n="pg.metal.types.t2.title">Edificios estructurados en acero</h3>
+          <p class="mt-3 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.metal.types.t2.desc">Edificaciones comerciales, oficinas e instituciones de varios niveles.</p>
+        </div>
+        <!-- t3 · truss -->
+        <div class="bg-ink-1 p-7 lg:p-9 reveal reveal-delay-2 flex flex-col">
+          <svg viewBox="0 0 200 110" class="w-full h-20 text-steel/70 mb-6" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M10 80 L190 80"/>
+            <path d="M10 80 L100 20 L190 80 Z"/>
+            <path d="M40 80 L70 50 M70 80 L100 50 M100 80 L130 50 M130 80 L160 50 M70 50 L130 50 M40 50 L70 50" />
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase">T-03</div>
+          <h3 class="mt-3 text-xl font-semibold" data-i18n="pg.metal.types.t3.title">Cubiertas y techos</h3>
+          <p class="mt-3 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.metal.types.t3.desc">Cerchas, vigas reticulares y estructuras de cubierta para grandes luces.</p>
+        </div>
+        <!-- t4 · mezzanine -->
+        <div class="bg-ink-1 p-7 lg:p-9 reveal flex flex-col">
+          <svg viewBox="0 0 200 110" class="w-full h-20 text-steel/70 mb-6" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M10 100 L190 100"/>
+            <path d="M20 100 L20 20 M180 100 L180 20"/>
+            <path d="M20 60 L180 60"/>
+            <path d="M20 20 L180 20"/>
+            <path d="M50 100 L50 60 M90 100 L90 60 M130 100 L130 60 M170 100 L170 60" opacity="0.6"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase">T-04</div>
+          <h3 class="mt-3 text-xl font-semibold" data-i18n="pg.metal.types.t4.title">Mezaninos y plataformas</h3>
+          <p class="mt-3 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.metal.types.t4.desc">Pisos técnicos, entrepisos y plataformas industriales para equipos.</p>
+        </div>
+        <!-- t5 · pipe rack -->
+        <div class="bg-ink-1 p-7 lg:p-9 reveal reveal-delay-1 flex flex-col">
+          <svg viewBox="0 0 200 110" class="w-full h-20 text-steel/70 mb-6" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M30 100 L30 20 M90 100 L90 20 M150 100 L150 20"/>
+            <path d="M20 40 L160 40 M20 70 L160 70"/>
+            <circle cx="50" cy="40" r="4"/><circle cx="80" cy="40" r="4"/><circle cx="120" cy="40" r="4"/>
+            <circle cx="50" cy="70" r="4"/><circle cx="120" cy="70" r="4"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase">T-05</div>
+          <h3 class="mt-3 text-xl font-semibold" data-i18n="pg.metal.types.t5.title">Estructuras especiales</h3>
+          <p class="mt-3 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.metal.types.t5.desc">Soportes de proceso, racks de tuberías y estructuras a medida.</p>
+        </div>
+        <!-- t6 · walkway -->
+        <div class="bg-ink-1 p-7 lg:p-9 reveal reveal-delay-2 flex flex-col">
+          <svg viewBox="0 0 200 110" class="w-full h-20 text-steel/70 mb-6" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M10 100 L190 100" stroke-dasharray="3 5" opacity="0.5"/>
+            <path d="M20 70 L180 70" />
+            <path d="M20 50 L180 50" />
+            <path d="M20 50 L20 100 M60 50 L60 100 M100 50 L100 100 M140 50 L140 100 M180 50 L180 100" opacity="0.7"/>
+            <path d="M20 50 L60 70 L100 50 L140 70 L180 50" stroke-dasharray="2 3" opacity="0.5"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase">T-06</div>
+          <h3 class="mt-3 text-xl font-semibold" data-i18n="pg.metal.types.t6.title">Pasarelas y escaleras</h3>
+          <p class="mt-3 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.metal.types.t6.desc">Circulaciones industriales, pasarelas técnicas y escaleras estructurales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SPECS / CAPACITY STRIP ============================== -->
+  <section class="bg-paper-0 border-y border-paper-2">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-20 lg:py-24">
+      <div class="grid lg:grid-cols-12 gap-10 mb-12 reveal">
+        <div class="lg:col-span-5">
+          <div class="kicker mb-5" data-i18n="pg.metal.specs.kicker">04 / Capacidades técnicas</div>
+          <h2 class="text-[clamp(26px,3vw,42px)] font-semibold leading-tight tracking-[-0.02em]"
+              data-i18n="pg.metal.specs.h2">Cifras que definen el alcance de cada obra</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 border-t border-paper-2">
+        <div class="reveal p-7 lg:p-10 border-r border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.metal.specs.s1.value">[XX] t/mes</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.metal.specs.s1.label">Capacidad productiva de la planta</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">01</div>
+        </div>
+        <div class="reveal reveal-delay-1 p-7 lg:p-10 border-r border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.metal.specs.s2.value">[XX] m</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.metal.specs.s2.label">Luz libre máxima en pórticos</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">02</div>
+        </div>
+        <div class="reveal reveal-delay-2 p-7 lg:p-10 border-r border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.metal.specs.s3.value">[XX] m</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.metal.specs.s3.label">Altura útil máxima por nave</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">03</div>
+        </div>
+        <div class="reveal reveal-delay-3 p-7 lg:p-10 border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.metal.specs.s4.value">ASTM</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.metal.specs.s4.label">Aceros y soldaduras según norma internacional</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">04</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== PROCESS ============================== -->
+  <section class="bg-ink-2 text-white">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-10 mb-16">
+        <div class="lg:col-span-7 reveal">
+          <div class="kicker mb-5" data-i18n="pg.metal.proc.kicker">05 / Proceso de fabricación</div>
+          <h2 class="text-[clamp(28px,3.4vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.metal.proc.h2">De la ingeniería 3D al montaje en obra</h2>
+        </div>
+        <div class="lg:col-span-4 lg:col-start-9 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-dark leading-relaxed" data-i18n="pg.metal.proc.intro">Un flujo integrado que mantiene la trazabilidad de cada elemento desde el modelo BIM hasta el bulón final.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+        <div class="proc-card reveal">
+          <image-slot id="metal-p1" class="block w-full aspect-[4/3] mb-7" placeholder="01 · Modelo BIM en pantalla CAD"></image-slot>
+          <div class="flex items-baseline justify-between">
+            <div class="num text-[13px] tracking-[0.2em]">01</div>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" class="text-steel"><path d="M3 3H19V19H3V3Z" stroke="currentColor" stroke-width="1.2"/><path d="M3 11H19M11 3V19" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="mt-8 text-[22px] font-semibold leading-tight" data-i18n="pg.metal.proc.p1.title">Ingeniería de detalle</h3>
+          <p class="mt-4 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.metal.proc.p1.desc">Modelado 3D, planos de taller y listas de materiales con trazabilidad por pieza.</p>
+        </div>
+        <div class="proc-card reveal reveal-delay-1">
+          <image-slot id="metal-p2" class="block w-full aspect-[4/3] mb-7" placeholder="02 · Plasma CNC cortando perfil de acero"></image-slot>
+          <div class="flex items-baseline justify-between">
+            <div class="num text-[13px] tracking-[0.2em]">02</div>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" class="text-steel"><path d="M3 19H19M5 3L17 19M17 3L5 19" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="mt-8 text-[22px] font-semibold leading-tight" data-i18n="pg.metal.proc.p2.title">Corte y conformado CNC</h3>
+          <p class="mt-4 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.metal.proc.p2.desc">Corte por plasma, oxicorte y perforado automatizado para precisión milimétrica.</p>
+        </div>
+        <div class="proc-card reveal reveal-delay-2">
+          <image-slot id="metal-p3" class="block w-full aspect-[4/3] mb-7" placeholder="03 · Soldador con máscara · faíscas · estructura siendo armada"></image-slot>
+          <div class="flex items-baseline justify-between">
+            <div class="num text-[13px] tracking-[0.2em]">03</div>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" class="text-steel"><path d="M3 19L11 3L19 19H3Z" stroke="currentColor" stroke-width="1.2"/><path d="M11 9V14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="mt-8 text-[22px] font-semibold leading-tight" data-i18n="pg.metal.proc.p3.title">Armado y soldadura</h3>
+          <p class="mt-4 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.metal.proc.p3.desc">Soldadores calificados, procedimientos WPS y END en uniones críticas.</p>
+        </div>
+        <div class="proc-card reveal reveal-delay-3">
+          <image-slot id="metal-p4" class="block w-full aspect-[4/3] mb-7" placeholder="04 · Grúa izando viga de acero en obra · cielo azul"></image-slot>
+          <div class="flex items-baseline justify-between">
+            <div class="num text-[13px] tracking-[0.2em]">04</div>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" class="text-steel"><path d="M3 19H19M5 19V11L11 6L17 11V19" stroke="currentColor" stroke-width="1.2"/><path d="M11 3V6" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="mt-8 text-[22px] font-semibold leading-tight" data-i18n="pg.metal.proc.p4.title">Tratamiento y montaje</h3>
+          <p class="mt-4 text-[14px] text-mut-dark leading-relaxed" data-i18n="pg.metal.proc.p4.desc">Granallado, pintura industrial o galvanizado, transporte y montaje en obra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== APPLICATIONS ============================== -->
+  <section class="bg-paper-1">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-10 mb-14">
+        <div class="lg:col-span-5 reveal">
+          <div class="kicker mb-5" data-i18n="pg.metal.apps.kicker">06 / Aplicaciones</div>
+          <h2 class="text-[clamp(26px,3vw,42px)] font-semibold leading-tight tracking-[-0.02em]"
+              data-i18n="pg.metal.apps.h2">Sectores donde Systenger ya entregó obras</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="reveal">
+          <image-slot id="metal-app-1" class="block w-full aspect-[5/4]" placeholder="APP 01 · Galpão logístico finalizado · estrutura metálica"></image-slot>
+          <div class="mt-4 flex items-baseline justify-between">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-mut-light uppercase">01</div>
+            <div class="text-[15px] font-medium" data-i18n="pg.metal.apps.a1">Logística y depósitos</div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <image-slot id="metal-app-2" class="block w-full aspect-[5/4]" placeholder="APP 02 · Planta industrial · maquinaria de proceso"></image-slot>
+          <div class="mt-4 flex items-baseline justify-between">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-mut-light uppercase">02</div>
+            <div class="text-[15px] font-medium" data-i18n="pg.metal.apps.a2">Plantas industriales</div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <image-slot id="metal-app-3" class="block w-full aspect-[5/4]" placeholder="APP 03 · Centro comercial · cobertura metálica"></image-slot>
+          <div class="mt-4 flex items-baseline justify-between">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-mut-light uppercase">03</div>
+            <div class="text-[15px] font-medium" data-i18n="pg.metal.apps.a3">Retail y centros comerciales</div>
+          </div>
+        </div>
+        <div class="reveal">
+          <image-slot id="metal-app-4" class="block w-full aspect-[5/4]" placeholder="APP 04 · Galpón agroindustrial · silo metálico"></image-slot>
+          <div class="mt-4 flex items-baseline justify-between">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-mut-light uppercase">04</div>
+            <div class="text-[15px] font-medium" data-i18n="pg.metal.apps.a4">Agroindustria</div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <image-slot id="metal-app-5" class="block w-full aspect-[5/4]" placeholder="APP 05 · Subestación eléctrica · estructura metálica"></image-slot>
+          <div class="mt-4 flex items-baseline justify-between">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-mut-light uppercase">05</div>
+            <div class="text-[15px] font-medium" data-i18n="pg.metal.apps.a5">Energía e infraestructura</div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <image-slot id="metal-app-6" class="block w-full aspect-[5/4]" placeholder="APP 06 · Edificación especial · uso atípico"></image-slot>
+          <div class="mt-4 flex items-baseline justify-between">
+            <div class="font-mono text-[10px] tracking-[0.2em] text-mut-light uppercase">06</div>
+            <div class="text-[15px] font-medium" data-i18n="pg.metal.apps.a6">Edificaciones especiales</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CTA ============================== -->
+  <section class="bg-ink-1 text-white">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-20 lg:py-24 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7">
+        <h2 class="text-[clamp(28px,3.4vw,48px)] font-semibold leading-[1.05] tracking-[-0.02em]" data-i18n="pg.metal.cta.h">¿Necesitás estructuras metálicas para tu próximo proyecto?</h2>
+      </div>
+      <div class="lg:col-span-4 lg:col-start-9 flex flex-wrap gap-3">
+        <a href="../contacto.html" class="btn btn-primary"><span data-i18n="pg.metal.cta.btn">Solicitar cotización</span><span class="arrow">→</span></a>
+        <a href="../procesos.html" class="btn btn-ghost-dark"><span data-i18n="pg.metal.cta.btn2">Ver procesos</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="../assets/image-slot.js"></script>
+  <script src="../assets/chrome.js" data-page="metal"></script>
+  <script src="../assets/translations.js"></script>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

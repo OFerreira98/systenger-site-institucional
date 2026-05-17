@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es-PA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Sobre Systenger · Contratista de confianza en Panamá</title>
+  <meta name="description" content="Conocé Systenger: transformamos visiones en realidad mediante métodos de construcción de vanguardia. Estructuras metálicas, fachadas Smart Wall, obras industriales en Panamá y América Latina." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        ink:   { 0:"#030b0b", 1:"#011516", 2:"#0d1b1c", 3:"#162324", 4:"#003730" },
+        paper: { 0:"#ffffff", 1:"#f6f7f9", 2:"#eceef2" },
+        steel: { DEFAULT:"#039b9c", hi:"#0bbcbd", lo:"#006f75" },
+        mut:   { dark:"#8993a3", light:"#5b6573" }
+      },
+      fontFamily: {
+        sans: ['"Space Grotesk"', "Helvetica Neue", "Arial", "sans-serif"],
+        mono: ['"JetBrains Mono"', "ui-monospace", "Menlo", "monospace"]
+      },
+      maxWidth: { '8xl': '88rem' }
+    } } };
+  </script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-paper-0 text-ink-1">
+
+  <div id="site-header"></div>
+
+  <!-- ============================== PAGE HERO ============================== -->
+  <section class="relative bg-ink-1 text-white overflow-hidden">
+    <image-slot id="about-hero" class="absolute inset-0 w-full h-full opacity-50" placeholder="ABOUT HERO · planta Systenger · ambiente de fábrica con estructuras"></image-slot>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink-1 via-ink-1/85 to-ink-1/40"></div>
+    <div class="absolute inset-0 tech-grid opacity-40"></div>
+
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 pt-40 pb-24 lg:pt-48 lg:pb-32">
+      <div class="kicker mb-8" data-i18n="pg.about.eyebrow">Institucional · 01</div>
+      <h1 class="text-[clamp(36px,5.4vw,84px)] font-bold leading-[1.02] tracking-[-0.02em] max-w-[18ch] text-balance"
+          data-i18n="pg.about.h1">Tu socio en soluciones innovadoras de construcción</h1>
+      <p class="mt-8 text-[17px] lg:text-[19px] text-mut-dark leading-relaxed max-w-[60ch]"
+         data-i18n="pg.about.lede">Systenger es la contratista panameña que transforma visiones en realidad mediante métodos de construcción de vanguardia. Especialistas en estructuras metálicas prefabricadas, fachadas Smart Wall y obras industriales en Panamá y América Latina.</p>
+    </div>
+  </section>
+
+  <!-- ============================== QUIÉNES SOMOS ============================== -->
+  <section class="bg-paper-0">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-4 reveal">
+          <div class="kicker mb-5" data-i18n="pg.about.who.kicker">02 / Quiénes Somos</div>
+          <h2 class="text-[clamp(28px,3.2vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.about.who.h2">Una empresa de ingeniería estructural enfocada en la innovación</h2>
+        </div>
+        <div class="lg:col-span-7 lg:col-start-6 reveal reveal-delay-1">
+          <div class="space-y-6 text-[16.5px] leading-[1.65] text-ink-1">
+            <p data-i18n="about.p1">En Systenger, nos especializamos en transformar visiones en realidad mediante métodos de construcción de vanguardia.</p>
+            <p class="text-mut-light" data-i18n="about.p2">Systenger es tu contratista de confianza para estructuras metálicas prefabricadas de alta calidad y soluciones de construcción en sitio. Nuestro equipo está comprometido a ofrecer servicios excepcionales de diseño y construcción adaptados a tus necesidades específicas.</p>
+            <p class="text-mut-light" data-i18n="about.p3">Con un enfoque en la innovación y la calidad, garantizamos que cada proyecto se lleve a cabo con precisión y excelencia.</p>
+          </div>
+          <image-slot id="about-team" class="mt-10 block w-full aspect-[16/10]" placeholder="Equipo Systenger · planta / oficinas"></image-slot>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== MISIÓN / VISIÓN / VALORES ============================== -->
+  <section class="bg-ink-1 text-white relative">
+    <div class="absolute inset-0 tech-grid opacity-40 pointer-events-none"></div>
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+
+      <div class="grid lg:grid-cols-12 gap-10 mb-16">
+        <div class="lg:col-span-7 reveal">
+          <div class="kicker mb-5" data-i18n="pg.about.mvv.kicker">03 / Misión · Visión · Valores</div>
+          <h2 class="text-[clamp(30px,3.6vw,50px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.about.mvv.h2">El propósito que guía cada estructura que fabricamos</h2>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-px bg-ink-4 border border-ink-4">
+        <div class="bg-ink-1 p-8 lg:p-10 reveal">
+          <div class="font-mono text-[11px] tracking-[0.2em] text-steel mb-6">M / 01</div>
+          <h3 class="text-2xl font-semibold" data-i18n="pg.about.mission.title">Misión</h3>
+          <p class="mt-5 text-[15px] text-mut-dark leading-relaxed" data-i18n="pg.about.mission.body">Entregar soluciones estructurales industrializadas que combinen ingeniería de precisión, control total de calidad y plazos predecibles para obras complejas en América Latina.</p>
+        </div>
+        <div class="bg-ink-1 p-8 lg:p-10 reveal reveal-delay-1">
+          <div class="font-mono text-[11px] tracking-[0.2em] text-steel mb-6">V / 02</div>
+          <h3 class="text-2xl font-semibold" data-i18n="pg.about.vision.title">Visión</h3>
+          <p class="mt-5 text-[15px] text-mut-dark leading-relaxed" data-i18n="pg.about.vision.body">Ser la contratista referente de construcción prefabricada, modular y off-site de Centroamérica — la primera opción para industrias, infraestructura y grandes edificaciones.</p>
+        </div>
+        <div class="bg-ink-1 p-8 lg:p-10 reveal reveal-delay-2">
+          <div class="font-mono text-[11px] tracking-[0.2em] text-steel mb-6">V / 03</div>
+          <h3 class="text-2xl font-semibold" data-i18n="pg.about.values.title">Valores</h3>
+          <ul class="mt-5 space-y-2 text-[15px] text-mut-dark">
+            <li class="flex gap-3"><span class="font-mono text-steel">→</span><span data-i18n="pg.about.values.v1">Precisión</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel">→</span><span data-i18n="pg.about.values.v2">Innovación</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel">→</span><span data-i18n="pg.about.values.v3">Compromiso</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel">→</span><span data-i18n="pg.about.values.v4">Seguridad</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel">→</span><span data-i18n="pg.about.values.v5">Sostenibilidad</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== TIMELINE / HISTORIA ============================== -->
+  <section id="timeline" class="bg-paper-1">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-10 mb-16">
+        <div class="lg:col-span-5 reveal">
+          <div class="kicker mb-5" data-i18n="pg.about.timeline.kicker">04 / Trayectoria</div>
+          <h2 class="text-[clamp(28px,3.2vw,44px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.about.timeline.h2">Un recorrido de ingeniería y consistencia</h2>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-light leading-relaxed max-w-[50ch]" data-i18n="pg.about.timeline.intro">Cada hito refleja el crecimiento de un equipo enfocado en estandarizar lo que la industria de construcción tradicional aún ejecuta de forma artesanal.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-paper-2 border border-paper-2">
+        <div class="bg-paper-0 p-7 lg:p-10 reveal">
+          <div class="font-mono text-steel text-2xl tracking-tight" data-i18n="pg.about.t.y1">[YYYY]</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[24ch]" data-i18n="pg.about.t.l1">Fundación de Systenger en Panamá</div>
+        </div>
+        <div class="bg-paper-0 p-7 lg:p-10 reveal reveal-delay-1">
+          <div class="font-mono text-steel text-2xl tracking-tight" data-i18n="pg.about.t.y2">[YYYY]</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[24ch]" data-i18n="pg.about.t.l2">Apertura de planta de fabricación propia</div>
+        </div>
+        <div class="bg-paper-0 p-7 lg:p-10 reveal reveal-delay-2">
+          <div class="font-mono text-steel text-2xl tracking-tight" data-i18n="pg.about.t.y3">[YYYY]</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[24ch]" data-i18n="pg.about.t.l3">Lanzamiento del sistema Smart Wall</div>
+        </div>
+        <div class="bg-paper-0 p-7 lg:p-10 reveal reveal-delay-3">
+          <div class="font-mono text-steel text-2xl tracking-tight" data-i18n="pg.about.t.y4">[YYYY]</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[24ch]" data-i18n="pg.about.t.l4">Expansión a proyectos en América Latina</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CALIDAD + CERTIFICACIONES ============================== -->
+  <section id="quality" class="bg-paper-0 border-t border-paper-2">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 reveal">
+          <div class="kicker mb-5" data-i18n="pg.about.qa.kicker">05 / Gestión de Calidad</div>
+          <h2 class="text-[clamp(28px,3.2vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.about.qa.h2">100% de control en planta antes de la instalación</h2>
+          <p class="mt-7 text-[16px] text-mut-light leading-relaxed max-w-[50ch]" data-i18n="pg.about.qa.body">Cada elemento pasa por inspección dimensional, ensayos no destructivos en soldaduras y trazabilidad por número de pieza. El resultado: cero retrabajos en obra y entregas predecibles.</p>
+        </div>
+        <div id="certs" class="lg:col-span-6 lg:col-start-7 reveal reveal-delay-1">
+          <div class="grid grid-cols-2 gap-px bg-paper-2 border border-paper-2">
+            <div class="bg-paper-0 p-7"><div class="font-mono text-[10px] tracking-[0.18em] text-mut-light uppercase">01</div><div class="mt-3 text-[15px] font-medium" data-i18n="pg.about.qa.c1">Inspección dimensional</div></div>
+            <div class="bg-paper-0 p-7"><div class="font-mono text-[10px] tracking-[0.18em] text-mut-light uppercase">02</div><div class="mt-3 text-[15px] font-medium" data-i18n="pg.about.qa.c2">END en soldaduras</div></div>
+            <div class="bg-paper-0 p-7"><div class="font-mono text-[10px] tracking-[0.18em] text-mut-light uppercase">03</div><div class="mt-3 text-[15px] font-medium" data-i18n="pg.about.qa.c3">Trazabilidad por pieza</div></div>
+            <div class="bg-paper-0 p-7"><div class="font-mono text-[10px] tracking-[0.18em] text-mut-light uppercase">04</div><div class="mt-3 text-[15px] font-medium" data-i18n="pg.about.qa.c4">Certificación según norma</div></div>
+          </div>
+          <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div class="aspect-[3/2] ph-light flex items-center justify-center" data-label="CERT 01"></div>
+            <div class="aspect-[3/2] ph-light flex items-center justify-center" data-label="CERT 02"></div>
+            <div class="aspect-[3/2] ph-light flex items-center justify-center" data-label="CERT 03"></div>
+            <div class="aspect-[3/2] ph-light flex items-center justify-center" data-label="CERT 04"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CTA ============================== -->
+  <section class="bg-ink-1 text-white">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-20 lg:py-24 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7">
+        <h2 class="text-[clamp(28px,3.4vw,48px)] font-semibold leading-[1.05] tracking-[-0.02em]" data-i18n="pg.about.cta.h">¿Listo para conversar sobre tu próximo proyecto?</h2>
+      </div>
+      <div class="lg:col-span-4 lg:col-start-9 flex flex-wrap gap-3">
+        <a href="contacto.html" class="btn btn-primary"><span data-i18n="pg.about.cta.btn">Contactar al equipo</span><span class="arrow">→</span></a>
+        <a href="procesos.html" class="btn btn-ghost-dark"><span data-i18n="pg.about.cta.btn2">Ver procesos</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/image-slot.js"></script>
+  <script src="assets/chrome.js" data-page="about"></script>
+  <script src="assets/translations.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

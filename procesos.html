@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="es-PA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Procesos y Tecnología · Systenger</title>
+  <meta name="description" content="Systenger · Diseño, producción y control de calidad bajo un mismo techo. Procesos industrializados, tecnología BIM y CNC, soldadura calificada y END para obras complejas." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        ink:   { 0:"#030b0b", 1:"#011516", 2:"#0d1b1c", 3:"#162324", 4:"#003730" },
+        paper: { 0:"#ffffff", 1:"#f6f7f9", 2:"#eceef2" },
+        steel: { DEFAULT:"#039b9c", hi:"#0bbcbd", lo:"#006f75" },
+        mut:   { dark:"#8993a3", light:"#5b6573" }
+      },
+      fontFamily: {
+        sans: ['"Space Grotesk"', "Helvetica Neue", "Arial", "sans-serif"],
+        mono: ['"JetBrains Mono"', "ui-monospace", "Menlo", "monospace"]
+      },
+      maxWidth: { '8xl': '88rem' }
+    } } };
+  </script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-paper-0 text-ink-1">
+
+  <div id="site-header"></div>
+
+  <!-- ============================== HERO ============================== -->
+  <section class="relative bg-ink-1 text-white overflow-hidden">
+    <image-slot id="proc-hero" class="absolute inset-0 w-full h-full opacity-45" placeholder="HERO · Trabajadores en planta · vista amplia de operación industrial"></image-slot>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink-1 via-ink-1/85 to-ink-1/35"></div>
+    <div class="absolute inset-0 tech-grid opacity-40"></div>
+
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 pt-40 pb-24 lg:pt-48 lg:pb-32">
+      <div class="kicker mb-8" data-i18n="pg.proc.eyebrow">Operaciones · 01</div>
+      <h1 class="text-[clamp(36px,5.4vw,84px)] font-bold leading-[1.02] tracking-[-0.02em] max-w-[18ch] text-balance"
+          data-i18n="pg.proc.h1">Procesos y Tecnología</h1>
+      <p class="mt-8 text-[17px] lg:text-[19px] text-mut-dark leading-relaxed max-w-[60ch]"
+         data-i18n="pg.proc.lede">Diseño, producción y control de calidad bajo un mismo techo. Un flujo integrado que mantiene la trazabilidad de cada elemento desde el modelo BIM hasta el montaje final en obra.</p>
+
+      <div class="mt-14 grid grid-cols-3 max-w-3xl border-t border-ink-4">
+        <div class="py-5 pr-6 border-r border-ink-4">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.proc.r1.k">Etapas</div>
+          <div class="mt-2 font-mono text-[13px] text-white" data-i18n="pg.proc.r1.v">04 integradas</div>
+        </div>
+        <div class="py-5 px-6 border-r border-ink-4">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.proc.r2.k">Estándar</div>
+          <div class="mt-2 font-mono text-[13px] text-white">ASTM · AWS · AISC</div>
+        </div>
+        <div class="py-5 pl-6">
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase" data-i18n="pg.proc.r3.k">QA</div>
+          <div class="mt-2 font-mono text-[13px] text-white" data-i18n="pg.proc.r3.v">100% en planta</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== OVERVIEW ============================== -->
+  <section class="bg-paper-0">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 reveal">
+          <div class="kicker mb-5" data-i18n="pg.proc.ov.kicker">02 / Nuestra filosofía</div>
+          <h2 class="text-[clamp(28px,3.2vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.proc.ov.h2">Procesos industrializados para obras complejas</h2>
+          <ul class="mt-9 space-y-4 text-[15px] text-mut-light">
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.proc.ov.b1">Diseño paramétrico y modelado BIM colaborativo</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.proc.ov.b2">Fabricación en ambiente controlado, no en obra</span></li>
+            <li class="flex gap-3"><span class="font-mono text-steel mt-[2px]">→</span><span data-i18n="pg.proc.ov.b3">Control de calidad sobre cada pieza, no por muestreo</span></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-6 lg:col-start-7 reveal reveal-delay-1">
+          <div class="space-y-6 text-[16.5px] leading-[1.65] text-ink-1">
+            <p data-i18n="pg.proc.ov.p1">Llevamos a la construcción la lógica de la industria: estandarización, ambiente controlado, control dimensional por pieza y trazabilidad completa de materia prima al montaje.</p>
+            <p class="text-mut-light" data-i18n="pg.proc.ov.p2">El resultado son obras predecibles, con menos retrabajos, menos exposición al clima y menos riesgos para el cliente.</p>
+          </div>
+          <image-slot id="proc-ov" class="mt-10 block w-full aspect-[16/10]" placeholder="Ingenieros en oficina con pantallas BIM y maqueta 3D"></image-slot>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== 4 STEPS (deep) ============================== -->
+  <section class="bg-ink-1 text-white relative">
+    <div class="absolute inset-0 tech-grid opacity-40 pointer-events-none"></div>
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+
+      <div class="grid lg:grid-cols-12 gap-10 mb-16">
+        <div class="lg:col-span-7 reveal">
+          <div class="kicker mb-5" data-i18n="pg.proc.steps.kicker">03 / Las cuatro etapas</div>
+          <h2 class="text-[clamp(30px,3.6vw,50px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.proc.steps.h2">De la consulta inicial al montaje certificado</h2>
+        </div>
+        <div class="lg:col-span-4 lg:col-start-9 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-dark leading-relaxed" data-i18n="pg.proc.steps.intro">Cada proyecto recorre un flujo integrado de cuatro etapas, ejecutadas por el mismo equipo bajo un único responsable contractual.</p>
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <!-- Step 1 -->
+        <article class="grid lg:grid-cols-12 gap-x-10 gap-y-8 py-10 lg:py-14 border-t border-ink-4 reveal">
+          <div class="lg:col-span-4">
+            <image-slot id="proc-s1" class="block w-full aspect-[4/3]" placeholder="01 · Reunião de kick-off · planos abertos sobre mesa"></image-slot>
+          </div>
+          <div class="lg:col-span-7 lg:col-start-6">
+            <div class="flex items-baseline gap-6 mb-5">
+              <div class="font-mono text-[42px] lg:text-[56px] font-bold text-steel/80 tracking-tight leading-none">01</div>
+              <div class="font-mono text-[11px] tracking-[0.22em] text-mut-dark uppercase">Stage · Project Study</div>
+            </div>
+            <h3 class="text-[clamp(22px,2.4vw,32px)] font-semibold leading-tight" data-i18n="pg.proc.s1.title">Estudio Integral del Proyecto</h3>
+            <p class="mt-4 text-[16px] text-mut-dark leading-relaxed max-w-[60ch]" data-i18n="pg.proc.s1.desc">Antes de iniciar cualquier obra, realizamos un estudio exhaustivo del proyecto, abarcando todos sus requisitos técnicos y contractuales.</p>
+            <ul class="mt-7 grid sm:grid-cols-3 gap-4 text-[13.5px]">
+              <li class="border-l border-ink-4 pl-4"><div class="font-mono text-[10px] tracking-[0.18em] text-steel uppercase mb-1">01.A</div><span class="text-mut-dark" data-i18n="pg.proc.s1.b1">Análisis de pliegos, cargas y normativa local</span></li>
+              <li class="border-l border-ink-4 pl-4"><div class="font-mono text-[10px] tracking-[0.18em] text-steel uppercase mb-1">01.B</div><span class="text-mut-dark" data-i18n="pg.proc.s1.b2">Levantamiento de sitio y compatibilización con disciplinas</span></li>
+              <li class="border-l border-ink-4 pl-4"><div class="font-mono text-[10px] tracking-[0.18em] text-steel uppercase mb-1">01.C</div><span class="text-mut-dark" data-i18n="pg.proc.s1.b3">Cronograma de fabricación, transporte y montaje</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Step 2 -->
+        <article class="grid lg:grid-cols-12 gap-x-10 gap-y-8 py-10 lg:py-14 border-t border-ink-4 reveal">
+          <div class="lg:col-span-4">
+            <image-slot id="proc-s2" class="block w-full aspect-[4/3]" placeholder="02 · Tela com modelo BIM 3D de pórtico estrutural"></image-slot>
+          </div>
+          <div class="lg:col-span-7 lg:col-start-6">
+            <div class="flex items-baseline gap-6 mb-5">
+              <div class="font-mono text-[42px] lg:text-[56px] font-bold text-steel/80 tracking-tight leading-none">02</div>
+              <div class="font-mono text-[11px] tracking-[0.22em] text-mut-dark uppercase">Stage · Engineering</div>
+            </div>
+            <h3 class="text-[clamp(22px,2.4vw,32px)] font-semibold leading-tight" data-i18n="pg.proc.s2.title">Diseño e Ingeniería</h3>
+            <p class="mt-4 text-[16px] text-mut-dark leading-relaxed max-w-[60ch]" data-i18n="pg.proc.s2.desc">Servicios excepcionales de diseño adaptados a las necesidades específicas de cada cliente, con enfoque en innovación y calidad.</p>
+            <ul class="mt-7 grid sm:grid-cols-3 gap-4 text-[13.5px]">
+              <li class="border-l border-ink-4 pl-4"><div class="font-mono text-[10px] tracking-[0.18em] text-steel uppercase mb-1">02.A</div><span class="text-mut-dark" data-i18n="pg.proc.s2.b1">Modelado 3D y coordinación BIM con arquitectura y MEP</span></li>
+              <li class="border-l border-ink-4 pl-4"><div class="font-mono text-[10px] tracking-[0.18em] text-steel uppercase mb-1">02.B</div><span class="text-mut-dark" data-i18n="pg.proc.s2.b2">Cálculo estructural según ASTM, AISC y normas locales</span></li>
+              <li class="border-l border-ink-4 pl-4"><div class="font-mono text-[10px] tracking-[0.18em] text-steel uppercase mb-1">02.C</div><span class="text-mut-dark" data-i18n="pg.proc.s2.b3">Planos de fabricación con listas de piezas y soldaduras</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Step 3 -->
+        <article class="grid lg:grid-cols-12 gap-x-10 gap-y-8 py-10 lg:py-14 border-t border-ink-4 reveal">
+          <div class="lg:col-span-4">
+            <image-slot id="proc-s3" class="block w-full aspect-[4/3]" placeholder="03 · Mesa CNC cortando chapa · ambiente industrial"></image-slot>
+          </div>
+          <div class="lg:col-span-7 lg:col-start-6">
+            <div class="flex items-baseline gap-6 mb-5">
+              <div class="font-mono text-[42px] lg:text-[56px] font-bold text-steel/80 tracking-tight leading-none">03</div>
+              <div class="font-mono text-[11px] tracking-[0.22em] text-mut-dark uppercase">Stage · Fabrication</div>
+            </div>
+            <h3 class="text-[clamp(22px,2.4vw,32px)] font-semibold leading-tight" data-i18n="pg.proc.s3.title">Fabricación en Planta</h3>
+            <p class="mt-4 text-[16px] text-mut-dark leading-relaxed max-w-[60ch]" data-i18n="pg.proc.s3.desc">Fabricadas en planta con control de calidad total antes de la instalación, en un ambiente controlado que reduce riesgos y tiempos.</p>
+            <ul class="mt-7 grid sm:grid-cols-3 gap-4 text-[13.5px]">
+              <li class="border-l border-ink-4 pl-4"><div class="font-mono text-[10px] tracking-[0.18em] text-steel uppercase mb-1">03.A</div><span class="text-mut-dark" data-i18n="pg.proc.s3.b1">Corte CNC, perforado y conformado automatizado</span></li>
+              <li class="border-l border-ink-4 pl-4"><div class="font-mono text-[10px] tracking-[0.18em] text-steel uppercase mb-1">03.B</div><span class="text-mut-dark" data-i18n="pg.proc.s3.b2">Soldadores calificados con procedimientos WPS</span></li>
+              <li class="border-l border-ink-4 pl-4"><div class="font-mono text-[10px] tracking-[0.18em] text-steel uppercase mb-1">03.C</div><span class="text-mut-dark" data-i18n="pg.proc.s3.b3">Tratamiento superficial: granallado, pintura o galvanizado</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Step 4 -->
+        <article class="grid lg:grid-cols-12 gap-x-10 gap-y-8 py-10 lg:py-14 border-t border-b border-ink-4 reveal">
+          <div class="lg:col-span-4">
+            <image-slot id="proc-s4" class="block w-full aspect-[4/3]" placeholder="04 · Grúa montando viga en obra · operarios con casco"></image-slot>
+          </div>
+          <div class="lg:col-span-7 lg:col-start-6">
+            <div class="flex items-baseline gap-6 mb-5">
+              <div class="font-mono text-[42px] lg:text-[56px] font-bold text-steel/80 tracking-tight leading-none">04</div>
+              <div class="font-mono text-[11px] tracking-[0.22em] text-mut-dark uppercase">Stage · Erection</div>
+            </div>
+            <h3 class="text-[clamp(22px,2.4vw,32px)] font-semibold leading-tight" data-i18n="pg.proc.s4.title">Montaje en Obra</h3>
+            <p class="mt-4 text-[16px] text-mut-dark leading-relaxed max-w-[60ch]" data-i18n="pg.proc.s4.desc">Montaje en obra con la precisión y la calidad requerida, garantizando que cada proyecto se lleve a cabo con excelencia.</p>
+            <ul class="mt-7 grid sm:grid-cols-3 gap-4 text-[13.5px]">
+              <li class="border-l border-ink-4 pl-4"><div class="font-mono text-[10px] tracking-[0.18em] text-steel uppercase mb-1">04.A</div><span class="text-mut-dark" data-i18n="pg.proc.s4.b1">Equipo propio de montaje con seguridad certificada</span></li>
+              <li class="border-l border-ink-4 pl-4"><div class="font-mono text-[10px] tracking-[0.18em] text-steel uppercase mb-1">04.B</div><span class="text-mut-dark" data-i18n="pg.proc.s4.b2">Topografía de control y torque controlado de uniones</span></li>
+              <li class="border-l border-ink-4 pl-4"><div class="font-mono text-[10px] tracking-[0.18em] text-steel uppercase mb-1">04.C</div><span class="text-mut-dark" data-i18n="pg.proc.s4.b3">Entrega documentada con as-built y dossier de calidad</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================== TECHNOLOGY ============================== -->
+  <section class="bg-paper-1">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-12 gap-10 mb-14">
+        <div class="lg:col-span-6 reveal">
+          <div class="kicker mb-5" data-i18n="pg.proc.tech.kicker">04 / Tecnología aplicada</div>
+          <h2 class="text-[clamp(28px,3.4vw,46px)] font-semibold leading-[1.05] tracking-[-0.02em]"
+              data-i18n="pg.proc.tech.h2">Las herramientas que sostienen cada proceso</h2>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8 flex items-end reveal reveal-delay-1">
+          <p class="text-base text-mut-light leading-relaxed max-w-[50ch]" data-i18n="pg.proc.tech.intro">Invertimos en software y maquinaria que permiten ejecutar obras complejas con la precisión de la industria manufacturera.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-paper-2 border border-paper-2">
+        <!-- t1 BIM -->
+        <div class="bg-paper-0 p-7 lg:p-9 reveal">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" class="text-steel mb-6">
+            <path d="M4 11l12-6 12 6-12 6L4 11z"/>
+            <path d="M4 17l12 6 12-6M4 23l12 6 12-6"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">TECH · 01</div>
+          <h3 class="mt-3 text-[20px] font-semibold" data-i18n="pg.proc.tech.t1.title">BIM y modelado 3D</h3>
+          <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.proc.tech.t1.desc">Plataformas colaborativas con detección de interferencias y trazabilidad por pieza.</p>
+        </div>
+        <!-- t2 CNC -->
+        <div class="bg-paper-0 p-7 lg:p-9 reveal reveal-delay-1">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" class="text-steel mb-6">
+            <rect x="4" y="8" width="24" height="16"/>
+            <path d="M4 14h24M10 8v6M22 8v6M10 18v6M22 18v6"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">TECH · 02</div>
+          <h3 class="mt-3 text-[20px] font-semibold" data-i18n="pg.proc.tech.t2.title">Maquinaria CNC</h3>
+          <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.proc.tech.t2.desc">Corte plasma, oxicorte y perforado automatizado con precisión milimétrica.</p>
+        </div>
+        <!-- t3 welding -->
+        <div class="bg-paper-0 p-7 lg:p-9 reveal reveal-delay-2">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" class="text-steel mb-6">
+            <path d="M6 24l8-16 4 8 8-4-4 14H6z"/>
+            <path d="M14 8l-2-4M22 16l4-2" stroke-linecap="round"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">TECH · 03</div>
+          <h3 class="mt-3 text-[20px] font-semibold" data-i18n="pg.proc.tech.t3.title">Soldadura calificada</h3>
+          <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.proc.tech.t3.desc">Procedimientos WPS, soldadores calificados y consumibles certificados.</p>
+        </div>
+        <!-- t4 NDT -->
+        <div class="bg-paper-0 p-7 lg:p-9 reveal">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" class="text-steel mb-6">
+            <circle cx="14" cy="14" r="8"/>
+            <path d="M20 20l8 8" stroke-linecap="round"/>
+            <path d="M10 14h8M14 10v8" stroke-linecap="round"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">TECH · 04</div>
+          <h3 class="mt-3 text-[20px] font-semibold" data-i18n="pg.proc.tech.t4.title">Ensayos no destructivos</h3>
+          <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.proc.tech.t4.desc">END por ultrasonido, líquidos penetrantes y partículas magnéticas en uniones críticas.</p>
+        </div>
+        <!-- t5 ERP -->
+        <div class="bg-paper-0 p-7 lg:p-9 reveal reveal-delay-1">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" class="text-steel mb-6">
+            <rect x="4" y="6" width="24" height="20"/>
+            <path d="M4 12h24M9 17h8M9 21h12"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">TECH · 05</div>
+          <h3 class="mt-3 text-[20px] font-semibold" data-i18n="pg.proc.tech.t5.title">ERP de producción</h3>
+          <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.proc.tech.t5.desc">Trazabilidad de materia prima, lote de soldadura y elemento por número de pieza.</p>
+        </div>
+        <!-- t6 surveying -->
+        <div class="bg-paper-0 p-7 lg:p-9 reveal reveal-delay-2">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" class="text-steel mb-6">
+            <path d="M16 4v8M16 28v-4"/>
+            <rect x="12" y="12" width="8" height="12"/>
+            <path d="M8 24h16" stroke-linecap="round"/>
+            <circle cx="16" cy="8" r="2"/>
+          </svg>
+          <div class="font-mono text-[10px] tracking-[0.22em] text-mut-light uppercase">TECH · 06</div>
+          <h3 class="mt-3 text-[20px] font-semibold" data-i18n="pg.proc.tech.t6.title">Topografía digital</h3>
+          <p class="mt-3 text-[14px] text-mut-light leading-relaxed" data-i18n="pg.proc.tech.t6.desc">Equipos de medición láser para verificar fundaciones y montaje en obra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== QA STATS ============================== -->
+  <section class="bg-paper-0 border-y border-paper-2">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-20 lg:py-24">
+      <div class="grid lg:grid-cols-12 gap-10 mb-12 reveal">
+        <div class="lg:col-span-5">
+          <div class="kicker mb-5" data-i18n="pg.proc.qa.kicker">05 / Control de calidad</div>
+          <h2 class="text-[clamp(26px,3vw,42px)] font-semibold leading-tight tracking-[-0.02em]"
+              data-i18n="pg.proc.qa.h2">100% de control en planta antes de la instalación</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 border-t border-paper-2">
+        <div class="reveal p-7 lg:p-10 border-r border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.proc.qa.s1.value">100%</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.proc.qa.s1.label">Piezas inspeccionadas antes de despacho</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">01</div>
+        </div>
+        <div class="reveal reveal-delay-1 p-7 lg:p-10 border-r border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.proc.qa.s2.value">[XX]</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.proc.qa.s2.label">Soldadores calificados según WPS/PQR</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">02</div>
+        </div>
+        <div class="reveal reveal-delay-2 p-7 lg:p-10 border-r border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.proc.qa.s3.value">ASTM</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.proc.qa.s3.label">Aceros, soldaduras y END según norma internacional</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">03</div>
+        </div>
+        <div class="reveal reveal-delay-3 p-7 lg:p-10 border-b border-paper-2">
+          <div class="counter text-[clamp(34px,4vw,60px)] font-bold tracking-[-0.03em] text-ink-1" data-i18n="pg.proc.qa.s4.value">[XX] %</div>
+          <div class="mt-4 text-[14px] text-mut-light max-w-[26ch]" data-i18n="pg.proc.qa.s4.label">Reducción de retrabajos en obra vs construcción tradicional</div>
+          <div class="mt-6 font-mono text-[10px] tracking-[0.2em] text-mut-light/70">04</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CTA ============================== -->
+  <section class="bg-ink-1 text-white">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 py-20 lg:py-24 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7">
+        <h2 class="text-[clamp(28px,3.4vw,48px)] font-semibold leading-[1.05] tracking-[-0.02em]" data-i18n="pg.proc.cta.h">¿Querés conocer cómo aplicamos esto a tu proyecto?</h2>
+      </div>
+      <div class="lg:col-span-4 lg:col-start-9 flex flex-wrap gap-3">
+        <a href="contacto.html" class="btn btn-primary"><span data-i18n="pg.proc.cta.btn">Hablar con un ingeniero</span><span class="arrow">→</span></a>
+        <a href="instalaciones.html" class="btn btn-ghost-dark"><span data-i18n="pg.proc.cta.btn2">Ver instalaciones</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/image-slot.js"></script>
+  <script src="assets/chrome.js" data-page="processes"></script>
+  <script src="assets/translations.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
