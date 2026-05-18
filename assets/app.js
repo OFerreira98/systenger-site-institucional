@@ -190,8 +190,41 @@
     });
   }
 
+  /* ---------------- page transition veil ---------------- */
+  function initPageTransitions() {
+    const veil = document.getElementById("__page-veil");
+    if (!veil) return;
+
+    // Fade veil out on page load (reveals content)
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        veil.classList.add("is-hidden");
+      });
+    });
+
+    // Fade veil in before navigating away
+    document.addEventListener("click", (e) => {
+      const a = e.target.closest("a[href]");
+      if (!a) return;
+      const href = a.getAttribute("href");
+      if (
+        !href ||
+        href.startsWith("#") ||
+        href.startsWith("mailto:") ||
+        href.startsWith("tel:") ||
+        href.includes("://") ||
+        a.getAttribute("target") === "_blank"
+      ) return;
+      e.preventDefault();
+      veil.classList.remove("is-hidden");
+      veil.classList.add("is-leaving");
+      setTimeout(() => { window.location.href = href; }, 360);
+    });
+  }
+
   /* ---------------- init ---------------- */
   document.addEventListener("DOMContentLoaded", () => {
+    initPageTransitions();
     initLangSwitch();
     initHero();
     initReveal();

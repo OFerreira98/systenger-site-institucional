@@ -40,9 +40,10 @@
 
   const isActive = (k) => k === current ? "text-steel" : "";
 
-  const LOGO_IMG = `<img src="${ROOT}assets/img/systenger-logo-new.svg" alt="Systenger" class="h-10 w-auto" />`;
+  const LOGO_IMG = `<img src="${ROOT}assets/img/logo%20novo%20modelo.png" alt="Systenger" class="h-12 w-auto" />`;
 
   const HEADER_HTML = `
+    <div id="__page-veil" aria-hidden="true"></div>
     <header data-header
             class="fixed top-0 inset-x-0 z-50 transition-[background,backdrop-filter,padding] duration-300
                    bg-ink-1/0 backdrop-blur-0 [&.is-scrolled]:bg-ink-1/95 [&.is-scrolled]:backdrop-blur-md
@@ -54,10 +55,10 @@
             ${LOGO_IMG}
           </a>
 
-          <nav class="hidden lg:flex items-center gap-1 text-white">
-            <a href="${PAGES.home}" class="nav-item px-3 py-2 text-[13px] hover:text-steel transition ${isActive("home")}" data-i18n="nav.home">Inicio</a>
+          <nav class="hidden lg:flex items-center gap-0 flex-1 justify-center text-white">
+            <a href="${PAGES.home}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("home")}" data-i18n="nav.home">Inicio</a>
 
-            <div class="nav-item px-3 py-2 text-[13px] hover:text-steel transition cursor-default ${isActive("about")}">
+            <div class="nav-item px-2 py-2 text-[13px] hover:text-steel transition cursor-default ${isActive("about")}">
               <span data-i18n="nav.institutional">Institucional</span>
               <svg class="inline -mt-1 ml-1 w-3 h-3" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.4"/></svg>
               <div class="nav-dropdown">
@@ -68,7 +69,7 @@
               </div>
             </div>
 
-            <div class="nav-item px-3 py-2 text-[13px] hover:text-steel transition cursor-default ${["metal","smartwall","industrial"].includes(current) ? "text-steel" : ""}">
+            <div class="nav-item px-2 py-2 text-[13px] hover:text-steel transition cursor-default ${["metal","smartwall","industrial"].includes(current) ? "text-steel" : ""}">
               <span data-i18n="nav.business">Unidades de Negocio</span>
               <svg class="inline -mt-1 ml-1 w-3 h-3" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.4"/></svg>
               <div class="nav-dropdown">
@@ -78,18 +79,13 @@
               </div>
             </div>
 
-            <a href="${PAGES.processes}" class="px-3 py-2 text-[13px] hover:text-steel transition ${isActive("processes")}" data-i18n="nav.processes">Procesos y Tecnología</a>
-            <a href="${PAGES.facilities}" class="px-3 py-2 text-[13px] hover:text-steel transition ${isActive("facilities")}" data-i18n="nav.facilities">Instalaciones</a>
-            <a href="${PAGES.steel}" class="px-3 py-2 text-[13px] hover:text-steel transition ${isActive("steel")}" data-i18n="nav.steel">Ventajas del Acero</a>
-            <a href="${PAGES.contact}" class="px-3 py-2 text-[13px] hover:text-steel transition ${isActive("contact")}" data-i18n="nav.contact">Contacto</a>
+            <a href="${PAGES.processes}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("processes")}" data-i18n="nav.processes">Procesos y Tecnología</a>
+            <a href="${PAGES.facilities}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("facilities")}" data-i18n="nav.facilities">Instalaciones</a>
+            <a href="${PAGES.steel}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("steel")}" data-i18n="nav.steel">Ventajas del Acero</a>
+            <a href="${PAGES.contact}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("contact")}" data-i18n="nav.contact">Contacto</a>
           </nav>
 
           <div class="flex items-center gap-3 text-white">
-            <div class="hidden md:flex items-center gap-1 border border-ink-4/60 px-1 py-1">
-              <button class="lang-pill is-active" data-lang="es" aria-label="Español">ES</button>
-              <button class="lang-pill" data-lang="en" aria-label="English">EN</button>
-              <button class="lang-pill" data-lang="pt" aria-label="Português">PT</button>
-            </div>
             <a href="${PAGES.contact}" class="hidden md:inline-flex btn btn-primary" data-i18n="nav.quote">Solicitar Cotización</a>
 
             <button class="lg:hidden w-10 h-10 inline-flex items-center justify-center border border-ink-4/60" data-open-menu aria-label="Menu">
