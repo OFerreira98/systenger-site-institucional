@@ -40,7 +40,7 @@
 
   const isActive = (k) => k === current ? "text-steel" : "";
 
-  const LOGO_IMG = `<img src="${ROOT}assets/img/logo%20novo%20modelo.png" alt="Systenger" class="h-12 w-auto" />`;
+  const LOGO_IMG = `<img src="${ROOT}assets/img/systenger-logo-new.svg" alt="Systenger" class="h-10 w-auto" />`;
 
   const HEADER_HTML = `
     <div id="__page-veil" aria-hidden="true"></div>
