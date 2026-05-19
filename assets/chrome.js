@@ -40,14 +40,14 @@
 
   const isActive = (k) => k === current ? "text-steel" : "";
 
-  // Header: only the S monogram — clean, big, glowing
-  const LOGO_HEADER = `<img src="${ROOT}assets/favicon.png" alt="Systenger" class="brand-s h-14 w-auto" />`;
+  // Header: only the S monogram — clean (no white bg), centered, glowing
+  const LOGO_HEADER = `<img src="${ROOT}assets/img/s-clean.png" alt="Systenger" class="brand-s h-16 w-auto" />`;
   // Footer: S + SYSTENGER wordmark composed in HTML (the source PNG file
   // doesn't carry the wordmark, so we render the text directly for crisp white)
   const LOGO_FOOTER = `
     <div class="flex items-center gap-3">
-      <img src="${ROOT}assets/favicon.png" alt="" class="brand-s h-11 w-auto" aria-hidden="true" />
-      <span class="text-white font-display tracking-[0.16em] text-[22px] leading-none">SYSTENGER</span>
+      <img src="${ROOT}assets/img/s-clean.png" alt="" class="brand-s h-12 w-auto" aria-hidden="true" />
+      <span class="text-white font-sans font-semibold tracking-[0.16em] text-[22px] leading-none">SYSTENGER</span>
     </div>`;
 
   const HEADER_HTML = `
