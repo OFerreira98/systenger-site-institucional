@@ -56,53 +56,47 @@
                    bg-ink-1/0 backdrop-blur-0 [&.is-scrolled]:bg-ink-1/95 [&.is-scrolled]:backdrop-blur-md
                    border-b border-transparent [&.is-scrolled]:border-ink-4/60">
       <div class="max-w-8xl mx-auto px-6 lg:px-10">
-        <div class="grid grid-cols-[1fr_auto_1fr] items-center h-20 gap-2 lg:gap-6">
+        <div class="flex items-center justify-between h-20">
 
-          <!-- LEFT: half nav (desktop) / hamburger (mobile) -->
-          <div class="flex items-center text-white">
-            <nav class="hidden lg:flex items-center gap-0">
-              <a href="${PAGES.home}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("home")}" data-i18n="nav.home">Inicio</a>
+          <a href="${PAGES.home}" class="flex items-center" aria-label="Systenger - Inicio">
+            ${LOGO_HEADER}
+          </a>
 
-              <div class="nav-item px-2 py-2 text-[13px] hover:text-steel transition cursor-default ${isActive("about")}">
-                <span data-i18n="nav.institutional">Institucional</span>
-                <svg class="inline -mt-1 ml-1 w-3 h-3" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.4"/></svg>
-                <div class="nav-dropdown">
-                  <a href="${PAGES.about}" data-i18n="nav.institutional.about">Sobre Nosotros</a>
-                  <a href="${PAGES.about}#timeline" data-i18n="nav.institutional.timeline">Historia</a>
-                  <a href="${PAGES.about}#quality" data-i18n="nav.institutional.quality">Gestión de Calidad</a>
-                </div>
+          <nav class="hidden lg:flex items-center gap-0 flex-1 justify-center text-white">
+            <a href="${PAGES.home}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("home")}" data-i18n="nav.home">Inicio</a>
+
+            <div class="nav-item px-2 py-2 text-[13px] hover:text-steel transition cursor-default ${isActive("about")}">
+              <span data-i18n="nav.institutional">Institucional</span>
+              <svg class="inline -mt-1 ml-1 w-3 h-3" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.4"/></svg>
+              <div class="nav-dropdown">
+                <a href="${PAGES.about}" data-i18n="nav.institutional.about">Sobre Nosotros</a>
+                <a href="${PAGES.about}#timeline" data-i18n="nav.institutional.timeline">Historia</a>
+                <a href="${PAGES.about}#quality" data-i18n="nav.institutional.quality">Gestión de Calidad</a>
               </div>
+            </div>
 
-              <div class="nav-item px-2 py-2 text-[13px] hover:text-steel transition cursor-default ${["metal","smartwall","industrial"].includes(current) ? "text-steel" : ""}">
-                <span data-i18n="nav.business">Unidades de Negocio</span>
-                <svg class="inline -mt-1 ml-1 w-3 h-3" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.4"/></svg>
-                <div class="nav-dropdown">
-                  <a href="${PAGES.metal}" data-i18n="nav.business.metal">Estructuras Metálicas</a>
-                  <a href="${PAGES.smartwall}" data-i18n="nav.business.smartwall">Fachadas Smart Wall</a>
-                  <a href="${PAGES.industrial}" data-i18n="nav.business.industrial">Obras Industriales</a>
-                </div>
+            <div class="nav-item px-2 py-2 text-[13px] hover:text-steel transition cursor-default ${["metal","smartwall","industrial"].includes(current) ? "text-steel" : ""}">
+              <span data-i18n="nav.business">Unidades de Negocio</span>
+              <svg class="inline -mt-1 ml-1 w-3 h-3" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.4"/></svg>
+              <div class="nav-dropdown">
+                <a href="${PAGES.metal}" data-i18n="nav.business.metal">Estructuras Metálicas</a>
+                <a href="${PAGES.smartwall}" data-i18n="nav.business.smartwall">Fachadas Smart Wall</a>
+                <a href="${PAGES.industrial}" data-i18n="nav.business.industrial">Obras Industriales</a>
               </div>
-            </nav>
+            </div>
+
+            <a href="${PAGES.processes}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("processes")}" data-i18n="nav.processes">Procesos y Tecnología</a>
+            <a href="${PAGES.facilities}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("facilities")}" data-i18n="nav.facilities">Instalaciones</a>
+            <a href="${PAGES.steel}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("steel")}" data-i18n="nav.steel">Ventajas del Acero</a>
+            <a href="${PAGES.contact}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("contact")}" data-i18n="nav.contact">Contacto</a>
+          </nav>
+
+          <div class="flex items-center gap-3 text-white">
+            <a href="${PAGES.contact}" class="hidden md:inline-flex btn btn-primary" data-i18n="nav.quote">Solicitar Cotización</a>
 
             <button class="lg:hidden w-10 h-10 inline-flex items-center justify-center border border-ink-4/60" data-open-menu aria-label="Menu">
               <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M0 1H18M0 7H18M0 13H18" stroke="currentColor" stroke-width="1.5"/></svg>
             </button>
-          </div>
-
-          <!-- CENTER: logo -->
-          <a href="${PAGES.home}" class="flex items-center justify-self-center" aria-label="Systenger - Inicio">
-            ${LOGO_HEADER}
-          </a>
-
-          <!-- RIGHT: half nav + CTA button -->
-          <div class="flex items-center justify-end gap-2 text-white">
-            <nav class="hidden lg:flex items-center gap-0">
-              <a href="${PAGES.processes}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("processes")}" data-i18n="nav.processes">Procesos y Tecnología</a>
-              <a href="${PAGES.facilities}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("facilities")}" data-i18n="nav.facilities">Instalaciones</a>
-              <a href="${PAGES.steel}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("steel")}" data-i18n="nav.steel">Ventajas del Acero</a>
-              <a href="${PAGES.contact}" class="nav-item px-2 py-2 text-[13px] hover:text-steel transition ${isActive("contact")}" data-i18n="nav.contact">Contacto</a>
-            </nav>
-            <a href="${PAGES.contact}" class="hidden md:inline-flex btn btn-primary ml-2" data-i18n="nav.quote">Solicitar Cotización</a>
           </div>
         </div>
       </div>
