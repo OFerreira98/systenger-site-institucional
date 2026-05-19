@@ -335,62 +335,22 @@
         </div>
       </div>
 
-      <div class="reveal map-wrap border border-ink-4">
-        <!-- background image-slot for actual map screenshot -->
-        <image-slot id="contact-map-bg" class="absolute inset-0 w-full h-full opacity-60" placeholder="MAPA · Screenshot Google Maps · localização da planta Systenger"></image-slot>
-
-        <!-- decorative overlay grid + pin -->
-        <svg viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice" class="relative block w-full h-[420px] lg:h-[480px] text-steel">
-          <!-- grid background -->
-          <defs>
-            <pattern id="cgrid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M0 40 L0 0 40 0" stroke="currentColor" stroke-width="0.4" stroke-opacity="0.12" fill="none"/>
-            </pattern>
-            <pattern id="cgrid-big" width="200" height="200" patternUnits="userSpaceOnUse">
-              <path d="M0 200 L0 0 200 0" stroke="currentColor" stroke-width="0.7" stroke-opacity="0.18" fill="none"/>
-            </pattern>
-          </defs>
-          <rect width="1600" height="600" fill="url(#cgrid)"/>
-          <rect width="1600" height="600" fill="url(#cgrid-big)"/>
-
-          <!-- roads -->
-          <path d="M-50 200 Q400 220 700 280 T1300 320 L1700 350" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.5" fill="none"/>
-          <path d="M-50 380 Q500 360 900 380 T1700 420" stroke="currentColor" stroke-width="1.2" stroke-opacity="0.35" fill="none"/>
-          <path d="M780 -50 L820 600" stroke="currentColor" stroke-width="1" stroke-opacity="0.3" fill="none"/>
-
-          <!-- coordinate ticks -->
-          <g font-family="JetBrains Mono,monospace" font-size="11" fill="currentColor" opacity="0.55">
-            <text x="40" y="30">N 9.0°</text>
-            <text x="40" y="580">N 8.8°</text>
-            <text x="1480" y="30">W 79.5°</text>
-          </g>
-
-          <!-- pin -->
-          <g transform="translate(800,300)">
-            <circle r="60" fill="currentColor" fill-opacity="0.08"/>
-            <circle r="30" fill="currentColor" fill-opacity="0.18"/>
-            <circle r="10" fill="currentColor"/>
-            <circle r="4" fill="#fff"/>
-            <line x1="0" y1="-80" x2="0" y2="-30" stroke="currentColor" stroke-width="1"/>
-            <line x1="0" y1="30" x2="0" y2="80" stroke="currentColor" stroke-width="1"/>
-            <line x1="-80" y1="0" x2="-30" y2="0" stroke="currentColor" stroke-width="1"/>
-            <line x1="30" y1="0" x2="80" y2="0" stroke="currentColor" stroke-width="1"/>
-            <text x="50" y="-50" font-family="JetBrains Mono,monospace" font-size="13" fill="#fff" font-weight="600">SYSTENGER</text>
-            <text x="50" y="-32" font-family="JetBrains Mono,monospace" font-size="11" fill="currentColor">PLANTA · PA</text>
-          </g>
-
-          <!-- legend box -->
-          <g transform="translate(40,460)">
-            <rect width="280" height="100" fill="#0a0e14" fill-opacity="0.9" stroke="currentColor" stroke-opacity="0.5"/>
-            <text x="20" y="32" font-family="JetBrains Mono,monospace" font-size="10" fill="currentColor" letter-spacing="2">SYSTENGER PLANT</text>
-            <text x="20" y="58" font-family="Space Grotesk,sans-serif" font-size="14" fill="#fff" font-weight="600">[Dirección completa]</text>
-            <text x="20" y="80" font-family="JetBrains Mono,monospace" font-size="11" fill="#8993a3">Panamá · +507 [XXXX-XXXX]</text>
-          </g>
-        </svg>
-
-        <div class="absolute top-4 right-4 font-mono text-[10px] tracking-[0.22em] text-mut-dark uppercase bg-ink-1/80 px-3 py-2 border border-ink-4">
-          Map · SYS-LOC-01
-        </div>
+      <div class="reveal map-wrap">
+        <iframe
+          class="map-frame"
+          src="https://www.google.com/maps?q=Calle+7+San+Francisco+Ciudad+de+Panama+Systenger&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+          title="Ubicación Systenger · Google Maps"></iframe>
+      </div>
+      <div class="mt-5 flex flex-wrap items-center gap-4 text-[13px]">
+        <a href="https://maps.app.goo.gl/2wHaBFnyYRKwtnqP8" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-steel hover:text-steel-hi transition">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 14s5-4 5-8a5 5 0 10-10 0c0 4 5 8 5 8z"/><circle cx="8" cy="6" r="1.8"/></svg>
+          <span data-i18n="pg.contact.map.open">Abrir en Google Maps</span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <span class="font-mono text-[11px] tracking-[0.16em] text-mut-dark uppercase">Calle 7 · San Francisco · Ciudad de Panamá</span>
       </div>
     </div>
   </section>

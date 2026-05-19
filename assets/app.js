@@ -14,29 +14,50 @@
   const DEFAULT_LANG = "es";
 
   /* ---------------- i18n ---------------- */
+  // Look up a translation key with a fallback chain: requested lang → en → es.
+  // Avoids leaving a key untranslated if the target dict is missing it.
+  function lookup(lang, key) {
+    const chain = [lang, "en", DEFAULT_LANG];
+    for (const code of chain) {
+      const dict = window.I18N && window.I18N[code];
+      if (dict && dict[key] != null) return dict[key];
+    }
+    return null;
+  }
+
   function applyLang(lang) {
     if (!SUPPORTED.includes(lang)) lang = DEFAULT_LANG;
-    const dict = window.I18N[lang];
-    const meta = window.I18N_META[lang];
+    if (!window.I18N || !window.I18N[lang]) return; // translations not yet loaded
+    const meta = (window.I18N_META && window.I18N_META[lang]) || {};
 
-    document.documentElement.lang = meta.lang;
-    document.title = meta.title;
-    const descEl = document.querySelector('meta[name="description"]');
-    if (descEl) descEl.setAttribute("content", meta.description);
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) ogTitle.setAttribute("content", meta.title);
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) ogDesc.setAttribute("content", meta.description);
+    if (meta.lang) document.documentElement.lang = meta.lang;
+    if (meta.title) document.title = meta.title;
+    if (meta.description) {
+      const descEl = document.querySelector('meta[name="description"]');
+      if (descEl) descEl.setAttribute("content", meta.description);
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute("content", meta.description);
+    }
+    if (meta.title) {
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute("content", meta.title);
+    }
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
-      if (dict[key] != null) el.textContent = dict[key];
+      const value = lookup(lang, key);
+      if (value != null) el.textContent = value;
     });
+    // data-i18n-attr supports either "attr:key" or "attr|key", and comma-separated pairs
     document.querySelectorAll("[data-i18n-attr]").forEach((el) => {
-      const spec = el.getAttribute("data-i18n-attr"); // e.g. "aria-label:nav.home"
+      const spec = el.getAttribute("data-i18n-attr");
       spec.split(",").forEach((pair) => {
-        const [attr, key] = pair.split(":").map((s) => s.trim());
-        if (dict[key] != null) el.setAttribute(attr, dict[key]);
+        const parts = pair.split(/[|:]/).map((s) => s.trim());
+        if (parts.length < 2) return;
+        const attr = parts[0];
+        const key = parts[1];
+        const value = lookup(lang, key);
+        if (value != null) el.setAttribute(attr, value);
       });
     });
 
@@ -47,6 +68,16 @@
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
   }
 
+  // Apply persisted lang as early as possible — runs immediately, even before
+  // DOMContentLoaded, so the page renders in the right language behind the
+  // page-transition veil instead of flashing the default.
+  function applyPersistedLangEarly() {
+    let saved = DEFAULT_LANG;
+    try { saved = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG; } catch (e) {}
+    applyLang(saved);
+  }
+  applyPersistedLangEarly();
+
   function initLangSwitch() {
     document.querySelectorAll("[data-lang]").forEach((el) => {
       el.addEventListener("click", (e) => {
@@ -54,9 +85,8 @@
         applyLang(el.getAttribute("data-lang"));
       });
     });
-    let saved = DEFAULT_LANG;
-    try { saved = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG; } catch (e) {}
-    applyLang(saved);
+    // Re-apply to catch any elements rendered late (just in case)
+    applyPersistedLangEarly();
   }
 
   /* ---------------- hero slider ---------------- */

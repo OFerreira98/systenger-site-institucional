@@ -40,7 +40,15 @@
 
   const isActive = (k) => k === current ? "text-steel" : "";
 
-  const LOGO_IMG = `<img src="${ROOT}assets/img/systenger-logo-new.svg" alt="Systenger" class="h-10 w-auto" />`;
+  // Header: only the S monogram — clean, big, glowing
+  const LOGO_HEADER = `<img src="${ROOT}assets/favicon.png" alt="Systenger" class="brand-s h-14 w-auto" />`;
+  // Footer: S + SYSTENGER wordmark composed in HTML (the source PNG file
+  // doesn't carry the wordmark, so we render the text directly for crisp white)
+  const LOGO_FOOTER = `
+    <div class="flex items-center gap-3">
+      <img src="${ROOT}assets/favicon.png" alt="" class="brand-s h-11 w-auto" aria-hidden="true" />
+      <span class="text-white font-display tracking-[0.16em] text-[22px] leading-none">SYSTENGER</span>
+    </div>`;
 
   const HEADER_HTML = `
     <div id="__page-veil" aria-hidden="true"></div>
@@ -51,8 +59,8 @@
       <div class="max-w-8xl mx-auto px-6 lg:px-10">
         <div class="flex items-center justify-between h-20">
 
-          <a href="${PAGES.home}" class="flex items-center">
-            ${LOGO_IMG}
+          <a href="${PAGES.home}" class="flex items-center" aria-label="Systenger - Inicio">
+            ${LOGO_HEADER}
           </a>
 
           <nav class="hidden lg:flex items-center gap-0 flex-1 justify-center text-white">
@@ -65,7 +73,6 @@
                 <a href="${PAGES.about}" data-i18n="nav.institutional.about">Sobre Nosotros</a>
                 <a href="${PAGES.about}#timeline" data-i18n="nav.institutional.timeline">Historia</a>
                 <a href="${PAGES.about}#quality" data-i18n="nav.institutional.quality">Gestión de Calidad</a>
-                <a href="${PAGES.about}#certs" data-i18n="nav.institutional.certs">Certificaciones</a>
               </div>
             </div>
 
@@ -128,7 +135,7 @@
 
           <div class="lg:col-span-4">
             <div class="mb-6">
-              ${LOGO_IMG}
+              ${LOGO_FOOTER}
             </div>
             <p class="text-sm text-mut-dark max-w-[34ch]" data-i18n="footer.tagline">Contratista de confianza · Ingeniería estructural en Panamá</p>
           </div>
