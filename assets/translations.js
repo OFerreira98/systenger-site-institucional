@@ -104,6 +104,8 @@ window.I18N = {
 
     /* Footer */
     "footer.tagline": "Más rápido. Mejor. Sin sorpresas.",
+    "footer.descriptor": "Construcción industrializada: precisa, segura y sin imprevistos.",
+    "footer.subtagline": "Industrializamos tu obra para maximizar tus resultados",
     "footer.contact": "Contacto",
     "footer.address": "Calle 7, San Francisco, Ciudad de Panamá",
     "footer.phone": "+507 3020-5532",
@@ -748,6 +750,8 @@ window.I18N = {
     "clients.intro": "We work with developers, contractors and industries in Panama and Latin America.",
 
     "footer.tagline": "Faster. Better. No surprises.",
+    "footer.descriptor": "Industrialized construction: precise, safe and predictable.",
+    "footer.subtagline": "We industrialize your project to maximize your results",
     "footer.contact": "Contact",
     "footer.address": "Calle 7, San Francisco, Panama City",
     "footer.phone": "+507 3020-5532",
@@ -1392,6 +1396,8 @@ window.I18N = {
     "clients.intro": "Trabalhamos com incorporadoras, construtoras e indústrias no Panamá e na América Latina.",
 
     "footer.tagline": "Mais rápido. Melhor. Sem surpresas.",
+    "footer.descriptor": "Construção industrializada: precisa, segura e sem imprevistos.",
+    "footer.subtagline": "Industrializamos sua obra para maximizar seus resultados",
     "footer.contact": "Contato",
     "footer.address": "Calle 7, San Francisco, Cidade do Panamá",
     "footer.phone": "+507 3020-5532",

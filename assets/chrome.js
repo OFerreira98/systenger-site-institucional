@@ -133,10 +133,12 @@
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 pb-16 border-b border-ink-4">
 
           <div class="lg:col-span-4">
-            <div class="mb-6">
+            <div class="mb-4">
               ${LOGO_FOOTER}
             </div>
-            <p class="text-sm text-mut-dark max-w-[34ch]" data-i18n="footer.tagline">Más rápido. Mejor. Sin sorpresas.</p>
+            <p class="text-[12px] text-mut-dark/80 max-w-[40ch] mb-6" data-i18n="footer.descriptor">Construcción industrializada: precisa, segura y sin imprevistos.</p>
+            <p class="text-white font-semibold text-lg leading-snug max-w-[30ch]" data-i18n="footer.tagline">Más rápido. Mejor. Sin sorpresas.</p>
+            <p class="text-steel text-sm mt-2 max-w-[34ch]" data-i18n="footer.subtagline">Industrializamos tu obra para maximizar tus resultados</p>
           </div>
 
           <div class="lg:col-span-3">
