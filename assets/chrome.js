@@ -42,11 +42,12 @@
 
   // Header: S monogram centralizado no meio da barra
   const LOGO_HEADER = `<img src="${ROOT}assets/img/s-clean.png" alt="Systenger" class="brand-s h-12 w-auto" />`;
-  // Footer: logo oficial com a wordmark SYSTENGER ao lado
+  // Footer: bloco esquerdo da lockup oficial — S em cima, SYSTENGER e descritor embaixo (centralizado)
   const LOGO_FOOTER = `
-    <div class="flex items-center gap-3">
-      <img src="${ROOT}assets/img/s-clean.png" alt="" class="brand-s h-12 w-auto" aria-hidden="true" />
-      <span class="text-white font-sans font-semibold tracking-[0.16em] text-[22px] leading-none">SYSTENGER</span>
+    <div class="flex flex-col items-center text-center shrink-0 max-w-[180px]">
+      <img src="${ROOT}assets/img/s-clean.png" alt="Systenger" class="brand-s h-14 w-auto" />
+      <span class="text-white font-sans font-semibold tracking-[0.18em] text-[18px] leading-none mt-2">SYSTENGER</span>
+      <span class="text-[10px] text-mut-dark/80 leading-tight mt-2" data-i18n="footer.descriptor">Construcción industrializada: precisa, segura y sin imprevistos.</span>
     </div>`;
 
   const HEADER_HTML = `
@@ -133,12 +134,14 @@
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 pb-16 border-b border-ink-4">
 
           <div class="lg:col-span-4">
-            <div class="mb-4">
+            <div class="flex items-stretch gap-5">
               ${LOGO_FOOTER}
+              <div class="w-px bg-ink-4 self-stretch"></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-white font-bold text-[22px] leading-[1.1] tracking-[-0.01em]" data-i18n="footer.tagline">Más rápido. Mejor. Sin sorpresas.</p>
+                <p class="text-steel text-[13px] mt-3 leading-snug max-w-[26ch]" data-i18n="footer.subtagline">Industrializamos tu obra para maximizar tus resultados</p>
+              </div>
             </div>
-            <p class="text-[12px] text-mut-dark/80 max-w-[40ch] mb-6" data-i18n="footer.descriptor">Construcción industrializada: precisa, segura y sin imprevistos.</p>
-            <p class="text-white font-semibold text-lg leading-snug max-w-[30ch]" data-i18n="footer.tagline">Más rápido. Mejor. Sin sorpresas.</p>
-            <p class="text-steel text-sm mt-2 max-w-[34ch]" data-i18n="footer.subtagline">Industrializamos tu obra para maximizar tus resultados</p>
           </div>
 
           <div class="lg:col-span-3">
