@@ -136,7 +136,7 @@
             <div class="mb-6">
               ${LOGO_FOOTER}
             </div>
-            <p class="text-sm text-mut-dark max-w-[34ch]" data-i18n="footer.tagline">Contratista de confianza · Ingeniería estructural en Panamá</p>
+            <p class="text-sm text-mut-dark max-w-[34ch]" data-i18n="footer.tagline">Más rápido. Mejor. Sin sorpresas.</p>
           </div>
 
           <div class="lg:col-span-3">
@@ -145,6 +145,7 @@
               <li><a href="https://maps.app.goo.gl/2wHaBFnyYRKwtnqP8" target="_blank" rel="noopener" class="hover:text-steel transition" data-i18n="footer.address">Calle 7, San Francisco, Ciudad de Panamá</a></li>
               <li><a href="tel:+50730205532" class="hover:text-steel transition" data-i18n="footer.phone">+507 3020-5532</a></li>
               <li><a href="mailto:info@systenger.com" class="hover:text-steel transition" data-i18n="footer.email">info@systenger.com</a></li>
+              <li><a href="mailto:comercial@systenger.com" class="hover:text-steel transition" data-i18n="footer.emailComercial">comercial@systenger.com</a></li>
             </ul>
           </div>
 
