@@ -27,7 +27,7 @@ window.I18N = {
     /* Hero — frases reales del sitio Systenger */
     "hero.eyebrow": "Soluciones Estructurales para Obras Complejas",
     "hero.tagline1": "Bienvenido a Systenger — Tu Socio en Soluciones Innovadoras de Construcción",
-    "hero.tagline2": "Estructuras metálicas, fachadas en vidrio y aluminio, sistemas Smart Wall",
+    "hero.tagline2": "Estructuras metálicas, fachadas en vidrio y aluminio, sistemas Smart Wall y defensas metálicas",
     "hero.tagline3": "Construcción Industrializada Más Rápida, Segura y de Alta Calidad",
     "hero.tagline4": "Ingeniería de precisión para obras de infraestructura, industria y grandes edificaciones en América Latina",
     "hero.cta.primary": "Conocé nuestras unidades",
@@ -59,7 +59,7 @@ window.I18N = {
     /* Business Units — categorías reales del sitio */
     "bu.kicker": "03 / Unidades de Negocio",
     "bu.heading": "Tres frentes, una sola precisión de ingeniería",
-    "bu.intro": "Estructuras metálicas, fachadas en vidrio y aluminio, sistemas Smart Wall — ingeniería de precisión para obras de infraestructura, industria y grandes edificaciones en América Latina.",
+    "bu.intro": "Estructuras metálicas, fachadas en vidrio y aluminio, sistemas Smart Wall y defensas metálicas — ingeniería de precisión para obras de infraestructura, industria y grandes edificaciones en América Latina.",
     "bu.c1.tag": "Unidad 01",
     "bu.c1.title": "Estructuras Metálicas Prefabricadas",
     "bu.c1.desc": "Estructuras metálicas prefabricadas de alta calidad y soluciones de construcción en sitio. Fabricadas en planta con control de calidad total antes de la instalación.",
@@ -681,7 +681,7 @@ window.I18N = {
 
     "hero.eyebrow": "Structural Solutions for Complex Projects",
     "hero.tagline1": "Welcome to Systenger — Your Partner in Innovative Construction Solutions",
-    "hero.tagline2": "Metal structures, glass and aluminum facades, Smart Wall systems",
+    "hero.tagline2": "Metal structures, glass and aluminum facades, Smart Wall systems and metal guardrails",
     "hero.tagline3": "Industrialized construction — faster, safer and higher quality",
     "hero.tagline4": "Precision engineering for infrastructure, industry and large buildings across Latin America",
     "hero.cta.primary": "Explore our units",
@@ -710,7 +710,7 @@ window.I18N = {
 
     "bu.kicker": "03 / Business Units",
     "bu.heading": "Three fronts, one engineering precision",
-    "bu.intro": "Metal structures, glass and aluminum facades, Smart Wall systems — precision engineering for infrastructure, industry and large buildings across Latin America.",
+    "bu.intro": "Metal structures, glass and aluminum facades, Smart Wall systems and metal guardrails — precision engineering for infrastructure, industry and large buildings across Latin America.",
     "bu.c1.tag": "Unit 01",
     "bu.c1.title": "Prefabricated Metal Structures",
     "bu.c1.desc": "High-quality prefabricated metal structures and on-site construction solutions. Built in the plant with full quality control before installation.",
@@ -1327,7 +1327,7 @@ window.I18N = {
 
     "hero.eyebrow": "Soluções Estruturais para Obras Complexas",
     "hero.tagline1": "Bem-vindo à Systenger — Seu Parceiro em Soluções Inovadoras de Construção",
-    "hero.tagline2": "Estruturas metálicas, fachadas em vidro e alumínio, sistemas Smart Wall",
+    "hero.tagline2": "Estruturas metálicas, fachadas em vidro e alumínio, sistemas Smart Wall e defensas metálicas",
     "hero.tagline3": "Construção Industrializada Mais Rápida, Segura e de Alta Qualidade",
     "hero.tagline4": "Engenharia de precisão para obras de infraestrutura, indústria e grandes edificações na América Latina",
     "hero.cta.primary": "Conheça nossas unidades",
@@ -1356,7 +1356,7 @@ window.I18N = {
 
     "bu.kicker": "03 / Unidades de Negócio",
     "bu.heading": "Três frentes, uma única precisão de engenharia",
-    "bu.intro": "Estruturas metálicas, fachadas em vidro e alumínio, sistemas Smart Wall — engenharia de precisão para obras de infraestrutura, indústria e grandes edificações na América Latina.",
+    "bu.intro": "Estruturas metálicas, fachadas em vidro e alumínio, sistemas Smart Wall e defensas metálicas — engenharia de precisão para obras de infraestrutura, indústria e grandes edificações na América Latina.",
     "bu.c1.tag": "Unidade 01",
     "bu.c1.title": "Estruturas Metálicas Pré-Fabricadas",
     "bu.c1.desc": "Estruturas metálicas pré-fabricadas de alta qualidade e soluções de construção em obra. Fabricadas na planta com controle total de qualidade antes da instalação.",
