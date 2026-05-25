@@ -37,7 +37,7 @@ window.I18N = {
     /* Stats — indicadores con placeholders editables */
     "stats.heading": "Contratista de confianza en Panamá",
     "stats.kicker": "01 / Indicadores",
-    "stats.s1.value": "[XX]+",
+    "stats.s1.value": "30+",
     "stats.s1.label": "Proyectos de ingeniería estructural en Panamá y América Latina",
     "stats.s2.value": "100%",
     "stats.s2.label": "Control de calidad en planta antes de la instalación",
@@ -690,7 +690,7 @@ window.I18N = {
 
     "stats.heading": "A trusted contractor in Panama",
     "stats.kicker": "01 / Key figures",
-    "stats.s1.value": "[XX]+",
+    "stats.s1.value": "30+",
     "stats.s1.label": "Structural engineering projects in Panama and Latin America",
     "stats.s2.value": "100%",
     "stats.s2.label": "Quality control at the plant before installation",
@@ -1336,7 +1336,7 @@ window.I18N = {
 
     "stats.heading": "Empreiteira de confiança no Panamá",
     "stats.kicker": "01 / Indicadores",
-    "stats.s1.value": "[XX]+",
+    "stats.s1.value": "30+",
     "stats.s1.label": "Projetos de engenharia estrutural no Panamá e na América Latina",
     "stats.s2.value": "100%",
     "stats.s2.label": "Controle de qualidade na fábrica antes da instalação",
