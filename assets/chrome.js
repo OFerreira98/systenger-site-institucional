@@ -166,13 +166,13 @@
           <div class="lg:col-span-3">
             <div class="font-mono text-[11px] tracking-[0.18em] text-mut-dark mb-5 uppercase" data-i18n="footer.social">Seguinos</div>
             <div class="flex items-center gap-3 mb-8">
-              <a href="https://twitter.com/Systenger" aria-label="Twitter" class="w-10 h-10 inline-flex items-center justify-center border border-ink-4 hover:border-steel hover:text-steel transition">
+              <a href="https://twitter.com/Systenger" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" class="w-10 h-10 inline-flex items-center justify-center border border-ink-4 hover:border-steel hover:text-steel transition">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M10.5 0H12.7l-4.8 5.5L13.5 14H9.1L5.6 9.3 1.7 14H-.5l5.2-5.9L-1 0h4.5l3.2 4.3L10.5 0zm-.8 12.7h1.2L3.6 1.2H2.3l7.4 11.5z"/></svg>
               </a>
-              <a href="#" aria-label="LinkedIn" class="w-10 h-10 inline-flex items-center justify-center border border-ink-4 hover:border-steel hover:text-steel transition">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M3 5H0v9h3V5zm-1.5-4a1.7 1.7 0 100 3.5 1.7 1.7 0 000-3.5zM14 9.4c0-2.6-1.4-3.8-3.2-3.8-1.5 0-2.2.8-2.5 1.4V5H5.3v9h3V9c0-.8 0-1.7 1.2-1.7 1.1 0 1.2 1 1.2 1.7v5h3V9.4z"/></svg>
+              <a href="https://www.facebook.com/profile.php?id=61552615863013" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 inline-flex items-center justify-center border border-ink-4 hover:border-steel hover:text-steel transition">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0014.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"/></svg>
               </a>
-              <a href="#" aria-label="Instagram" class="w-10 h-10 inline-flex items-center justify-center border border-ink-4 hover:border-steel hover:text-steel transition">
+              <a href="https://www.instagram.com/systenger_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 inline-flex items-center justify-center border border-ink-4 hover:border-steel hover:text-steel transition">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1" y="1" width="12" height="12" rx="3"/><circle cx="7" cy="7" r="3"/><circle cx="10.6" cy="3.4" r=".6" fill="currentColor"/></svg>
               </a>
             </div>
