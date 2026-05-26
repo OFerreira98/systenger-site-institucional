@@ -147,9 +147,9 @@
           <div class="lg:col-span-3">
             <div class="font-mono text-[11px] tracking-[0.18em] text-mut-dark mb-5 uppercase" data-i18n="footer.contact">Contacto</div>
             <ul class="space-y-3 text-sm">
-              <li><a href="https://maps.app.goo.gl/2wHaBFnyYRKwtnqP8" target="_blank" rel="noopener" class="hover:text-steel transition" data-i18n="footer.address">Calle 7, San Francisco, Ciudad de Panamá</a></li>
-              <li><a href="tel:+50730205532" class="hover:text-steel transition" data-i18n="footer.phone">+507 3020-5532</a></li>
-              <li><a href="mailto:info@systenger.com" class="hover:text-steel transition" data-i18n="footer.email">info@systenger.com</a></li>
+              <li><a href="https://www.google.com/maps/search/?api=1&query=Burunga+Carretera+Panamericana+Arraij%C3%A1n+Panam%C3%A1" target="_blank" rel="noopener" class="hover:text-steel transition" data-i18n="footer.address">Burunga, Carretera Panamericana, Arraiján, Panamá Oeste</a></li>
+              <li><a href="tel:+5073426480" class="hover:text-steel transition" data-i18n="footer.phone">+(507) 342-6480 / 342-6481</a></li>
+              <li><a href="mailto:amacedo@systenger.com" class="hover:text-steel transition" data-i18n="footer.email">amacedo@systenger.com</a></li>
               <li><a href="mailto:comercial@systenger.com" class="hover:text-steel transition" data-i18n="footer.emailComercial">comercial@systenger.com</a></li>
             </ul>
           </div>
