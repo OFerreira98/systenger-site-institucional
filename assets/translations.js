@@ -592,8 +592,8 @@ window.I18N = {
     "pg.steel.data.s2.label": "Reducción de plazos respecto a sistemas tradicionales",
     "pg.steel.data.s3.value": "80 %",
     "pg.steel.data.s3.label": "Reducción de residuos generados en obra",
-    "pg.steel.data.s4.value": "ASTM",
-    "pg.steel.data.s4.label": "Propiedades mecánicas certificadas por norma internacional",
+    "pg.steel.data.s4.value": "100%",
+    "pg.steel.data.s4.label": "Control de calidad estricto en planta, según normas ASTM internacionales",
 
     "pg.steel.cta.h": "Conversemos sobre si el acero es la mejor opción para tu obra",
     "pg.steel.cta.btn": "Hablar con un ingeniero",
@@ -1238,8 +1238,8 @@ window.I18N = {
     "pg.steel.data.s2.label": "Schedule reduction vs traditional systems",
     "pg.steel.data.s3.value": "80 %",
     "pg.steel.data.s3.label": "Reduction in waste generated on site",
-    "pg.steel.data.s4.value": "ASTM",
-    "pg.steel.data.s4.label": "Mechanical properties certified to international standard",
+    "pg.steel.data.s4.value": "100%",
+    "pg.steel.data.s4.label": "Strict quality control in plant, per international ASTM standards",
 
     "pg.steel.cta.h": "Let's discuss whether steel is the best fit for your project",
     "pg.steel.cta.btn": "Talk to an engineer",
@@ -1884,8 +1884,8 @@ window.I18N = {
     "pg.steel.data.s2.label": "Redução de prazos vs sistemas tradicionais",
     "pg.steel.data.s3.value": "80 %",
     "pg.steel.data.s3.label": "Redução de resíduos gerados em obra",
-    "pg.steel.data.s4.value": "ASTM",
-    "pg.steel.data.s4.label": "Propriedades mecânicas certificadas por norma internacional",
+    "pg.steel.data.s4.value": "100%",
+    "pg.steel.data.s4.label": "Controle de qualidade rigoroso em planta, segundo normas ASTM internacionais",
 
     "pg.steel.cta.h": "Vamos conversar se o aço é a melhor escolha para sua obra",
     "pg.steel.cta.btn": "Falar com um engenheiro",
