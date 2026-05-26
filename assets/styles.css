@@ -414,15 +414,14 @@ body.no-scroll { overflow: hidden; }
   width: auto;
   height: auto;
   object-fit: contain;
-  opacity: 0.6;
-  transition: opacity 300ms ease, transform 300ms ease, filter 300ms ease;
-  filter: brightness(0.85) contrast(1.05);
+  opacity: 1;
+  transition: transform 300ms ease, filter 300ms ease;
+  filter: none;
 }
 
 .client-item:hover img {
-  opacity: 1;
   transform: scale(1.1);
-  filter: brightness(1) contrast(1.1) drop-shadow(0 4px 12px rgba(3,155,156,0.25));
+  filter: drop-shadow(0 4px 12px rgba(3,155,156,0.25));
 }
 
 /* Responsive adjustments */
@@ -562,17 +561,14 @@ a:hover .brand-s,
 .client-item:hover { background: transparent !important; }
 .client-item:hover::before { opacity: 1; }
 .client-item img {
-  opacity: 0.55;
-  filter: grayscale(0.7) brightness(0.95) contrast(1.05);
-  transition: opacity 360ms cubic-bezier(.2,.7,.2,1),
-              transform 360ms cubic-bezier(.2,.7,.2,1),
+  opacity: 1;
+  filter: none;
+  transition: transform 360ms cubic-bezier(.2,.7,.2,1),
               filter 360ms cubic-bezier(.2,.7,.2,1);
 }
 .client-item:hover img {
-  opacity: 1;
-  transform: scale(1.08);
-  filter: grayscale(0) brightness(1.05) contrast(1.1)
-          drop-shadow(0 6px 18px rgba(11,188,189,0.35));
+  transform: scale(1.06);
+  filter: drop-shadow(0 6px 18px rgba(11,188,189,0.35));
 }
 
 /* ---------- FORM REDESIGN · "sex appeal" dark elegance ---------- */

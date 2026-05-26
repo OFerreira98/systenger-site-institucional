@@ -26,7 +26,7 @@ window.I18N = {
 
     /* Hero — frases reales del sitio Systenger */
     "hero.eyebrow": "Soluciones Estructurales para Obras Complejas",
-    "hero.tagline1": "Bienvenido a Systenger — Tu Socio en Soluciones Innovadoras de Construcción",
+    "hero.tagline1": "Bienvenido a Systenger. Tu Socio en Soluciones Innovadoras de Construcción",
     "hero.tagline2": "Estructuras metálicas, fachadas en vidrio y aluminio, sistemas Smart Wall y defensas metálicas",
     "hero.tagline3": "Construcción Industrializada Más Rápida, Segura y de Alta Calidad",
     "hero.tagline4": "Ingeniería de precisión para obras de infraestructura, industria y grandes edificaciones en América Latina",
@@ -51,7 +51,7 @@ window.I18N = {
     "about.heading": "Tu Socio en Soluciones Innovadoras de Construcción",
     "about.p1": "En Systenger, nos especializamos en transformar visiones en realidad mediante métodos de construcción de vanguardia.",
     "about.p2": "Systenger es tu contratista de confianza para estructuras metálicas prefabricadas de alta calidad y soluciones de construcción en sitio. Nuestro equipo de más de 50 profesionales está comprometido a ofrecer servicios excepcionales de diseño y construcción adaptados a tus necesidades específicas.",
-    "about.p3": "Especializados en construcción off-site, MMC, Smart Wall, glass curtain y puentes metálicos — con enfoque en fast track, QA/QC y sostenibilidad y cero desperdicio.",
+    "about.p3": "Especializados en construcción off-site, MMC, Smart Wall, glass curtain y puentes metálicos. Con enfoque en fast track, QA/QC y sostenibilidad y cero desperdicio.",
     "about.bullet1": "Construcción off-site, modular y MMC · puentes metálicos e infraestructura",
     "about.bullet2": "Smart Wall, glass curtain · fast track y QA/QC certificado",
     "about.bullet3": "Sostenibilidad y cero desperdicio · más de 50 profesionales especializados",
@@ -59,7 +59,7 @@ window.I18N = {
     /* Business Units — categorías reales del sitio */
     "bu.kicker": "03 / Unidades de Negocio",
     "bu.heading": "Tres frentes, una sola precisión de ingeniería",
-    "bu.intro": "Estructuras metálicas, fachadas en vidrio y aluminio, sistemas Smart Wall y defensas metálicas — ingeniería de precisión para obras de infraestructura, industria y grandes edificaciones en América Latina.",
+    "bu.intro": "Estructuras metálicas, fachadas en vidrio y aluminio, sistemas Smart Wall y defensas metálicas. Ingeniería de precisión para obras de infraestructura, industria y grandes edificaciones en América Latina.",
     "bu.c1.tag": "Unidad 01",
     "bu.c1.title": "Estructuras Metálicas Prefabricadas",
     "bu.c1.desc": "Estructuras metálicas prefabricadas de alta calidad y soluciones de construcción en sitio. Fabricadas en planta con control de calidad total antes de la instalación.",
@@ -130,7 +130,7 @@ window.I18N = {
     "pg.about.mission.title": "Misión",
     "pg.about.mission.body": "Entregar soluciones estructurales industrializadas que combinen ingeniería de precisión, control total de calidad y plazos predecibles para obras complejas en América Latina.",
     "pg.about.vision.title": "Visión",
-    "pg.about.vision.body": "Ser la contratista referente de construcción prefabricada, modular y off-site de Centroamérica — la primera opción para industrias, infraestructura y grandes edificaciones.",
+    "pg.about.vision.body": "Ser la contratista referente de construcción prefabricada, modular y off-site de Centroamérica. La primera opción para industrias, infraestructura y grandes edificaciones.",
     "pg.about.values.title": "Valores",
     "pg.about.values.v1": "Precisión",
     "pg.about.values.v2": "Innovación",
@@ -533,7 +533,7 @@ window.I18N = {
     /* ============ VENTAJAS DEL ACERO ============ */
     "pg.steel.eyebrow": "Conocimiento · 01",
     "pg.steel.h1": "Ventajas del Acero Estructural",
-    "pg.steel.lede": "Por qué el acero es la elección racional para obras industriales, infraestructura y grandes edificaciones — desempeño estructural, plazos predecibles y un ciclo de vida más sostenible que los sistemas tradicionales.",
+    "pg.steel.lede": "Por qué el acero es la elección racional para obras industriales, infraestructura y grandes edificaciones. Desempeño estructural, plazos predecibles y un ciclo de vida más sostenible que los sistemas tradicionales.",
 
     "pg.steel.ov.kicker": "02 / Por qué acero",
     "pg.steel.ov.h2": "Un material industrializado para obras industrializadas",
@@ -545,7 +545,7 @@ window.I18N = {
 
     "pg.steel.adv.kicker": "03 / Seis ventajas",
     "pg.steel.adv.h2": "Velocidad, sostenibilidad, precisión y previsibilidad",
-    "pg.steel.adv.intro": "El acero no compite contra el hormigón — lo complementa y, en obras complejas, lo supera en plazos, ciclo de vida y flexibilidad.",
+    "pg.steel.adv.intro": "El acero no compite contra el hormigón. Lo complementa y, en obras complejas, lo supera en plazos, ciclo de vida y flexibilidad.",
     "pg.steel.adv.a1.title": "Velocidad de obra",
     "pg.steel.adv.a1.desc": "Estructuras prefabricadas y montadas off-site permiten reducir hasta 30 % los plazos respecto a sistemas tradicionales.",
     "pg.steel.adv.a2.title": "Sostenibilidad",
@@ -561,7 +561,7 @@ window.I18N = {
 
     "pg.steel.compare.kicker": "04 / Comparativo",
     "pg.steel.compare.h2": "Acero estructural vs. hormigón armado",
-    "pg.steel.compare.intro": "Una lectura honesta de las diferencias en obras industriales de gran envergadura — sin desconocer las virtudes de cada sistema.",
+    "pg.steel.compare.intro": "Una lectura honesta de las diferencias en obras industriales de gran envergadura, sin desconocer las virtudes de cada sistema.",
     "pg.steel.compare.col.crit": "Criterio",
     "pg.steel.compare.col.steel": "Acero estructural",
     "pg.steel.compare.col.conc": "Hormigón armado",
@@ -680,9 +680,9 @@ window.I18N = {
     "nav.quote": "Request a Quote",
 
     "hero.eyebrow": "Structural Solutions for Complex Projects",
-    "hero.tagline1": "Welcome to Systenger — Your Partner in Innovative Construction Solutions",
+    "hero.tagline1": "Welcome to Systenger. Your Partner in Innovative Construction Solutions",
     "hero.tagline2": "Metal structures, glass and aluminum facades, Smart Wall systems and metal guardrails",
-    "hero.tagline3": "Industrialized construction — faster, safer and higher quality",
+    "hero.tagline3": "Industrialized construction: faster, safer and higher quality",
     "hero.tagline4": "Precision engineering for infrastructure, industry and large buildings across Latin America",
     "hero.cta.primary": "Explore our units",
     "hero.cta.secondary": "Talk to an engineer",
@@ -703,14 +703,14 @@ window.I18N = {
     "about.heading": "Your Partner in Innovative Construction Solutions",
     "about.p1": "At Systenger, we specialize in turning visions into reality through cutting-edge construction methods.",
     "about.p2": "Systenger is your trusted contractor for high-quality prefabricated metal structures and on-site construction solutions. Our team of over 50 professionals is committed to delivering exceptional design and construction services tailored to your specific needs.",
-    "about.p3": "Specialists in off-site construction, MMC, Smart Wall, glass curtain and metal bridges — with a focus on fast track, QA/QC and zero-waste sustainability.",
+    "about.p3": "Specialists in off-site construction, MMC, Smart Wall, glass curtain and metal bridges. With a focus on fast track, QA/QC and zero-waste sustainability.",
     "about.bullet1": "Off-site, modular and MMC construction · metal bridges and infrastructure",
     "about.bullet2": "Smart Wall, glass curtain · fast track and certified QA/QC",
     "about.bullet3": "Sustainability and zero waste · a team of over 50 specialists",
 
     "bu.kicker": "03 / Business Units",
     "bu.heading": "Three fronts, one engineering precision",
-    "bu.intro": "Metal structures, glass and aluminum facades, Smart Wall systems and metal guardrails — precision engineering for infrastructure, industry and large buildings across Latin America.",
+    "bu.intro": "Metal structures, glass and aluminum facades, Smart Wall systems and metal guardrails. Precision engineering for infrastructure, industry and large buildings across Latin America.",
     "bu.c1.tag": "Unit 01",
     "bu.c1.title": "Prefabricated Metal Structures",
     "bu.c1.desc": "High-quality prefabricated metal structures and on-site construction solutions. Built in the plant with full quality control before installation.",
@@ -726,7 +726,7 @@ window.I18N = {
 
     "innov.kicker": "04 / Innovation",
     "innov.heading": "We bet on prefabricated, modular and off-site construction",
-    "innov.body": "By standardizing every possible element, we not only guarantee quality and consistency, but also significantly reduce the time on-site exposed to the weather — rain and sun — and lower other risks by working in a controlled environment such as our factories.",
+    "innov.body": "By standardizing every possible element, we not only guarantee quality and consistency, but also significantly reduce the time on-site exposed to the weather (rain and sun) and lower other risks by working in a controlled environment such as our factories.",
 
     "proc.kicker": "05 / Our Processes",
     "proc.heading": "Design, production and quality control under one roof",
@@ -776,7 +776,7 @@ window.I18N = {
     "pg.about.mission.title": "Mission",
     "pg.about.mission.body": "Deliver industrialized structural solutions that combine precision engineering, full quality control and predictable timelines for complex projects across Latin America.",
     "pg.about.vision.title": "Vision",
-    "pg.about.vision.body": "To be Central America's reference contractor for prefabricated, modular and off-site construction — the first choice for industry, infrastructure and large buildings.",
+    "pg.about.vision.body": "To be Central America's reference contractor for prefabricated, modular and off-site construction. The first choice for industry, infrastructure and large buildings.",
     "pg.about.values.title": "Values",
     "pg.about.values.v1": "Precision",
     "pg.about.values.v2": "Innovation",
@@ -1179,7 +1179,7 @@ window.I18N = {
     /* ============ ADVANTAGES OF STEEL ============ */
     "pg.steel.eyebrow": "Knowledge · 01",
     "pg.steel.h1": "Advantages of Structural Steel",
-    "pg.steel.lede": "Why steel is the rational choice for industrial works, infrastructure and large buildings — structural performance, predictable schedules and a more sustainable life cycle than traditional systems.",
+    "pg.steel.lede": "Why steel is the rational choice for industrial works, infrastructure and large buildings. Structural performance, predictable schedules and a more sustainable life cycle than traditional systems.",
 
     "pg.steel.ov.kicker": "02 / Why steel",
     "pg.steel.ov.h2": "An industrialized material for industrialized construction",
@@ -1191,7 +1191,7 @@ window.I18N = {
 
     "pg.steel.adv.kicker": "03 / Six advantages",
     "pg.steel.adv.h2": "Speed, sustainability, precision and predictability",
-    "pg.steel.adv.intro": "Steel doesn't compete with concrete — it complements it, and in complex projects it outperforms it on schedule, life cycle and flexibility.",
+    "pg.steel.adv.intro": "Steel doesn't compete with concrete. It complements it, and in complex projects it outperforms it on schedule, life cycle and flexibility.",
     "pg.steel.adv.a1.title": "Construction speed",
     "pg.steel.adv.a1.desc": "Prefabricated structures erected off-site can cut schedules by up to 30 % compared to traditional systems.",
     "pg.steel.adv.a2.title": "Sustainability",
@@ -1207,7 +1207,7 @@ window.I18N = {
 
     "pg.steel.compare.kicker": "04 / Comparison",
     "pg.steel.compare.h2": "Structural steel vs. reinforced concrete",
-    "pg.steel.compare.intro": "An honest reading of the differences in large-scale industrial works — without ignoring the strengths of either system.",
+    "pg.steel.compare.intro": "An honest reading of the differences in large-scale industrial works, without ignoring the strengths of either system.",
     "pg.steel.compare.col.crit": "Criterion",
     "pg.steel.compare.col.steel": "Structural steel",
     "pg.steel.compare.col.conc": "Reinforced concrete",
@@ -1326,7 +1326,7 @@ window.I18N = {
     "nav.quote": "Solicitar Orçamento",
 
     "hero.eyebrow": "Soluções Estruturais para Obras Complexas",
-    "hero.tagline1": "Bem-vindo à Systenger — Seu Parceiro em Soluções Inovadoras de Construção",
+    "hero.tagline1": "Bem-vindo à Systenger. Seu Parceiro em Soluções Inovadoras de Construção",
     "hero.tagline2": "Estruturas metálicas, fachadas em vidro e alumínio, sistemas Smart Wall e defensas metálicas",
     "hero.tagline3": "Construção Industrializada Mais Rápida, Segura e de Alta Qualidade",
     "hero.tagline4": "Engenharia de precisão para obras de infraestrutura, indústria e grandes edificações na América Latina",
@@ -1349,14 +1349,14 @@ window.I18N = {
     "about.heading": "Seu Parceiro em Soluções Inovadoras de Construção",
     "about.p1": "Na Systenger, somos especializados em transformar visões em realidade por meio de métodos de construção de vanguarda.",
     "about.p2": "A Systenger é sua empreiteira de confiança para estruturas metálicas pré-fabricadas de alta qualidade e soluções de construção em obra. Nossa equipe de mais de 50 profissionais está comprometida em oferecer serviços excepcionais de projeto e construção adaptados às suas necessidades específicas.",
-    "about.p3": "Especializados em construção off-site, MMC, Smart Wall, glass curtain e pontes metálicas — com foco em fast track, QA/QC e sustentabilidade com zero desperdício.",
+    "about.p3": "Especializados em construção off-site, MMC, Smart Wall, glass curtain e pontes metálicas. Com foco em fast track, QA/QC e sustentabilidade com zero desperdício.",
     "about.bullet1": "Construção off-site, modular e MMC · pontes metálicas e infraestrutura",
     "about.bullet2": "Smart Wall, glass curtain · fast track e QA/QC certificado",
     "about.bullet3": "Sustentabilidade e zero desperdício · mais de 50 profissionais especializados",
 
     "bu.kicker": "03 / Unidades de Negócio",
     "bu.heading": "Três frentes, uma única precisão de engenharia",
-    "bu.intro": "Estruturas metálicas, fachadas em vidro e alumínio, sistemas Smart Wall e defensas metálicas — engenharia de precisão para obras de infraestrutura, indústria e grandes edificações na América Latina.",
+    "bu.intro": "Estruturas metálicas, fachadas em vidro e alumínio, sistemas Smart Wall e defensas metálicas. Engenharia de precisão para obras de infraestrutura, indústria e grandes edificações na América Latina.",
     "bu.c1.tag": "Unidade 01",
     "bu.c1.title": "Estruturas Metálicas Pré-Fabricadas",
     "bu.c1.desc": "Estruturas metálicas pré-fabricadas de alta qualidade e soluções de construção em obra. Fabricadas na planta com controle total de qualidade antes da instalação.",
@@ -1372,7 +1372,7 @@ window.I18N = {
 
     "innov.kicker": "04 / Inovação",
     "innov.heading": "Apostamos na construção pré-fabricada, modular e off-site",
-    "innov.body": "Ao padronizar ao máximo todos os elementos possíveis, não apenas garantimos qualidade e consistência, mas também reduzimos significativamente o tempo de obra exposto às intempéries — chuvas e sol — além de reduzir outros riscos ao trabalhar em um ambiente controlado como são as fábricas.",
+    "innov.body": "Ao padronizar ao máximo todos os elementos possíveis, não apenas garantimos qualidade e consistência, mas também reduzimos significativamente o tempo de obra exposto às intempéries (chuvas e sol) e reduzimos outros riscos ao trabalhar em um ambiente controlado como são as fábricas.",
 
     "proc.kicker": "05 / Nossos Processos",
     "proc.heading": "Projeto, produção e controle de qualidade sob o mesmo teto",
@@ -1422,7 +1422,7 @@ window.I18N = {
     "pg.about.mission.title": "Missão",
     "pg.about.mission.body": "Entregar soluções estruturais industrializadas que combinem engenharia de precisão, controle total de qualidade e prazos previsíveis para obras complexas na América Latina.",
     "pg.about.vision.title": "Visão",
-    "pg.about.vision.body": "Ser a empreiteira referência em construção pré-fabricada, modular e off-site da América Central — a primeira escolha para indústrias, infraestrutura e grandes edificações.",
+    "pg.about.vision.body": "Ser a empreiteira referência em construção pré-fabricada, modular e off-site da América Central. A primeira escolha para indústrias, infraestrutura e grandes edificações.",
     "pg.about.values.title": "Valores",
     "pg.about.values.v1": "Precisão",
     "pg.about.values.v2": "Inovação",
@@ -1825,7 +1825,7 @@ window.I18N = {
     /* ============ VANTAGENS DO AÇO ============ */
     "pg.steel.eyebrow": "Conhecimento · 01",
     "pg.steel.h1": "Vantagens do Aço Estrutural",
-    "pg.steel.lede": "Por que o aço é a escolha racional para obras industriais, infraestrutura e grandes edificações — desempenho estrutural, prazos previsíveis e um ciclo de vida mais sustentável do que sistemas tradicionais.",
+    "pg.steel.lede": "Por que o aço é a escolha racional para obras industriais, infraestrutura e grandes edificações. Desempenho estrutural, prazos previsíveis e um ciclo de vida mais sustentável do que sistemas tradicionais.",
 
     "pg.steel.ov.kicker": "02 / Por que aço",
     "pg.steel.ov.h2": "Um material industrializado para obras industrializadas",
@@ -1837,7 +1837,7 @@ window.I18N = {
 
     "pg.steel.adv.kicker": "03 / Seis vantagens",
     "pg.steel.adv.h2": "Velocidade, sustentabilidade, precisão e previsibilidade",
-    "pg.steel.adv.intro": "O aço não compete com o concreto — o complementa e, em obras complexas, o supera em prazos, ciclo de vida e flexibilidade.",
+    "pg.steel.adv.intro": "O aço não compete com o concreto. O complementa e, em obras complexas, o supera em prazos, ciclo de vida e flexibilidade.",
     "pg.steel.adv.a1.title": "Velocidade de obra",
     "pg.steel.adv.a1.desc": "Estruturas pré-fabricadas e montadas off-site reduzem em até 30 % os prazos em relação a sistemas tradicionais.",
     "pg.steel.adv.a2.title": "Sustentabilidade",
@@ -1853,7 +1853,7 @@ window.I18N = {
 
     "pg.steel.compare.kicker": "04 / Comparativo",
     "pg.steel.compare.h2": "Aço estrutural vs. concreto armado",
-    "pg.steel.compare.intro": "Uma leitura honesta das diferenças em obras industriais de grande porte — sem desconhecer as virtudes de cada sistema.",
+    "pg.steel.compare.intro": "Uma leitura honesta das diferenças em obras industriais de grande porte, sem desconhecer as virtudes de cada sistema.",
     "pg.steel.compare.col.crit": "Critério",
     "pg.steel.compare.col.steel": "Aço estrutural",
     "pg.steel.compare.col.conc": "Concreto armado",
