@@ -47,7 +47,7 @@
     <div class="flex flex-col items-center text-center shrink-0 max-w-[210px]">
       <img src="${ROOT}assets/img/s-clean.png" alt="Systenger" class="brand-s h-[72px] w-auto" />
       <span class="text-white font-sans font-semibold tracking-[0.18em] text-[22px] leading-none mt-3">SYSTENGER</span>
-      <span class="text-[11px] text-mut-dark/80 leading-tight mt-2" data-i18n="footer.descriptor">Construcción industrializada: precisa, segura y sin imprevistos.</span>
+      <span class="text-[11px] text-mut-dark/80 leading-tight mt-2" data-i18n="footer.descriptor">Construcción industrializada: segura, rápida y sin imprevistos.</span>
     </div>`;
 
   const HEADER_HTML = `
@@ -139,7 +139,7 @@
               <div class="w-px bg-ink-4 self-stretch"></div>
               <div class="flex flex-col justify-center">
                 <p class="text-white font-bold text-[26px] leading-[1.1] tracking-[-0.01em]" data-i18n="footer.tagline">Más rápido. Mejor. Sin sorpresas.</p>
-                <p class="text-steel text-[14px] mt-3 leading-snug max-w-[26ch]" data-i18n="footer.subtagline">Industrializamos tu obra para maximizar tus resultados</p>
+                <p class="text-steel text-[14px] mt-3 leading-snug max-w-[26ch]" data-i18n="footer.subtagline">Industrializamos tu obra: más rápido, mejor y sin sorpresas.</p>
               </div>
             </div>
           </div>
